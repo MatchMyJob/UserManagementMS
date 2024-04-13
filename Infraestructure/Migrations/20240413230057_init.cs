@@ -66,30 +66,13 @@ namespace Infraestructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "MetaUser",
-                columns: table => new
-                {
-                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Phone = table.Column<int>(type: "int", nullable: false),
-                    CityId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_MetaUser", x => x.UserId);
-                    table.ForeignKey(
-                        name: "FK_MetaUser_City_CityId",
-                        column: x => x.CityId,
-                        principalTable: "City",
-                        principalColumn: "CityId",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Applicant",
                 columns: table => new
                 {
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CityId = table.Column<int>(type: "int", nullable: false),
                     DNI = table.Column<int>(type: "int", nullable: false),
+                    Phone = table.Column<int>(type: "int", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Surname = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     BirthDate = table.Column<DateOnly>(type: "date", nullable: false)
@@ -98,10 +81,10 @@ namespace Infraestructure.Migrations
                 {
                     table.PrimaryKey("PK_Applicant", x => x.UserId);
                     table.ForeignKey(
-                        name: "FK_Applicant_MetaUser_UserId",
-                        column: x => x.UserId,
-                        principalTable: "MetaUser",
-                        principalColumn: "UserId",
+                        name: "FK_Applicant_City_CityId",
+                        column: x => x.CityId,
+                        principalTable: "City",
+                        principalColumn: "CityId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -112,7 +95,9 @@ namespace Infraestructure.Migrations
                     CompanyId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CityId = table.Column<int>(type: "int", nullable: false),
                     CUIT = table.Column<string>(type: "nvarchar(12)", maxLength: 12, nullable: false),
+                    Phone = table.Column<int>(type: "int", nullable: false),
                     BusinessName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Address = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     BusinessSector = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
@@ -124,10 +109,10 @@ namespace Infraestructure.Migrations
                 {
                     table.PrimaryKey("PK_Company", x => x.CompanyId);
                     table.ForeignKey(
-                        name: "FK_Company_MetaUser_UserId",
-                        column: x => x.UserId,
-                        principalTable: "MetaUser",
-                        principalColumn: "UserId",
+                        name: "FK_Company_City_CityId",
+                        column: x => x.CityId,
+                        principalTable: "City",
+                        principalColumn: "CityId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -155,26 +140,25 @@ namespace Infraestructure.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_Applicant_CityId",
+                table: "Applicant",
+                column: "CityId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_City_ProvinceId",
                 table: "City",
                 column: "ProvinceId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Company_UserId",
+                name: "IX_Company_CityId",
                 table: "Company",
-                column: "UserId",
-                unique: true);
+                column: "CityId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_ConctacInformation_CompanyId",
                 table: "ConctacInformation",
                 column: "CompanyId",
                 unique: true);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_MetaUser_CityId",
-                table: "MetaUser",
-                column: "CityId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Province_CountryId",
@@ -193,9 +177,6 @@ namespace Infraestructure.Migrations
 
             migrationBuilder.DropTable(
                 name: "Company");
-
-            migrationBuilder.DropTable(
-                name: "MetaUser");
 
             migrationBuilder.DropTable(
                 name: "City");

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Domain.Entities
+﻿namespace Domain.Entities
 {
     public class City
     {
@@ -13,6 +7,7 @@ namespace Domain.Entities
         public string Name { get; set; }
 
         public Province ProvinciaObject { get; set; }
-        public List<MetaUser> MetaUserObjects { get; set; }
+        public List<Company> CompanyObjects { get; set; }
+        public List<Applicant> ApplicantObjects { get; set; }
     }
 }

@@ -12,6 +12,10 @@ namespace Infraestructure.EntityConfig
             builder.HasKey(a => a.UserId);
             builder.Property(a => a.UserId)
                    .IsRequired();
+            builder.Property(u => u.CityId)
+                   .IsRequired();
+            builder.Property(u => u.Phone)
+                   .IsRequired();
             builder.Property(d => d.DNI)
                    .IsRequired();
             builder.Property(n => n.Name)
@@ -23,9 +27,9 @@ namespace Infraestructure.EntityConfig
             builder.Property(b => b.BirthDate)
                    .IsRequired();
 
-            builder.HasOne<MetaUser>(mu => mu.MetaUserObject)
-                   .WithOne(a => a.ApplicantObject)
-                   .HasForeignKey<Applicant>(fk => fk.UserId);
+            builder.HasOne<City>(mu => mu.CityObject)
+                    .WithMany(c => c.ApplicantObjects)
+                    .HasForeignKey(fk => fk.CityId);
         }
     }
 }

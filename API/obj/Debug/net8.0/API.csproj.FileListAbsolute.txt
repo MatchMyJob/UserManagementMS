@@ -458,3 +458,4 @@ D:\Ingeniería Informatica\1 - Proyecto de Software\Proyecto integrador\APITempl
 D:\Ingeniería Informatica\1 - Proyecto de Software\Proyecto integrador\APITemplate - copia\API\obj\Debug\net8.0\API.csproj.Up2Date
 D:\Ingeniería Informatica\1 - Proyecto de Software\Proyecto integrador\APITemplate - copia\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 D:\Ingeniería Informatica\1 - Proyecto de Software\Proyecto integrador\APITemplate - copia\API\obj\Debug\net8.0\ref\API.dll
+D:\Ingeniería Informatica\1 - Proyecto de Software\Proyecto integrador\APITemplate - copia\API\obj\Debug\net8.0\API.sourcelink.json

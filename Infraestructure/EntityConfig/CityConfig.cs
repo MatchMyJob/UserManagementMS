@@ -22,7 +22,11 @@ namespace Infraestructure.EntityConfig
                    .WithMany(c => c.CityObjects)
                    .HasForeignKey(c => c.ProvinceId);
 
-            builder.HasMany<MetaUser>(mu => mu.MetaUserObjects)
+            builder.HasMany<Company>(c => c.CompanyObjects)
+                   .WithOne(c => c.CityObject)
+                   .HasForeignKey(fk => fk.CityId);
+
+            builder.HasMany<Applicant>(a => a.ApplicantObjects)
                    .WithOne(c => c.CityObject)
                    .HasForeignKey(fk => fk.CityId);
         }

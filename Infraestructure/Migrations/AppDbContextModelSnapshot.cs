@@ -25,10 +25,14 @@ namespace Infraestructure.Migrations
             modelBuilder.Entity("Domain.Entities.Applicant", b =>
                 {
                     b.Property<Guid>("UserId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateOnly>("BirthDate")
                         .HasColumnType("date");
+
+                    b.Property<int>("CityId")
+                        .HasColumnType("int");
 
                     b.Property<int>("DNI")
                         .HasColumnType("int");
@@ -38,12 +42,17 @@ namespace Infraestructure.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<int>("Phone")
+                        .HasColumnType("int");
+
                     b.Property<string>("Surname")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
                     b.HasKey("UserId");
+
+                    b.HasIndex("CityId");
 
                     b.ToTable("Applicant", (string)null);
                 });
@@ -99,6 +108,9 @@ namespace Infraestructure.Migrations
                         .HasMaxLength(12)
                         .HasColumnType("nvarchar(12)");
 
+                    b.Property<int>("CityId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasMaxLength(500)
@@ -108,6 +120,9 @@ namespace Infraestructure.Migrations
                         .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
+
+                    b.Property<int>("Phone")
+                        .HasColumnType("int");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
@@ -119,8 +134,7 @@ namespace Infraestructure.Migrations
 
                     b.HasKey("CompanyId");
 
-                    b.HasIndex("UserId")
-                        .IsUnique();
+                    b.HasIndex("CityId");
 
                     b.ToTable("Company", (string)null);
                 });
@@ -183,25 +197,6 @@ namespace Infraestructure.Migrations
                     b.ToTable("Country", (string)null);
                 });
 
-            modelBuilder.Entity("Domain.Entities.MetaUser", b =>
-                {
-                    b.Property<Guid>("UserId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("CityId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Phone")
-                        .HasColumnType("int");
-
-                    b.HasKey("UserId");
-
-                    b.HasIndex("CityId");
-
-                    b.ToTable("MetaUser", (string)null);
-                });
-
             modelBuilder.Entity("Domain.Entities.Province", b =>
                 {
                     b.Property<int>("ProvinceId")
@@ -227,13 +222,13 @@ namespace Infraestructure.Migrations
 
             modelBuilder.Entity("Domain.Entities.Applicant", b =>
                 {
-                    b.HasOne("Domain.Entities.MetaUser", "MetaUserObject")
-                        .WithOne("ApplicantObject")
-                        .HasForeignKey("Domain.Entities.Applicant", "UserId")
+                    b.HasOne("Domain.Entities.City", "CityObject")
+                        .WithMany("ApplicantObjects")
+                        .HasForeignKey("CityId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("MetaUserObject");
+                    b.Navigation("CityObject");
                 });
 
             modelBuilder.Entity("Domain.Entities.City", b =>
@@ -249,13 +244,13 @@ namespace Infraestructure.Migrations
 
             modelBuilder.Entity("Domain.Entities.Company", b =>
                 {
-                    b.HasOne("Domain.Entities.MetaUser", "MetaUserObject")
-                        .WithOne("CompanyObject")
-                        .HasForeignKey("Domain.Entities.Company", "UserId")
+                    b.HasOne("Domain.Entities.City", "CityObject")
+                        .WithMany("CompanyObjects")
+                        .HasForeignKey("CityId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("MetaUserObject");
+                    b.Navigation("CityObject");
                 });
 
             modelBuilder.Entity("Domain.Entities.ContactInformation", b =>
@@ -267,17 +262,6 @@ namespace Infraestructure.Migrations
                         .IsRequired();
 
                     b.Navigation("CompanyObject");
-                });
-
-            modelBuilder.Entity("Domain.Entities.MetaUser", b =>
-                {
-                    b.HasOne("Domain.Entities.City", "CityObject")
-                        .WithMany("MetaUserObjects")
-                        .HasForeignKey("CityId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("CityObject");
                 });
 
             modelBuilder.Entity("Domain.Entities.Province", b =>
@@ -293,7 +277,9 @@ namespace Infraestructure.Migrations
 
             modelBuilder.Entity("Domain.Entities.City", b =>
                 {
-                    b.Navigation("MetaUserObjects");
+                    b.Navigation("ApplicantObjects");
+
+                    b.Navigation("CompanyObjects");
                 });
 
             modelBuilder.Entity("Domain.Entities.Company", b =>
@@ -305,15 +291,6 @@ namespace Infraestructure.Migrations
             modelBuilder.Entity("Domain.Entities.Country", b =>
                 {
                     b.Navigation("ProvinceObjects");
-                });
-
-            modelBuilder.Entity("Domain.Entities.MetaUser", b =>
-                {
-                    b.Navigation("ApplicantObject")
-                        .IsRequired();
-
-                    b.Navigation("CompanyObject")
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("Domain.Entities.Province", b =>

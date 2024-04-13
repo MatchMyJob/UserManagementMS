@@ -14,6 +14,10 @@ namespace Infraestructure.EntityConfig
                    .ValueGeneratedOnAdd();
             builder.Property(u => u.UserId)
                    .IsRequired();
+            builder.Property(u => u.CityId)
+                   .IsRequired();
+            builder.Property(u => u.Phone)
+                   .IsRequired();
             builder.Property(c => c.CUIT)
                    .HasMaxLength(12)
                    .IsRequired();
@@ -31,9 +35,9 @@ namespace Infraestructure.EntityConfig
             builder.Property(l => l.Logo)
                    .HasMaxLength(255);
 
-            builder.HasOne<MetaUser>(mu => mu.MetaUserObject)
-                   .WithOne(c => c.CompanyObject)
-                   .HasForeignKey<Company>(fk => fk.UserId);
+            builder.HasOne<City>(mu => mu.CityObject)
+                   .WithMany(c => c.CompanyObjects)
+                   .HasForeignKey(fk => fk.CityId);
 
             builder.HasOne<ContactInformation>(ci => ci.ContactInformationObject)
                    .WithOne(c => c.CompanyObject)

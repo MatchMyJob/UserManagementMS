@@ -31,3 +31,4 @@ D:\Ingeniería Informatica\1 - Proyecto de Software\Proyecto integrador\APITempl
 D:\Ingeniería Informatica\1 - Proyecto de Software\Proyecto integrador\APITemplate - copia\Domain\obj\Debug\net8.0\refint\Domain.dll
 D:\Ingeniería Informatica\1 - Proyecto de Software\Proyecto integrador\APITemplate - copia\Domain\obj\Debug\net8.0\Domain.pdb
 D:\Ingeniería Informatica\1 - Proyecto de Software\Proyecto integrador\APITemplate - copia\Domain\obj\Debug\net8.0\ref\Domain.dll
+D:\Ingeniería Informatica\1 - Proyecto de Software\Proyecto integrador\APITemplate - copia\Domain\obj\Debug\net8.0\Domain.sourcelink.json

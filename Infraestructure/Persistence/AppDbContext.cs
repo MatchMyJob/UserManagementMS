@@ -12,7 +12,6 @@ namespace Infraestructure.Persistence
         public DbSet<Province> Provinces { get; set; }
         public DbSet<City> Cities { get; set; }
         public DbSet<Applicant> Applicants { get; set; }
-        public DbSet<MetaUser> MetaUsers { get; set; }
 
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
@@ -27,7 +26,6 @@ namespace Infraestructure.Persistence
             modelBuilder.ApplyConfiguration(new ApplicantConfig());
             modelBuilder.ApplyConfiguration(new CompanyConfig());
             modelBuilder.ApplyConfiguration(new ContactInformationConfig());
-            modelBuilder.ApplyConfiguration(new MetaUserConfig());
         }
     }
 }
