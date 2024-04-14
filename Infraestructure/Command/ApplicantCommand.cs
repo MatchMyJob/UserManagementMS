@@ -22,6 +22,7 @@ namespace Infraestructure.Command
 
             var applicant = await _context.Applicants
                 .Include(c => c.CityObject)
+                .ThenInclude(p => p.ProvinceObject)
                 .FirstOrDefaultAsync(u => (u.UserId == entity.UserId) && (u.Status));
 
             return applicant;

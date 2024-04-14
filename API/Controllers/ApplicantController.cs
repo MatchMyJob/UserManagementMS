@@ -24,6 +24,7 @@ namespace API.Controllers
             _queryService = queryService;
             _commandService = commandService;
             _mapper = mapper;
+            _response = new();
         }
 
         /// <summary>
@@ -65,7 +66,7 @@ namespace API.Controllers
         [ProducesResponseType(typeof(HTTPResponse<Paged<ApplicantResponse>>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> GetAll(int pagedNumber = 0, int pagedSize = 10)
+        public async Task<ActionResult> GetAll(int pagedNumber = 1, int pagedSize = 10)
         {
             try
             {

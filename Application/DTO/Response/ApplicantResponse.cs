@@ -4,7 +4,7 @@
     {
         public Guid UserId { get; set; }
         public int Phone { get; set; }
-        public CityResponse City { get; set; }
+        public UbicationResponse Ubication { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public int Dni { get; set; }

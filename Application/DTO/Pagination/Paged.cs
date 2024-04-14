@@ -22,7 +22,7 @@ namespace Application.DTO.Pagination
         {
             var count = await entity.CountAsync();
             var items = await entity.Skip((pageNumber - 1) * pageSize)
-                              .Take(pageSize).ToListAsync();
+                                    .Take(pageSize).ToListAsync();
             return new Paged<T>(items, count, pageNumber, pageSize);
         }
     }

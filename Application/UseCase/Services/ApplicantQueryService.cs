@@ -24,9 +24,22 @@ namespace Application.UseCase.Services
         {
             try
             {
+                if (pageNumber <= 0 || pageSize <= 0)
+                {
+                    throw new BadRequestException("Ingrese valores mayores que cero (0) para pageNumber y pageSize");
+                }
                 Parameters parameters = new Parameters(pageNumber, pageSize);
                 Paged<Applicant> applicants = await _query.RecoveryAll(parameters);
-                applicants.Data.ForEach(e => list.Add(_mapper.Map<ApplicantResponse>(e)));
+                applicants.Data.ForEach(e =>
+                {
+                    var applicantResponse = _mapper.Map<ApplicantResponse>(e);
+                    applicantResponse.Ubication = new UbicationResponse
+                    {
+                        Province = e.CityObject.ProvinceObject.Name,
+                        City = e.CityObject.Name
+                    };
+                    list.Add(applicantResponse);
+                });
 
                 return new Paged<ApplicantResponse>(list, applicants.MetaData.TotalCount, parameters.PageNumber, parameters.PageSize);
             }
@@ -52,7 +65,13 @@ namespace Application.UseCase.Services
 
                 var entity = await _query.RecoveryById(guid);
                
-                return _mapper.Map<ApplicantResponse>(entity);
+                var response = _mapper.Map<ApplicantResponse>(entity);
+                response.Ubication = new UbicationResponse
+                {
+                    Province = entity.CityObject.ProvinceObject.Name,
+                    City = entity.CityObject.Name
+                };
+                return response;
             }
             catch (Exception e)
             {

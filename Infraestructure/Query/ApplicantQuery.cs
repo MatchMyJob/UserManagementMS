@@ -29,7 +29,10 @@ namespace Infraestructure.Query
         public async Task<Applicant> RecoveryById(Guid id)
         {
             var applicant = await _context.Applicants
+                .Include(c => c.CityObject)
+                .ThenInclude(p => p.ProvinceObject)
                 .FirstOrDefaultAsync(a => (a.UserId == id) && (a.Status));
+                
             if (applicant == null)
             {
                 throw new NotFoundException("User con ID " + id + " no fue encontrado.");
