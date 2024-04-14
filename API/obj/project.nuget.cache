@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x66zC6InA4uP9Q1epqlSMTr2G6sdI8rZaMgCZuq8xtiOHYY6jOk+HB40VyRd1X6nxiCaio1fgtidlojfYdd9MA==",
+  "dgSpecHash": "bmUCUQoe9GpIHHkSc5zBKw3wC67l+DgH1XL75GDZi3iGpYMcihGCJ0njurA38un6QMl3SpbNf7+Kiy1lIr865g==",
   "success": true,
-  "projectFilePath": "D:\\Ingeniería Informatica\\1 - Proyecto de Software\\Proyecto integrador\\APITemplate - copia\\API\\API.csproj",
+  "projectFilePath": "D:\\Ingeniería Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\W10-PC\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\W10-PC\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
