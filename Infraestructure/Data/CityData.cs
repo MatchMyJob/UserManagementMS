@@ -1,12 +1,11 @@
 ﻿using Domain.Entities;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infraestructure.Data
 {
-    public class CityData : IEntityTypeConfiguration<City>
+    public static class CityData
     {
-        public void Configure(EntityTypeBuilder<City> builder)
+        public static void SeedData(EntityTypeBuilder<City> builder)
         {
             builder.HasData(
                 new City { CityId = 060280, Name = "General Alvarado", ProvinceId = 06 },

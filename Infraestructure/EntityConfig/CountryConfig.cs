@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+using Infraestructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -10,8 +11,8 @@ namespace Infraestructure.EntityConfig
         {
             builder.ToTable("Country");
             builder.HasKey(c => c.CountryId);
-            builder.Property(ci => ci.CountryId)
-                   .ValueGeneratedOnAdd();
+            //builder.Property(ci => ci.CountryId)
+            //       .ValueGeneratedOnAdd();
             builder.Property(c => c.Name)
                    .IsRequired()
                    .HasMaxLength(50);
@@ -19,6 +20,8 @@ namespace Infraestructure.EntityConfig
             builder.HasMany<Province>(p => p.ProvinceObjects)
                    .WithOne(c => c.CountryObject)
                    .HasForeignKey(fk => fk.CountryId);
+
+            CountryData.SeedData(builder);
         }
     }
 }
