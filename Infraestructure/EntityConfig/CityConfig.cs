@@ -18,7 +18,7 @@ namespace Infraestructure.EntityConfig
                    .IsRequired()
                    .HasMaxLength(50);
 
-            builder.HasOne<Province>(c => c.ProvinciaObject)
+            builder.HasOne<Province>(c => c.ProvinceObject)
                    .WithMany(c => c.CityObjects)
                    .HasForeignKey(c => c.ProvinceId);
 

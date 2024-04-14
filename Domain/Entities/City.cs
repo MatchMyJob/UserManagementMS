@@ -6,7 +6,7 @@
         public int ProvinceId { get; set; }
         public string Name { get; set; }
 
-        public Province ProvinciaObject { get; set; }
+        public Province ProvinceObject { get; set; }
         public List<Company> CompanyObjects { get; set; }
         public List<Applicant> ApplicantObjects { get; set; }
     }

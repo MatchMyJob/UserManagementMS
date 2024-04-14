@@ -3,6 +3,21 @@
   "WorkspaceRootPath": "C:\\Users\\Giuliano\\Documents\\git\\UserManagementMS\\API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|c:\\users\\giuliano\\documents\\git\\usermanagementms\\application\\usecase\\services\\applicantqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|c:\\users\\giuliano\\documents\\git\\usermanagementms\\application\\usecase\\services\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|c:\\users\\giuliano\\documents\\git\\usermanagementms\\infraestructure\\data\\countrydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|c:\\users\\giuliano\\documents\\git\\usermanagementms\\infraestructure\\data\\citydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D6EBE63-DA8C-4D14-B6C9-55B4F621513E}|..\\Domain\\Domain.csproj|c:\\users\\giuliano\\documents\\git\\usermanagementms\\domain\\entities\\applicant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3D6EBE63-DA8C-4D14-B6C9-55B4F621513E}|..\\Domain\\Domain.csproj|c:\\users\\giuliano\\documents\\git\\usermanagementms\\domain\\entities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -61,28 +76,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ApplicantQueryService.cs",
+              "DocumentMoniker": "C:\\Users\\Giuliano\\Documents\\git\\UserManagementMS\\Application\\UseCase\\Services\\ApplicantQueryService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\UseCase\\Services\\ApplicantQueryService.cs",
+              "ToolTip": "C:\\Users\\Giuliano\\Documents\\git\\UserManagementMS\\Application\\UseCase\\Services\\ApplicantQueryService.cs",
+              "RelativeToolTip": "..\\Application\\UseCase\\Services\\ApplicantQueryService.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T04:05:51.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Service.cs",
+              "DocumentMoniker": "C:\\Users\\Giuliano\\Documents\\git\\UserManagementMS\\Application\\UseCase\\Services\\Service.cs",
+              "RelativeDocumentMoniker": "..\\Application\\UseCase\\Services\\Service.cs",
+              "ToolTip": "C:\\Users\\Giuliano\\Documents\\git\\UserManagementMS\\Application\\UseCase\\Services\\Service.cs",
+              "RelativeToolTip": "..\\Application\\UseCase\\Services\\Service.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T04:05:46.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CountryData.cs",
+              "DocumentMoniker": "C:\\Users\\Giuliano\\Documents\\git\\UserManagementMS\\Infraestructure\\Data\\CountryData.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Data\\CountryData.cs",
+              "ToolTip": "C:\\Users\\Giuliano\\Documents\\git\\UserManagementMS\\Infraestructure\\Data\\CountryData.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Data\\CountryData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T04:05:39.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CityData.cs",
+              "DocumentMoniker": "C:\\Users\\Giuliano\\Documents\\git\\UserManagementMS\\Infraestructure\\Data\\CityData.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Data\\CityData.cs",
+              "ToolTip": "C:\\Users\\Giuliano\\Documents\\git\\UserManagementMS\\Infraestructure\\Data\\CityData.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Data\\CityData.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T04:05:26.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Applicant.cs",
+              "DocumentMoniker": "C:\\Users\\Giuliano\\Documents\\git\\UserManagementMS\\Domain\\Entities\\Applicant.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Entities\\Applicant.cs",
+              "ToolTip": "C:\\Users\\Giuliano\\Documents\\git\\UserManagementMS\\Domain\\Entities\\Applicant.cs",
+              "RelativeToolTip": "..\\Domain\\Entities\\Applicant.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAA1wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T04:05:17.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "City.cs",
               "DocumentMoniker": "C:\\Users\\Giuliano\\Documents\\git\\UserManagementMS\\Domain\\Entities\\City.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Entities\\City.cs",
               "ToolTip": "C:\\Users\\Giuliano\\Documents\\git\\UserManagementMS\\Domain\\Entities\\City.cs",
               "RelativeToolTip": "..\\Domain\\Entities\\City.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-14T04:00:25.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Infraestructure",
+              "DocumentIndex": 6,
+              "Title": "Infraestructure.csproj",
               "DocumentMoniker": "C:\\Users\\Giuliano\\Documents\\git\\UserManagementMS\\Infraestructure\\Infraestructure.csproj",
               "RelativeDocumentMoniker": "..\\Infraestructure\\Infraestructure.csproj",
               "ToolTip": "C:\\Users\\Giuliano\\Documents\\git\\UserManagementMS\\Infraestructure\\Infraestructure.csproj",
               "RelativeToolTip": "..\\Infraestructure\\Infraestructure.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-14T04:00:11.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T04:00:11.77Z"
             }
           ]
         },

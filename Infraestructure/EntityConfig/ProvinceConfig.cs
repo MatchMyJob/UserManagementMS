@@ -24,7 +24,7 @@ namespace Infraestructure.EntityConfig
                    .HasForeignKey(fk => fk.CountryId);
 
             builder.HasMany<City>(cs => cs.CityObjects)
-                   .WithOne(p => p.ProvinciaObject)
+                   .WithOne(p => p.ProvinceObject)
                    .HasForeignKey(fk => fk.ProvinceId);
         }
     }
