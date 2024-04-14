@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xjY/MHg7nBZBQQ/qwafzOUKNKBC5WfEiQY+RI2KJC+/zgAjCySTv1iYiJYIGPYb6xd4EFIfTXuvQp1LUVk4GfA==",
+  "dgSpecHash": "du37aJ82io4OEM+Vs9nh36MJVuw1QjDViZitxuTpk2s3WmpXwQZdRsTGsKvXwrBsEzX3yZenvRUPlm3Ofv80xw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Giuliano\\Documents\\git\\UserManagementMS\\Domain\\Domain.csproj",
+  "projectFilePath": "D:\\Ingeniería Informatica\\1 - Proyecto de Software\\Proyecto integrador\\Nueva carpeta\\UserManagementMS\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\Giuliano\\Documents\\git\\UserManagementMS\\Domain\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

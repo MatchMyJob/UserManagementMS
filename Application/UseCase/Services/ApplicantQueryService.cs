@@ -45,16 +45,13 @@ namespace Application.UseCase.Services
             try
             {
                 Guid guid;
-                if (Guid.TryParse(id, out guid))
+                if (!Guid.TryParse(id, out guid))
                 {
                     throw new BadRequestException("El ID debe ser de tipo GUID.");
                 }
 
                 var entity = await _query.RecoveryById(guid);
-                if (entity == null)
-                {
-                    throw new NotFoundException("El registro con el ID " + id + " no fue encontrado.");
-                }
+               
                 return _mapper.Map<ApplicantResponse>(entity);
             }
             catch (Exception e)

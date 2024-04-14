@@ -42,7 +42,7 @@ namespace Application.UseCase.Services
             try
             {
                 Guid guid;
-                if (Guid.TryParse(id, out guid))
+                if (!Guid.TryParse(id, out guid))
                 {
                     throw new BadRequestException("El ID debe ser de tipo GUID.");
                 }
@@ -63,7 +63,7 @@ namespace Application.UseCase.Services
             try
             {
                 Guid guid;
-                if (Guid.TryParse(id, out guid))
+                if (!Guid.TryParse(id, out guid))
                 {
                     throw new BadRequestException("El ID debe ser de tipo GUID.");
                 }

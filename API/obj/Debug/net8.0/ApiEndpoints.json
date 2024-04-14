@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "API.Controllers.UserController",
+    "ContainingType": "API.Controllers.ApplicantController",
     "Method": "GetAll",
-    "RelativePath": "api/User",
+    "RelativePath": "api/Applicant",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -20,7 +20,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Application.DTO.Response.HTTPResponse\u00601[[Application.DTO.Pagination.Paged\u00601[[Application.DTO.Response.UserResponse, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "Application.DTO.Response.HTTPResponse\u00601[[Application.DTO.Pagination.Paged\u00601[[Application.DTO.Response.ApplicantResponse, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -49,22 +49,22 @@
     ]
   },
   {
-    "ContainingType": "API.Controllers.UserController",
+    "ContainingType": "API.Controllers.ApplicantController",
     "Method": "CreateEntity",
-    "RelativePath": "api/User",
+    "RelativePath": "api/Applicant",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "request",
-        "Type": "Application.DTO.Request.UserRequest",
+        "Type": "Application.DTO.Request.ApplicantRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Application.DTO.Response.HTTPResponse\u00601[[Application.DTO.Response.UserResponse, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "Application.DTO.Response.HTTPResponse\u00601[[Application.DTO.Response.ApplicantResponse, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -102,80 +102,27 @@
     ]
   },
   {
-    "ContainingType": "API.Controllers.UserController",
-    "Method": "GetById",
-    "RelativePath": "api/User/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Application.DTO.Response.HTTPResponse\u00601[[Application.DTO.Response.UserResponse, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Application.DTO.Response.HTTPResponse\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
-      },
-      {
-        "Type": "Application.DTO.Response.HTTPResponse\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 404
-      },
-      {
-        "Type": "Application.DTO.Response.HTTPResponse\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 500
-      }
-    ]
-  },
-  {
-    "ContainingType": "API.Controllers.UserController",
+    "ContainingType": "API.Controllers.ApplicantController",
     "Method": "UpdateEntity",
-    "RelativePath": "api/User/{id}",
+    "RelativePath": "api/Applicant",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
+        "Type": "System.String",
+        "IsRequired": false
       },
       {
         "Name": "request",
-        "Type": "Application.DTO.Request.UserRequest",
+        "Type": "Application.DTO.Request.ApplicantUpdateRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Application.DTO.Response.HTTPResponse\u00601[[Application.DTO.Response.UserResponse, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "Application.DTO.Response.HTTPResponse\u00601[[Application.DTO.Response.ApplicantResponse, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -222,17 +169,17 @@
     ]
   },
   {
-    "ContainingType": "API.Controllers.UserController",
+    "ContainingType": "API.Controllers.ApplicantController",
     "Method": "UpdatePartialEntity",
-    "RelativePath": "api/User/{id}",
+    "RelativePath": "api/Applicant",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
+        "Type": "System.String",
+        "IsRequired": false
       },
       {
         "Name": "patchRequest",
@@ -242,7 +189,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Application.DTO.Response.HTTPResponse\u00601[[Application.DTO.Response.UserResponse, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "Application.DTO.Response.HTTPResponse\u00601[[Application.DTO.Response.ApplicantResponse, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -289,17 +236,17 @@
     ]
   },
   {
-    "ContainingType": "API.Controllers.UserController",
+    "ContainingType": "API.Controllers.ApplicantController",
     "Method": "DeleteById",
-    "RelativePath": "api/User/{id}",
+    "RelativePath": "api/Applicant",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -338,6 +285,59 @@
           "text/json"
         ],
         "StatusCode": 409
+      },
+      {
+        "Type": "Application.DTO.Response.HTTPResponse\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Controllers.ApplicantController",
+    "Method": "GetById",
+    "RelativePath": "api/Applicant/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.DTO.Response.HTTPResponse\u00601[[Application.DTO.Response.ApplicantResponse, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Application.DTO.Response.HTTPResponse\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Application.DTO.Response.HTTPResponse\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
       },
       {
         "Type": "Application.DTO.Response.HTTPResponse\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",

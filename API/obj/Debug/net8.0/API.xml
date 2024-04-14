@@ -4,5 +4,41 @@
         <name>API</name>
     </assembly>
     <members>
+        <member name="M:API.Controllers.ApplicantController.GetById(System.String)">
+            <summary>
+            Retorna un Applicant especificando el ID
+            </summary>
+            <response code="200">Retorna un Applicant como resultado.</response>
+        </member>
+        <member name="M:API.Controllers.ApplicantController.GetAll(System.Int32,System.Int32)">
+            <summary>
+            Retorna una pagina de Applicants
+            </summary>
+            <response code="200">Retorna una pagina de Applicants como resultado.</response>
+        </member>
+        <member name="M:API.Controllers.ApplicantController.CreateEntity(Application.DTO.Request.ApplicantRequest)">
+            <summary>
+            Registra un Applicant con su respectiva información
+            </summary>
+            <response code="201">Retorna el Applicant creado.</response>
+        </member>
+        <member name="M:API.Controllers.ApplicantController.UpdateEntity(System.String,Application.DTO.Request.ApplicantUpdateRequest)">
+            <summary>
+            Modifica un Applicant, especificando el ID y la nueva información
+            </summary>
+            <response code="200">Retorna el Applicant modificado como resultado.</response>
+        </member>
+        <member name="M:API.Controllers.ApplicantController.UpdatePartialEntity(System.String,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Application.DTO.Request.ApplicantUpdateRequest})">
+            <summary>
+            Modifica un dato de Applicant, especificando el dato a modificar y el ID
+            </summary>
+            <response code="200">Retorna el Applicant modificado.</response>
+        </member>
+        <member name="M:API.Controllers.ApplicantController.DeleteById(System.String)">
+            <summary>
+            Elimina un Applicant especificando su ID.
+            </summary>
+            <response code="200">No retorna nada.</response>
+        </member>
     </members>
 </doc>

@@ -32,7 +32,7 @@ namespace Infraestructure.Query
                 .FirstOrDefaultAsync(a => (a.UserId == id) && (a.Status));
             if (applicant == null)
             {
-                throw new NotFoundException("User con ID " + id + " no encontrado.");
+                throw new NotFoundException("User con ID " + id + " no fue encontrado.");
             }
             return applicant;
         }

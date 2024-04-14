@@ -1,5 +1,9 @@
 using Application.DTO.Config;
+using Application.Interfaces;
+using Application.UseCase.Services;
+using Infraestructure.Command;
 using Infraestructure.Persistence;
+using Infraestructure.Query;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -37,6 +41,11 @@ builder.Services.AddSwaggerGen(options =>
 var connectionString = builder.Configuration["ConnectionString"];
 
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(connectionString));
+
+builder.Services.AddScoped<IApplicantCommand, ApplicantCommand>();
+builder.Services.AddScoped<IApplicantQuery, ApplicantQuery>();
+builder.Services.AddScoped<IApplicantCommandService, ApplicantCommandService>();
+builder.Services.AddScoped<IApplicantQueryService, ApplicantQueryService>();
 
 
 builder.Services.Configure<ApiBehaviorOptions>(options =>

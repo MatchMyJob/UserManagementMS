@@ -69,33 +69,9 @@ namespace Application.UseCase.Services
             }
         }
 
-        public async Task<Paged<Response>> GetAll(int pagedNumber, int pagedSize)
+        public Task<Paged<Response>> GetAll(int pageNumber, int pageSize)
         {
-            try
-            {
-                if (pagedNumber>=0 && pagedSize>=0)
-                {
-                    parameters.PageSize = pagedSize;
-                    parameters.PageNumber = pagedNumber;
-                } else
-                {
-                    throw new BadRequestException("Ingrese valores válidos para pagedNumber y pagedSize.");
-                }
-
-                Paged<T> list = await _repository.RecoveryAll(parameters);
-                List<Response> listAux = new();
-                list.Data.ForEach(e => listAux.Add(_mapper.Map<Response>(e)));
-
-                return new Paged<Response>(listAux, list.MetaData.TotalCount, parameters.PageNumber, parameters.PageSize);
-            }
-            catch (Exception e)
-            {
-                if (e is HTTPError)
-                {
-                    throw e;
-                }
-                throw new InternalServerErrorException(e.Message);
-            }
+            throw new NotImplementedException();
         }
 
         public async Task<Response> GetById(int id)
