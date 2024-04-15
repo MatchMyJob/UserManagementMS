@@ -47,6 +47,11 @@ builder.Services.AddScoped<IApplicantQuery, ApplicantQuery>();
 builder.Services.AddScoped<IApplicantCommandService, ApplicantCommandService>();
 builder.Services.AddScoped<IApplicantQueryService, ApplicantQueryService>();
 
+builder.Services.AddScoped<ICompanyCommand, CompanyCommand>();
+builder.Services.AddScoped<ICompanyQuery, CompanyQuery>();
+builder.Services.AddScoped<ICompanyCommandService, CompanyCommandService>();
+builder.Services.AddScoped<ICompanyQueryService, CompanyQueryService>();
+
 
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
