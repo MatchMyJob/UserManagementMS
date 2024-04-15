@@ -61,7 +61,7 @@ namespace Application.UseCase.Services
         {
             try
             {
-                if (id > 0)
+                if (!(id >= 0))
                 {
                     throw new BadRequestException("El ID no puede ser cero (0), ni un número menor.");
                 }
@@ -81,7 +81,7 @@ namespace Application.UseCase.Services
         {
             try
             {
-                if (id > 0)
+                if (!(id >= 0))
                 {
                     throw new BadRequestException("El ID no puede ser cero (0), ni un número menor.");
                 }
