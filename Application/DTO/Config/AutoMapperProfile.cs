@@ -11,12 +11,16 @@ namespace Application.DTO.Config
         public AutoMapperProfile()
         {
             CreateMap<HTTPError, HTTPResponse<string>>().ReverseMap();
-            CreateMap<ApplicantResponse, Applicant>().ReverseMap();
+
+            CreateMap<Applicant, ApplicantResponse>().ReverseMap();
             CreateMap<Applicant, ApplicantRequest>().ReverseMap();
-            CreateMap<ApplicantUpdateRequest, Applicant>().ReverseMap();
+            CreateMap<Applicant, ApplicantUpdateRequest>().ReverseMap();
             CreateMap<ApplicantRequest, Applicant>()
                 .ForMember(dest => dest.BirthDate, opt => opt.MapFrom(src => DateOnly.Parse(src.BirthDate)));
 
+            CreateMap<Company, CompanyRequest>().ReverseMap();
+            CreateMap<Company, CompanyResponse>().ReverseMap();
+            CreateMap<Company, CompanyUpdateRequest>().ReverseMap();
         }
     }
 }

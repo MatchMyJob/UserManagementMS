@@ -34,8 +34,8 @@ namespace Infraestructure.Command
                 .FirstOrDefaultAsync(u => (u.UserId == id) && (u.Status));
             if (applicant == null)
             {
-                throw new NotFoundException("User con ID " + id + " no encontrado.");
-            }
+                throw new NotFoundException("El User con ID " + id + " no fue encontrado.");
+            }   
             applicant.Status = false;
             await _context.SaveChangesAsync();
         }
@@ -46,7 +46,7 @@ namespace Infraestructure.Command
                 .FirstOrDefaultAsync(u => (u.UserId == id) && (u.Status));
             if (applicant == null)
             {
-                throw new NotFoundException("User con ID " + id + " no encontrado.");
+                throw new NotFoundException("El User con ID " + id + " no fue encontrado.");
             }
 
             applicant.DNI = entity.DNI;

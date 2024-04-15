@@ -13,6 +13,7 @@
         public string Website { get; set; }
         public string Description { get; set; }
         public string Logo { get; set; }
+        public bool Status { get; set; }
 
         public ContactInformation ContactInformationObject { get; set; }
         public City CityObject { get; set; }
