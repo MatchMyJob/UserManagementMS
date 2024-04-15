@@ -52,6 +52,11 @@ builder.Services.AddScoped<ICompanyQuery, CompanyQuery>();
 builder.Services.AddScoped<ICompanyCommandService, CompanyCommandService>();
 builder.Services.AddScoped<ICompanyQueryService, CompanyQueryService>();
 
+builder.Services.AddScoped<IContactInformationCommand, ContactInformationCommand>();
+builder.Services.AddScoped<IContactInformationQuery, ContactInformationQuery>();
+builder.Services.AddScoped<IContactInformationCommandService, ContactInformationCommandService>();
+builder.Services.AddScoped<IContactInformationQueryService, ContactInformationQueryService>();
+
 
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
