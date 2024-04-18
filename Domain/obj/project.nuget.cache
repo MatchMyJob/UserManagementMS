@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5yD++8FbIoPc5JTsZS2N3Y3IzGhjGhrkTcTn6PgHwlaNvG/ZzeRJZ8wHdzZSnXuvAsRwaNMhLIDREP37UezrIA==",
+  "dgSpecHash": "f5nJekxHIi573MqYkdNJLHSPwF/FezdTaBJmYSzUMDE1VEJpUSj78NAaHc7bFr09fG9BFgFKNEK+12oGDbnN/g==",
   "success": true,
-  "projectFilePath": "D:\\Ingeniería Informatica\\1 - Proyecto de Software\\Proyecto integrador\\APITemplate - copia\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\Giuliano\\Desktop\\UserManagementMS\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
