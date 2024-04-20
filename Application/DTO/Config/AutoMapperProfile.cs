@@ -24,6 +24,10 @@ namespace Application.DTO.Config
 
             CreateMap<ContactInformation, ContactInformationResponse>().ReverseMap();
             CreateMap<ContactInformation, ContactInformationRequest>().ReverseMap();
+
+            CreateMap<Province, ProvinceResponse>().ReverseMap();
+
+            CreateMap<City, CityResponse>().ReverseMap();
         }
     }
 }

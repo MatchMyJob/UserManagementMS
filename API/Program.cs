@@ -57,6 +57,9 @@ builder.Services.AddScoped<IContactInformationQuery, ContactInformationQuery>();
 builder.Services.AddScoped<IContactInformationCommandService, ContactInformationCommandService>();
 builder.Services.AddScoped<IContactInformationQueryService, ContactInformationQueryService>();
 
+builder.Services.AddScoped<IProvinceQuery, ProvinceQuery>();
+builder.Services.AddScoped<IProvinceService, ProvinceService>();
+
 
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
