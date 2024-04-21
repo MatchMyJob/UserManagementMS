@@ -34,16 +34,18 @@ namespace Infraestructure.Migrations
                     b.Property<int>("CityId")
                         .HasColumnType("int");
 
-                    b.Property<int>("DNI")
-                        .HasColumnType("int");
+                    b.Property<string>("DNI")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<int>("Phone")
-                        .HasColumnType("int");
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
@@ -56,6 +58,9 @@ namespace Infraestructure.Migrations
                     b.HasKey("UserId");
 
                     b.HasIndex("CityId");
+
+                    b.HasIndex("DNI")
+                        .IsUnique();
 
                     b.ToTable("Applicant", (string)null);
                 });

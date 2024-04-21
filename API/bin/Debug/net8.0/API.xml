@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API</name>
+    </assembly>
+    <members>
+        <member name="M:API.Controllers.ApplicantController.GetById(System.String)">
+            <summary>
+            Retorna un Applicant especificando el ID
+            </summary>
+            <response code="200">Retorna un Applicant como resultado.</response>
+        </member>
+        <member name="M:API.Controllers.ApplicantController.GetAll(System.Int32,System.Int32)">
+            <summary>
+            Retorna una pagina de Applicants
+            </summary>
+            <response code="200">Retorna una pagina de Applicants como resultado.</response>
+        </member>
+        <member name="M:API.Controllers.ApplicantController.CreateEntity(Application.DTO.Request.ApplicantRequest)">
+            <summary>
+            Registra un Applicant con su respectiva información
+            </summary>
+            <response code="201">Retorna el Applicant creado.</response>
+        </member>
+        <member name="M:API.Controllers.ApplicantController.UpdateEntity(System.String,Application.DTO.Request.ApplicantUpdateRequest)">
+            <summary>
+            Modifica un Applicant, especificando el ID y la nueva información
+            </summary>
+            <response code="200">Retorna el Applicant modificado como resultado.</response>
+        </member>
+        <member name="M:API.Controllers.ApplicantController.UpdatePartialEntity(System.String,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Application.DTO.Request.ApplicantUpdateRequest})">
+            <summary>
+            Modifica un dato de Applicant, especificando el dato a modificar y el ID
+            </summary>
+            <response code="200">Retorna el Applicant modificado.</response>
+        </member>
+        <member name="M:API.Controllers.ApplicantController.DeleteById(System.String)">
+            <summary>
+            Elimina un Applicant especificando su ID.
+            </summary>
+            <response code="200">No retorna nada.</response>
+        </member>
+        <member name="M:API.Controllers.CompanyController.GetById(System.Int32)">
+            <summary>
+            Retorna una Company especificando el ID
+            </summary>
+            <response code="200">Retorna una Company como resultado.</response>
+        </member>
+        <member name="M:API.Controllers.CompanyController.GetAll(System.Int32,System.Int32)">
+            <summary>
+            Retorna una pagina de Companies
+            </summary>
+            <response code="200">Retorna una pagina de Companies como resultado.</response>
+        </member>
+        <member name="M:API.Controllers.CompanyController.CreateEntity(Application.DTO.Request.CompanyRequest)">
+            <summary>
+            Registra una Company con su respectiva información
+            </summary>
+            <response code="201">Retorna la Company creada.</response>
+        </member>
+        <member name="M:API.Controllers.CompanyController.UpdateEntity(System.Int32,Application.DTO.Request.CompanyUpdateRequest)">
+            <summary>
+            Modifica una Company, especificando el ID y la nueva información
+            </summary>
+            <response code="200">Retorna la Company modificado como resultado.</response>
+        </member>
+        <member name="M:API.Controllers.CompanyController.UpdatePartialEntity(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Application.DTO.Request.CompanyUpdateRequest})">
+            <summary>
+            Modifica un dato de la Company, especificando el dato a modificar y el ID
+            </summary>
+            <response code="200">Retorna la Company modificada.</response>
+        </member>
+        <member name="M:API.Controllers.CompanyController.DeleteById(System.Int32)">
+            <summary>
+            Elimina una Company especificando su ID.
+            </summary>
+            <response code="200">No retorna nada.</response>
+        </member>
+        <member name="M:API.Controllers.ContactInformationController.GetById(System.Int32)">
+            <summary>
+            Retorna información de contacto, especificando el ID de la Company
+            </summary>
+            <response code="200">Retorna la información de contacto como resultado.</response>
+        </member>
+        <member name="M:API.Controllers.ContactInformationController.CreateEntity(Application.DTO.Request.ContactInformationRequest)">
+            <summary>
+            Registra la información de contacto de determinada Company
+            </summary>
+            <response code="201">Retorna la información de contacto registrada.</response>
+        </member>
+        <member name="M:API.Controllers.ContactInformationController.UpdateEntity(System.Int32,Application.DTO.Request.ContactInformationRequest)">
+            <summary>
+            Modifica la información de contacto, especificando el ID de la Company y la nueva información
+            </summary>
+            <response code="200">Retorna la información de contacto modificada como resultado.</response>
+        </member>
+        <member name="M:API.Controllers.ContactInformationController.UpdatePartialEntity(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Application.DTO.Request.ContactInformationRequest})">
+            <summary>
+            Modifica un dato de la información de contacto, especificando el dato a modificar y el ID de la Company
+            </summary>
+            <response code="200">Retorna la información de contacto modificada.</response>
+        </member>
+        <member name="M:API.Controllers.ProvinceController.GetById(System.Int32)">
+            <summary>
+            Retorna una Province especificando el ID
+            </summary>
+            <response code="200">Retorna una Province como resultado.</response>
+        </member>
+        <member name="M:API.Controllers.ProvinceController.GetAll">
+            <summary>
+            Retorna una pagina de Province
+            </summary>
+            <response code="200">Retorna una pagina de Province como resultado.</response>
+        </member>
+    </members>
+</doc>

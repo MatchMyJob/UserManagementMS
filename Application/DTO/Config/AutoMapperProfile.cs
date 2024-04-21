@@ -17,6 +17,8 @@ namespace Application.DTO.Config
             CreateMap<Applicant, ApplicantUpdateRequest>().ReverseMap();
             CreateMap<ApplicantRequest, Applicant>()
                 .ForMember(dest => dest.BirthDate, opt => opt.MapFrom(src => DateOnly.Parse(src.BirthDate)));
+            CreateMap<ApplicantUpdateRequest, Applicant>()
+                .ForMember(dest => dest.BirthDate, opt => opt.MapFrom(src => DateOnly.Parse(src.BirthDate)));
 
             CreateMap<Company, CompanyRequest>().ReverseMap();
             CreateMap<Company, CompanyResponse>().ReverseMap();
