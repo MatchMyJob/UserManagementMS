@@ -4,6 +4,7 @@ using Application.DTO.Request;
 using Application.DTO.Response;
 using Application.Interfaces;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
@@ -33,6 +34,7 @@ namespace API.Controllers
         /// <response code="200">Retorna una Company como resultado.</response>
 
         [HttpGet("{id}")]
+        [Authorize(Roles = "company, admin")]
         [ProducesResponseType(typeof(HTTPResponse<CompanyResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
@@ -63,6 +65,7 @@ namespace API.Controllers
         /// <response code="200">Retorna una pagina de Companies como resultado.</response>
 
         [HttpGet]
+        [Authorize(Roles = "admin")]
         [ProducesResponseType(typeof(HTTPResponse<Paged<CompanyResponse>>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
@@ -92,6 +95,7 @@ namespace API.Controllers
         /// <response code="201">Retorna la Company creada.</response>
 
         [HttpPost]
+        [Authorize(Roles = "company, admin")]
         [ProducesResponseType(typeof(HTTPResponse<CompanyResponse>), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status409Conflict)]
@@ -122,6 +126,7 @@ namespace API.Controllers
         /// <response code="200">Retorna la Company modificado como resultado.</response>
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "company, admin")]
         [ProducesResponseType(typeof(HTTPResponse<CompanyResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
@@ -153,6 +158,7 @@ namespace API.Controllers
         /// <response code="200">Retorna la Company modificada.</response>
 
         [HttpPatch("{id}")]
+        [Authorize(Roles = "company, admin")]
         [ProducesResponseType(typeof(HTTPResponse<CompanyResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
@@ -194,6 +200,7 @@ namespace API.Controllers
         /// <response code="200">No retorna nada.</response>
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "company, admin")]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]

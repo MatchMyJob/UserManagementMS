@@ -306,3 +306,4 @@ D:\Ingeniería Informatica\1 - Proyecto de Software\Proyecto integrador\Nueva ca
 D:\Ingeniería Informatica\1 - Proyecto de Software\Proyecto integrador\Nueva carpeta\UserManagementMS\API\obj\Debug\net8.0\API.pdb
 D:\Ingeniería Informatica\1 - Proyecto de Software\Proyecto integrador\Nueva carpeta\UserManagementMS\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 D:\Ingeniería Informatica\1 - Proyecto de Software\Proyecto integrador\Nueva carpeta\UserManagementMS\API\obj\Debug\net8.0\ref\API.dll
+D:\Ingeniería Informatica\1 - Proyecto de Software\Proyecto integrador\Nueva carpeta\UserManagementMS\API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
