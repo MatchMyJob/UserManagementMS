@@ -1,9 +1,9 @@
 ﻿using Application.DTO.Error;
-using Application.DTO.Pagination;
 using Application.DTO.Request;
 using Application.DTO.Response;
 using Application.Interfaces;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
@@ -33,6 +33,7 @@ namespace API.Controllers
         /// <response code="200">Retorna la información de contacto como resultado.</response>
 
         [HttpGet("{id:int}")]
+        [Authorize(Roles = "company, admin")]
         [ProducesResponseType(typeof(HTTPResponse<ContactInformationResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
@@ -63,6 +64,7 @@ namespace API.Controllers
         /// <response code="201">Retorna la información de contacto registrada.</response>
 
         [HttpPost]
+        [Authorize(Roles = "company, admin")]
         [ProducesResponseType(typeof(HTTPResponse<ContactInformationResponse>), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status409Conflict)]
@@ -93,6 +95,7 @@ namespace API.Controllers
         /// <response code="200">Retorna la información de contacto modificada como resultado.</response>
 
         [HttpPut("{id:int}")]
+        [Authorize(Roles = "company, admin")]
         [ProducesResponseType(typeof(HTTPResponse<ContactInformationResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
@@ -124,6 +127,7 @@ namespace API.Controllers
         /// <response code="200">Retorna la información de contacto modificada.</response>
 
         [HttpPatch("{id:int}")]
+        [Authorize(Roles = "company, admin")]
         [ProducesResponseType(typeof(HTTPResponse<ContactInformationResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]

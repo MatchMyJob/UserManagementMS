@@ -4,6 +4,7 @@ using Application.DTO.Request;
 using Application.DTO.Response;
 using Application.Interfaces;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
@@ -33,6 +34,7 @@ namespace API.Controllers
         /// <response code="200">Retorna un Applicant como resultado.</response>
 
         [HttpGet("{id}")]
+        [Authorize(Roles = "jobuser, admin")]
         [ProducesResponseType(typeof(HTTPResponse<ApplicantResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
@@ -63,6 +65,7 @@ namespace API.Controllers
         /// <response code="200">Retorna una pagina de Applicants como resultado.</response>
 
         [HttpGet]
+        [Authorize(Roles = "admin")]
         [ProducesResponseType(typeof(HTTPResponse<Paged<ApplicantResponse>>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
@@ -92,6 +95,7 @@ namespace API.Controllers
         /// <response code="201">Retorna el Applicant creado.</response>
 
         [HttpPost]
+        [Authorize(Roles = "jobuser, admin")]
         [ProducesResponseType(typeof(HTTPResponse<ApplicantResponse>), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status409Conflict)]
@@ -121,7 +125,8 @@ namespace API.Controllers
         /// </summary>
         /// <response code="200">Retorna el Applicant modificado como resultado.</response>
 
-        [HttpPut]
+        [HttpPut("{id}")]
+        [Authorize(Roles = "jobuser, admin")]
         [ProducesResponseType(typeof(HTTPResponse<ApplicantResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
@@ -152,7 +157,8 @@ namespace API.Controllers
         /// </summary>
         /// <response code="200">Retorna el Applicant modificado.</response>
 
-        [HttpPatch]
+        [HttpPatch("{id}")]
+        [Authorize(Roles = "jobuser, admin")]
         [ProducesResponseType(typeof(HTTPResponse<ApplicantResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
@@ -193,7 +199,8 @@ namespace API.Controllers
         /// </summary>
         /// <response code="200">No retorna nada.</response>
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
+        [Authorize(Roles = "jobuser, admin")]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
