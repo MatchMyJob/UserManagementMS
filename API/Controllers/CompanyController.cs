@@ -32,12 +32,12 @@ namespace API.Controllers
         /// </summary>
         /// <response code="200">Retorna una Company como resultado.</response>
 
-        [HttpGet("{id:int}")]
+        [HttpGet("{id}")]
         [ProducesResponseType(typeof(HTTPResponse<CompanyResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> GetById(int id)
+        public async Task<ActionResult> GetById(string id)
         {
             try
             {
@@ -121,13 +121,13 @@ namespace API.Controllers
         /// </summary>
         /// <response code="200">Retorna la Company modificado como resultado.</response>
 
-        [HttpPut("{id:int}")]
+        [HttpPut("{id}")]
         [ProducesResponseType(typeof(HTTPResponse<CompanyResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status409Conflict)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> UpdateEntity(int id, [FromBody] CompanyUpdateRequest request)
+        public async Task<ActionResult> UpdateEntity(string id, [FromBody] CompanyUpdateRequest request)
         {
             try
             {
@@ -152,13 +152,13 @@ namespace API.Controllers
         /// </summary>
         /// <response code="200">Retorna la Company modificada.</response>
 
-        [HttpPatch("{id:int}")]
+        [HttpPatch("{id}")]
         [ProducesResponseType(typeof(HTTPResponse<CompanyResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status409Conflict)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> UpdatePartialEntity(int id, JsonPatchDocument<CompanyUpdateRequest> patchRequest)
+        public async Task<ActionResult> UpdatePartialEntity(string id, JsonPatchDocument<CompanyUpdateRequest> patchRequest)
         {
             try
             {
@@ -193,13 +193,13 @@ namespace API.Controllers
         /// </summary>
         /// <response code="200">No retorna nada.</response>
 
-        [HttpDelete("{id:int}")]
+        [HttpDelete("{id}")]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status409Conflict)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> DeleteById(int id)
+        public async Task<ActionResult> DeleteById(string id)
         {
             try
             {

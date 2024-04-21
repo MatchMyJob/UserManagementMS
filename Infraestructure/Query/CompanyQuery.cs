@@ -26,12 +26,12 @@ namespace Infraestructure.Query
             return await Paged<Company>.ToPagedAsync(companies, parameters.PageNumber, parameters.PageSize);
         }
 
-        public async Task<Company> RecoveryById(int id)
+        public async Task<Company> RecoveryById(Guid id)
         {
             var company = await _context.Companies
                 .Include(c => c.CityObject)
                 .ThenInclude(p => p.ProvinceObject)
-                .FirstOrDefaultAsync(c => (c.CompanyId == id) && (c.Status));
+                .FirstOrDefaultAsync(c => (c.UserId == id) && (c.Status));
 
             if (company == null)
             {

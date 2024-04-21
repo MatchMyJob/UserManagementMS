@@ -28,10 +28,10 @@ namespace Infraestructure.Command
             return company;
         }
 
-        public async Task Remove(int id)
+        public async Task Remove(Guid id)
         {
             var company = await _context.Companies
-                .FirstOrDefaultAsync(u => (u.CompanyId == id) && (u.Status));
+                .FirstOrDefaultAsync(u => (u.UserId == id) && (u.Status));
             if (company == null)
             {
                 throw new NotFoundException("La Company con el ID " + id + " no fue encontrada.");
@@ -40,10 +40,10 @@ namespace Infraestructure.Command
             await _context.SaveChangesAsync();
         }
 
-        public async Task<Company> Update(int id, Company entity)
+        public async Task<Company> Update(Guid id, Company entity)
         {
             var company = await _context.Companies
-                .FirstOrDefaultAsync(u => (u.CompanyId == id) && (u.Status));
+                .FirstOrDefaultAsync(u => (u.UserId == id) && (u.Status));
             if (company == null)
             {
                 throw new NotFoundException("La Company con el ID " + id + " no fue encontrada.");
@@ -59,6 +59,11 @@ namespace Infraestructure.Command
             company.Logo = entity.Logo;            
 
             await _context.SaveChangesAsync();
+
+            company = await _context.Companies
+                .Include(c => c.CityObject)
+                .ThenInclude(p => p.ProvinceObject)
+                .FirstOrDefaultAsync(u => (u.UserId == id) && (u.Status));
 
             return company;
         }

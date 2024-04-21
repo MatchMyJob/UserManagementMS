@@ -5,6 +5,8 @@ using Application.Interfaces;
 using AutoMapper;
 using Domain.Entities;
 using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.FileSystemGlobbing.Internal;
+using System.Text.RegularExpressions;
 
 namespace Application.UseCase.Services
 {
@@ -23,10 +25,9 @@ namespace Application.UseCase.Services
         {
             try
             {
-                if (!(request.CompanyId >= 0))
-                {
-                    throw new BadRequestException("El ID no puede ser cero (0), ni un número menor.");
-                }
+                IsValidId(request.CompanyId);
+                IsValidPhone(request.Phone);
+                IsValidEmail(request.Email);
 
                 var contactInformation = _mapper.Map<ContactInformation>(request);
                 contactInformation = await _command.Insert(contactInformation);
@@ -43,10 +44,10 @@ namespace Application.UseCase.Services
                 {
                     if (sqlException.Number == 547) // / Se comprueba si hay una violación de clave externa
                     {
-                        throw new ConflictException("La Company ya tiene asociada información de contacto.");
+                        throw new BadRequestException("Ingrese el ID de una Company existente.");
                     }
                 }
-                throw new ConflictException("Verifique la información ingresada, el ID debe ser único.");
+                throw new ConflictException("La Company ya tiene asociada información de contacto.");
             }
         }
 
@@ -59,10 +60,10 @@ namespace Application.UseCase.Services
         {
             try
             {
-                if (!(id >= 0))
-                {
-                    throw new BadRequestException("El ID no puede ser cero (0), ni un número menor.");
-                }
+                IsValidId(id);
+                IsValidPhone(request.Phone);
+                IsValidEmail(request.Email);
+
                 var contactInformation = _mapper.Map<ContactInformation>(request);
                 contactInformation = await _command.Update(id, contactInformation);
 
@@ -75,6 +76,31 @@ namespace Application.UseCase.Services
                     throw;
                 }
                 throw new InternalServerErrorException(e.Message);
+            }
+        }
+
+        private void IsValidPhone(string phone)
+        {
+            string pattern = @"^[1-9][1-9]-\d{10}$";
+            if (!Regex.IsMatch(phone, pattern))
+            {
+                throw new BadRequestException("Ingrese un formato valido para Phone: '54-1141462757' ");
+            }
+        }
+
+        private void IsValidId(int id)
+        {
+            if (!(id >= 0))
+            {
+                throw new BadRequestException("El ID no puede ser cero (0), ni un número menor.");
+            }
+        }
+        private void IsValidEmail(string email)
+        {
+            string pattern = @"^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$";
+            if (!Regex.IsMatch(email, pattern))
+            {
+                throw new BadRequestException("Ingrese un Email válido.");
             }
         }
     }

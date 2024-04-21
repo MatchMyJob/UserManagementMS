@@ -12602,8 +12602,8 @@ namespace Infraestructure.Migrations
 
                     b.Property<string>("CUIT")
                         .IsRequired()
-                        .HasMaxLength(12)
-                        .HasColumnType("nvarchar(12)");
+                        .HasMaxLength(14)
+                        .HasColumnType("nvarchar(14)");
 
                     b.Property<int>("CityId")
                         .HasColumnType("int");
@@ -12618,8 +12618,10 @@ namespace Infraestructure.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<int>("Phone")
-                        .HasColumnType("int");
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
@@ -12635,6 +12637,9 @@ namespace Infraestructure.Migrations
                     b.HasKey("CompanyId");
 
                     b.HasIndex("CityId");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
 
                     b.ToTable("Company", (string)null);
                 });
@@ -12660,8 +12665,10 @@ namespace Infraestructure.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<int>("Phone")
-                        .HasColumnType("int");
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.Property<string>("Surname")
                         .IsRequired()

@@ -2,7 +2,7 @@
 
 namespace Application.Interfaces
 {
-    public interface ICompanyQuery : IQuery<Company, int>
+    public interface ICompanyQuery : IQuery<Company, Guid>
     {
     }
 }

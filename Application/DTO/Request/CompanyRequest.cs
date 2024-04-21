@@ -2,8 +2,8 @@
 {
     public class CompanyRequest
     {
-        public Guid UserId { get; set; }
-        public int Phone {  get; set; }
+        public string UserId { get; set; }
+        public string Phone {  get; set; }
         public int CityId { get; set; }
         public string Cuit {  get; set; }
         public string BusinessName { get; set; }

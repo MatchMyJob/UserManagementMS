@@ -12,6 +12,8 @@ namespace Infraestructure.EntityConfig
             builder.HasKey(c => c.ContactInformationId);
             builder.Property(c => c.ContactInformationId)
                    .ValueGeneratedOnAdd();
+            builder.HasIndex(u => u.CompanyId)
+                   .IsUnique();
             builder.Property(n => n.Name)
                    .HasMaxLength(50)
                    .IsRequired();
@@ -19,6 +21,7 @@ namespace Infraestructure.EntityConfig
                    .HasMaxLength(50)
                    .IsRequired();
             builder.Property(p => p.Phone)
+                   .HasMaxLength(15)
                    .IsRequired();
             builder.Property(e => e.Email)
                    .HasMaxLength(50)

@@ -14,12 +14,15 @@ namespace Infraestructure.EntityConfig
                    .ValueGeneratedOnAdd();
             builder.Property(u => u.UserId)
                    .IsRequired();
+            builder.HasIndex(u => u.UserId)
+                   .IsUnique();
             builder.Property(u => u.CityId)
                    .IsRequired();
             builder.Property(u => u.Phone)
+                   .HasMaxLength(15)
                    .IsRequired();
             builder.Property(c => c.CUIT)
-                   .HasMaxLength(12)
+                   .HasMaxLength(14)
                    .IsRequired();
             builder.Property(bn => bn.BusinessName)
                    .HasMaxLength(50)

@@ -2,7 +2,7 @@
 {
     public class CompanyUpdateRequest
     {
-        public int Phone { get; set; }
+        public string Phone { get; set; }
         public int CityId { get; set; }
         public string Cuit { get; set; }
         public string BusinessName { get; set; }

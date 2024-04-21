@@ -5,7 +5,7 @@
         public int CompanyId { get; set; }
         public Guid UserId { get; set; }
         public UbicationResponse Ubication { get; set; }
-        public int Phone {  get; set; }
+        public string Phone {  get; set; }
         public string Cuit {  get; set; }
         public string BusinessName { get; set; }
         public string Address { get; set; }

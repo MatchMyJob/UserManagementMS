@@ -3,7 +3,7 @@ using Application.DTO.Response;
 
 namespace Application.Interfaces
 {
-    public interface ICompanyCommandService : ICommandService<CompanyRequest, CompanyResponse, CompanyUpdateRequest, int>
+    public interface ICompanyCommandService : ICommandService<CompanyRequest, CompanyResponse, CompanyUpdateRequest, string>
     {
     }
 }

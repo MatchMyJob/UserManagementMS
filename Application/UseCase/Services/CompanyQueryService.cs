@@ -3,6 +3,7 @@ using Application.DTO.Pagination;
 using Application.DTO.Response;
 using Application.Interfaces;
 using AutoMapper;
+using Azure.Core;
 using Domain.Entities;
 
 namespace Application.UseCase.Services
@@ -53,16 +54,17 @@ namespace Application.UseCase.Services
             }
         }
 
-        public async Task<CompanyResponse> GetById(int id)
+        public async Task<CompanyResponse> GetById(string id)
         {
             try
             {
-                if (!(id >= 0))
+                Guid guid;
+                if (!Guid.TryParse(id, out guid))
                 {
-                    throw new BadRequestException("El ID no puede ser cero (0), ni un número menor.");
+                    throw new BadRequestException("El ID debe ser de tipo GUID.");
                 }
 
-                var company = await _query.RecoveryById(id);
+                var company = await _query.RecoveryById(guid);
 
                 var response = _mapper.Map<CompanyResponse>(company);
                 response.Ubication = new UbicationResponse

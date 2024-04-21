@@ -2,7 +2,7 @@
 
 namespace Application.Interfaces
 {
-    public interface ICompanyCommand : ICommand<Company, int>
+    public interface ICompanyCommand : ICommand<Company, Guid>
     {
     }
 }

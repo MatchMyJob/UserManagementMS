@@ -2,7 +2,7 @@
 
 namespace Application.Interfaces
 {
-    public interface ICompanyQueryService : IQueryService<CompanyResponse, int>
+    public interface ICompanyQueryService : IQueryService<CompanyResponse, string>
     {
     }
 }

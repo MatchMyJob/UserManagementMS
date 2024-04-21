@@ -6,7 +6,7 @@
         public Guid UserId { get; set; }
         public int CityId { get; set; }
         public string CUIT {  get; set; }
-        public int Phone { get; set; }
+        public string Phone { get; set; }
         public string BusinessName { get; set; }
         public string Address { get; set; }
         public string BusinessSector { get; set; }
