@@ -40,7 +40,7 @@
             </summary>
             <response code="200">No retorna nada.</response>
         </member>
-        <member name="M:API.Controllers.CompanyController.GetById(System.Int32)">
+        <member name="M:API.Controllers.CompanyController.GetById(System.String)">
             <summary>
             Retorna una Company especificando el ID
             </summary>
@@ -58,19 +58,19 @@
             </summary>
             <response code="201">Retorna la Company creada.</response>
         </member>
-        <member name="M:API.Controllers.CompanyController.UpdateEntity(System.Int32,Application.DTO.Request.CompanyUpdateRequest)">
+        <member name="M:API.Controllers.CompanyController.UpdateEntity(System.String,Application.DTO.Request.CompanyUpdateRequest)">
             <summary>
             Modifica una Company, especificando el ID y la nueva información
             </summary>
             <response code="200">Retorna la Company modificado como resultado.</response>
         </member>
-        <member name="M:API.Controllers.CompanyController.UpdatePartialEntity(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Application.DTO.Request.CompanyUpdateRequest})">
+        <member name="M:API.Controllers.CompanyController.UpdatePartialEntity(System.String,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Application.DTO.Request.CompanyUpdateRequest})">
             <summary>
             Modifica un dato de la Company, especificando el dato a modificar y el ID
             </summary>
             <response code="200">Retorna la Company modificada.</response>
         </member>
-        <member name="M:API.Controllers.CompanyController.DeleteById(System.Int32)">
+        <member name="M:API.Controllers.CompanyController.DeleteById(System.String)">
             <summary>
             Elimina una Company especificando su ID.
             </summary>

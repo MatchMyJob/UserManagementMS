@@ -72,8 +72,8 @@ namespace Infraestructure.Migrations
                 {
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CityId = table.Column<int>(type: "int", nullable: false),
-                    DNI = table.Column<int>(type: "int", nullable: false),
-                    Phone = table.Column<int>(type: "int", nullable: false),
+                    DNI = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Surname = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     BirthDate = table.Column<DateOnly>(type: "date", nullable: false),
@@ -98,8 +98,8 @@ namespace Infraestructure.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CityId = table.Column<int>(type: "int", nullable: false),
-                    CUIT = table.Column<string>(type: "nvarchar(12)", maxLength: 12, nullable: false),
-                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CUIT = table.Column<string>(type: "nvarchar(14)", maxLength: 14, nullable: false),
+                    Phone = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
                     BusinessName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Address = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     BusinessSector = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
@@ -2271,6 +2271,12 @@ namespace Infraestructure.Migrations
                 column: "CityId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Applicant_DNI",
+                table: "Applicant",
+                column: "DNI",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_City_ProvinceId",
                 table: "City",
                 column: "ProvinceId");
@@ -2279,6 +2285,12 @@ namespace Infraestructure.Migrations
                 name: "IX_Company_CityId",
                 table: "Company",
                 column: "CityId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Company_UserId",
+                table: "Company",
+                column: "UserId",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_ConctacInformation_CompanyId",

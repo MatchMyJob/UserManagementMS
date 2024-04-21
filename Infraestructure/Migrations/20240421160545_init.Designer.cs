@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infraestructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240420203840_init")]
+    [Migration("20240421160545_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -37,16 +37,18 @@ namespace Infraestructure.Migrations
                     b.Property<int>("CityId")
                         .HasColumnType("int");
 
-                    b.Property<int>("DNI")
-                        .HasColumnType("int");
+                    b.Property<string>("DNI")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<int>("Phone")
-                        .HasColumnType("int");
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
@@ -59,6 +61,9 @@ namespace Infraestructure.Migrations
                     b.HasKey("UserId");
 
                     b.HasIndex("CityId");
+
+                    b.HasIndex("DNI")
+                        .IsUnique();
 
                     b.ToTable("Applicant", (string)null);
                 });
@@ -12605,8 +12610,8 @@ namespace Infraestructure.Migrations
 
                     b.Property<string>("CUIT")
                         .IsRequired()
-                        .HasMaxLength(12)
-                        .HasColumnType("nvarchar(12)");
+                        .HasMaxLength(14)
+                        .HasColumnType("nvarchar(14)");
 
                     b.Property<int>("CityId")
                         .HasColumnType("int");
@@ -12623,7 +12628,8 @@ namespace Infraestructure.Migrations
 
                     b.Property<string>("Phone")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
@@ -12639,6 +12645,9 @@ namespace Infraestructure.Migrations
                     b.HasKey("CompanyId");
 
                     b.HasIndex("CityId");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
 
                     b.ToTable("Company", (string)null);
                 });
