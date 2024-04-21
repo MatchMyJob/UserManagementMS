@@ -18,6 +18,8 @@ namespace Infraestructure.EntityConfig
                    .IsRequired();
             builder.Property(d => d.DNI)
                    .IsRequired();
+            builder.HasIndex(d => d.DNI)
+                    .IsUnique();
             builder.Property(n => n.Name)
                    .HasMaxLength(50)
                    .IsRequired();

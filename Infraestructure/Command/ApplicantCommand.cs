@@ -17,15 +17,28 @@ namespace Infraestructure.Command
 
         public async Task<Applicant> Insert(Applicant entity)
         {
-            await _context.AddAsync(entity);
-            await _context.SaveChangesAsync();
+            try
+            {
+                var existApplicant = await _context.Applicants.FirstOrDefaultAsync(e => (e.UserId == entity.UserId));
+                if(existApplicant != null)
+                {
+                    throw new ConflictException("El usuario ya se encuentra registrado");
+                }
+                await _context.AddAsync(entity);
+                await _context.SaveChangesAsync();
 
-            var applicant = await _context.Applicants
-                .Include(c => c.CityObject)
-                .ThenInclude(p => p.ProvinceObject)
-                .FirstOrDefaultAsync(u => (u.UserId == entity.UserId) && (u.Status));
+                var applicant = await _context.Applicants
+                    .Include(c => c.CityObject)
+                    .ThenInclude(p => p.ProvinceObject)
+                    .FirstOrDefaultAsync(u => (u.UserId == entity.UserId) && (u.Status));
 
-            return applicant;
+                return applicant;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
         }
 
         public async Task Remove(Guid id)
@@ -43,20 +56,26 @@ namespace Infraestructure.Command
         public async Task<Applicant> Update(Guid id, Applicant entity)
         {
             var applicant = await _context.Applicants
-                .FirstOrDefaultAsync(u => (u.UserId == id) && (u.Status));
+                .Include(c => c.CityObject)
+                .ThenInclude(p => p.ProvinceObject)
+                .FirstOrDefaultAsync(a => (a.UserId == id) && (a.Status));
+            
+            
             if (applicant == null)
             {
                 throw new NotFoundException("El User con ID " + id + " no fue encontrado.");
             }
-
             applicant.DNI = entity.DNI;
             applicant.Name = entity.Name;
             applicant.Surname = entity.Surname;
             applicant.BirthDate = entity.BirthDate;
             applicant.CityId = entity.CityId;
             applicant.Phone = entity.Phone;
-
             await _context.SaveChangesAsync();
+            applicant = await _context.Applicants
+                .Include(c => c.CityObject)
+                .ThenInclude(p => p.ProvinceObject)
+                .FirstOrDefaultAsync(a => (a.UserId == id) && (a.Status));
 
             return applicant;
         }
