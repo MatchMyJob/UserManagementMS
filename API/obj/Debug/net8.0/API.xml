@@ -4,9 +4,9 @@
         <name>API</name>
     </assembly>
     <members>
-        <member name="M:API.Controllers.ApplicantController.GetById(System.String)">
+        <member name="M:API.Controllers.ApplicantController.GetById">
             <summary>
-            Retorna un Applicant especificando el ID
+            Retorna la información del Applicant
             </summary>
             <response code="200">Retorna un Applicant como resultado.</response>
         </member>
@@ -18,31 +18,31 @@
         </member>
         <member name="M:API.Controllers.ApplicantController.CreateEntity(Application.DTO.Request.ApplicantRequest)">
             <summary>
-            Registra un Applicant con su respectiva información
+            Registra al Applicant con su respectiva información
             </summary>
             <response code="201">Retorna el Applicant creado.</response>
         </member>
-        <member name="M:API.Controllers.ApplicantController.UpdateEntity(System.String,Application.DTO.Request.ApplicantUpdateRequest)">
+        <member name="M:API.Controllers.ApplicantController.UpdateEntity(Application.DTO.Request.ApplicantUpdateRequest)">
             <summary>
-            Modifica un Applicant, especificando el ID y la nueva información
+            Modifica al Applicant, especificando la nueva información
             </summary>
             <response code="200">Retorna el Applicant modificado como resultado.</response>
         </member>
-        <member name="M:API.Controllers.ApplicantController.UpdatePartialEntity(System.String,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Application.DTO.Request.ApplicantUpdateRequest})">
+        <member name="M:API.Controllers.ApplicantController.UpdatePartialEntity(Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Application.DTO.Request.ApplicantUpdateRequest})">
             <summary>
-            Modifica un dato de Applicant, especificando el dato a modificar y el ID
+            Modifica un dato del Applicant, especificando el dato a modificar
             </summary>
             <response code="200">Retorna el Applicant modificado.</response>
         </member>
-        <member name="M:API.Controllers.ApplicantController.DeleteById(System.String)">
+        <member name="M:API.Controllers.ApplicantController.DeleteById">
             <summary>
-            Elimina un Applicant especificando su ID.
+            Elimina al Applicant.
             </summary>
             <response code="200">No retorna nada.</response>
         </member>
-        <member name="M:API.Controllers.CompanyController.GetById(System.String)">
+        <member name="M:API.Controllers.CompanyController.GetById">
             <summary>
-            Retorna una Company especificando el ID
+            Retorna la información de la Company
             </summary>
             <response code="200">Retorna una Company como resultado.</response>
         </member>
@@ -54,25 +54,25 @@
         </member>
         <member name="M:API.Controllers.CompanyController.CreateEntity(Application.DTO.Request.CompanyRequest)">
             <summary>
-            Registra una Company con su respectiva información
+            Registra la Company con su respectiva información
             </summary>
             <response code="201">Retorna la Company creada.</response>
         </member>
-        <member name="M:API.Controllers.CompanyController.UpdateEntity(System.String,Application.DTO.Request.CompanyUpdateRequest)">
+        <member name="M:API.Controllers.CompanyController.UpdateEntity(Application.DTO.Request.CompanyUpdateRequest)">
             <summary>
-            Modifica una Company, especificando el ID y la nueva información
+            Modifica la Company, especificando la nueva información
             </summary>
             <response code="200">Retorna la Company modificado como resultado.</response>
         </member>
-        <member name="M:API.Controllers.CompanyController.UpdatePartialEntity(System.String,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Application.DTO.Request.CompanyUpdateRequest})">
+        <member name="M:API.Controllers.CompanyController.UpdatePartialEntity(Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Application.DTO.Request.CompanyUpdateRequest})">
             <summary>
-            Modifica un dato de la Company, especificando el dato a modificar y el ID
+            Modifica un dato de la Company, especificando el dato a modificar
             </summary>
             <response code="200">Retorna la Company modificada.</response>
         </member>
-        <member name="M:API.Controllers.CompanyController.DeleteById(System.String)">
+        <member name="M:API.Controllers.CompanyController.DeleteById">
             <summary>
-            Elimina una Company especificando su ID.
+            Elimina la Company.
             </summary>
             <response code="200">No retorna nada.</response>
         </member>

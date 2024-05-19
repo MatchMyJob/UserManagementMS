@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
+using System.Security.Claims;
 
 namespace API.Controllers
 {
@@ -29,21 +30,23 @@ namespace API.Controllers
         }
 
         /// <summary>
-        /// Retorna una Company especificando el ID
+        /// Retorna la información de la Company
         /// </summary>
         /// <response code="200">Retorna una Company como resultado.</response>
 
-        [HttpGet("{id}")]
-        [Authorize(Roles = "company, admin")]
+        [HttpGet("Me")]
+        [Authorize(Roles = "company")]
         [ProducesResponseType(typeof(HTTPResponse<CompanyResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> GetById(string id)
+        public async Task<ActionResult> GetById()
         {
             try
             {
-                _response.Result = await _queryService.GetById(id);
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Obtengo el ID del token
+
+                _response.Result = await _queryService.GetById(userId);
                 _response.StatusCode = (HttpStatusCode)200;
                 _response.Status = "OK";
                 return new JsonResult(_response) { StatusCode = 200 };
@@ -90,12 +93,12 @@ namespace API.Controllers
 
 
         /// <summary>
-        /// Registra una Company con su respectiva información
+        /// Registra la Company con su respectiva información
         /// </summary>
         /// <response code="201">Retorna la Company creada.</response>
 
         [HttpPost]
-        [Authorize(Roles = "company, admin")]
+        [Authorize(Roles = "company")]
         [ProducesResponseType(typeof(HTTPResponse<CompanyResponse>), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status409Conflict)]
@@ -104,6 +107,9 @@ namespace API.Controllers
         {
             try
             {
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Obtengo el ID del token
+                request.UserId = userId;
+
                 _response.Result = await _commandService.Create(request);
                 _response.StatusCode = (HttpStatusCode)201;
                 _response.Status = "Created";
@@ -121,22 +127,24 @@ namespace API.Controllers
 
 
         /// <summary>
-        /// Modifica una Company, especificando el ID y la nueva información
+        /// Modifica la Company, especificando la nueva información
         /// </summary>
         /// <response code="200">Retorna la Company modificado como resultado.</response>
 
-        [HttpPut("{id}")]
-        [Authorize(Roles = "company, admin")]
+        [HttpPut("Me")]
+        [Authorize(Roles = "company")]
         [ProducesResponseType(typeof(HTTPResponse<CompanyResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status409Conflict)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> UpdateEntity(string id, [FromBody] CompanyUpdateRequest request)
+        public async Task<ActionResult> UpdateEntity([FromBody] CompanyUpdateRequest request)
         {
             try
             {
-                _response.Result = await _commandService.Update(id, request);
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Obtengo el ID del token
+
+                _response.Result = await _commandService.Update(userId, request);
                 _response.StatusCode = (HttpStatusCode)200;
                 _response.Status = "OK";
                 return new JsonResult(_response) { StatusCode = 200 };
@@ -153,22 +161,24 @@ namespace API.Controllers
 
 
         /// <summary>
-        /// Modifica un dato de la Company, especificando el dato a modificar y el ID
+        /// Modifica un dato de la Company, especificando el dato a modificar
         /// </summary>
         /// <response code="200">Retorna la Company modificada.</response>
 
-        [HttpPatch("{id}")]
-        [Authorize(Roles = "company, admin")]
+        [HttpPatch("Me")]
+        [Authorize(Roles = "company")]
         [ProducesResponseType(typeof(HTTPResponse<CompanyResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status409Conflict)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> UpdatePartialEntity(string id, JsonPatchDocument<CompanyUpdateRequest> patchRequest)
+        public async Task<ActionResult> UpdatePartialEntity(JsonPatchDocument<CompanyUpdateRequest> patchRequest)
         {
             try
             {
-                var company = await _queryService.GetById(id);
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Obtengo el ID del token
+
+                var company = await _queryService.GetById(userId);
                 CompanyUpdateRequest companyRequest = _mapper.Map<CompanyUpdateRequest>(company);
                 patchRequest.ApplyTo(companyRequest, ModelState);
                 if (!ModelState.IsValid)
@@ -176,7 +186,7 @@ namespace API.Controllers
                     throw new BadRequestException("Ingresa los datos correctamente.");
                 }
 
-                _response.Result = await _commandService.Update(id, companyRequest);
+                _response.Result = await _commandService.Update(userId, companyRequest);
                 _response.StatusCode = (HttpStatusCode)200;
                 _response.Status = "OK";
                 return new JsonResult(_response) { StatusCode = 200 };
@@ -195,22 +205,24 @@ namespace API.Controllers
 
 
         /// <summary>
-        /// Elimina una Company especificando su ID.
+        /// Elimina la Company.
         /// </summary>
         /// <response code="200">No retorna nada.</response>
 
-        [HttpDelete("{id}")]
-        [Authorize(Roles = "company, admin")]
+        [HttpDelete("Me")]
+        [Authorize(Roles = "company")]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status409Conflict)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> DeleteById(string id)
+        public async Task<ActionResult> DeleteById()
         {
             try
             {
-                await _commandService.DeleteById(id);
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Obtengo el ID del token
+
+                await _commandService.DeleteById(userId);
                 _response.StatusCode = (HttpStatusCode)200;
                 _response.Status = "OK";
                 return new JsonResult(_response) { StatusCode = 200 };

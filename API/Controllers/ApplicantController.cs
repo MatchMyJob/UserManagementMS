@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
+using System.Security.Claims;
 
 namespace API.Controllers
 {
@@ -29,21 +30,23 @@ namespace API.Controllers
         }
 
         /// <summary>
-        /// Retorna un Applicant especificando el ID
+        /// Retorna la información del Applicant
         /// </summary>
         /// <response code="200">Retorna un Applicant como resultado.</response>
 
-        [HttpGet("{id}")]
-        [Authorize(Roles = "jobuser, admin")]
+        [HttpGet("Me")]
+        [Authorize(Roles = "jobuser")]
         [ProducesResponseType(typeof(HTTPResponse<ApplicantResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> GetById(string id)
+        public async Task<ActionResult> GetById()
         {
             try
             {
-                _response.Result = await _queryService.GetById(id);
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Obtengo el ID del token
+
+                _response.Result = await _queryService.GetById(userId);
                 _response.StatusCode = (HttpStatusCode)200;
                 _response.Status = "OK";
                 return new JsonResult(_response) { StatusCode = 200 };
@@ -90,12 +93,12 @@ namespace API.Controllers
 
 
         /// <summary>
-        /// Registra un Applicant con su respectiva información
+        /// Registra al Applicant con su respectiva información
         /// </summary>
         /// <response code="201">Retorna el Applicant creado.</response>
 
         [HttpPost]
-        [Authorize(Roles = "jobuser, admin")]
+        [Authorize(Roles = "jobuser")]
         [ProducesResponseType(typeof(HTTPResponse<ApplicantResponse>), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status409Conflict)]
@@ -104,6 +107,9 @@ namespace API.Controllers
         {
             try
             {
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Obtengo el ID del token
+                request.UserId = Guid.Parse(userId);
+
                 _response.Result = await _commandService.Create(request);
                 _response.StatusCode = (HttpStatusCode)201;
                 _response.Status = "Created";
@@ -121,22 +127,24 @@ namespace API.Controllers
 
 
         /// <summary>
-        /// Modifica un Applicant, especificando el ID y la nueva información
+        /// Modifica al Applicant, especificando la nueva información
         /// </summary>
         /// <response code="200">Retorna el Applicant modificado como resultado.</response>
 
-        [HttpPut("{id}")]
-        [Authorize(Roles = "jobuser, admin")]
+        [HttpPut("Me")]
+        [Authorize(Roles = "jobuser")]
         [ProducesResponseType(typeof(HTTPResponse<ApplicantResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status409Conflict)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> UpdateEntity(string id, [FromBody] ApplicantUpdateRequest request)
+        public async Task<ActionResult> UpdateEntity([FromBody] ApplicantUpdateRequest request)
         {
             try
             {
-                _response.Result = await _commandService.Update(id, request);
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Obtengo el ID del token
+
+                _response.Result = await _commandService.Update(userId, request);
                 _response.StatusCode = (HttpStatusCode)200;
                 _response.Status = "OK";
                 return new JsonResult(_response) { StatusCode = 200 };
@@ -153,22 +161,24 @@ namespace API.Controllers
 
 
         /// <summary>
-        /// Modifica un dato de Applicant, especificando el dato a modificar y el ID
+        /// Modifica un dato del Applicant, especificando el dato a modificar
         /// </summary>
         /// <response code="200">Retorna el Applicant modificado.</response>
 
-        [HttpPatch("{id}")]
-        [Authorize(Roles = "jobuser, admin")]
+        [HttpPatch("Me")]
+        [Authorize(Roles = "jobuser")]
         [ProducesResponseType(typeof(HTTPResponse<ApplicantResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status409Conflict)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> UpdatePartialEntity(string id, JsonPatchDocument<ApplicantUpdateRequest> patchRequest)
+        public async Task<ActionResult> UpdatePartialEntity(JsonPatchDocument<ApplicantUpdateRequest> patchRequest)
         {
             try
             {
-                var applicant = await _queryService.GetById(id);
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Obtengo el ID del token
+
+                var applicant = await _queryService.GetById(userId);
                 ApplicantUpdateRequest applicantRequest = _mapper.Map<ApplicantUpdateRequest>(applicant);
                 patchRequest.ApplyTo(applicantRequest, ModelState);
                 if (!ModelState.IsValid)
@@ -176,7 +186,7 @@ namespace API.Controllers
                     throw new BadRequestException("Ingresa los datos correctamente.");
                 }
 
-                _response.Result = await _commandService.Update(id, applicantRequest);
+                _response.Result = await _commandService.Update(userId, applicantRequest);
                 _response.StatusCode = (HttpStatusCode)200;
                 _response.Status = "OK";
                 return new JsonResult(_response) { StatusCode = 200 };
@@ -195,22 +205,24 @@ namespace API.Controllers
 
 
         /// <summary>
-        /// Elimina un Applicant especificando su ID.
+        /// Elimina al Applicant.
         /// </summary>
         /// <response code="200">No retorna nada.</response>
 
-        [HttpDelete("{id}")]
-        [Authorize(Roles = "jobuser, admin")]
+        [HttpDelete("Me")]
+        [Authorize(Roles = "jobuser")]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status409Conflict)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> DeleteById(string id)
+        public async Task<ActionResult> DeleteById()
         {
             try
             {
-                await _commandService.DeleteById(id);
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Obtengo el ID del token
+
+                await _commandService.DeleteById(userId);
                 _response.StatusCode = (HttpStatusCode)200;
                 _response.Status = "OK";
                 return new JsonResult(_response) { StatusCode = 200 };

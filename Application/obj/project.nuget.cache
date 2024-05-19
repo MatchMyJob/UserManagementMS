@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qSLE7P2jK6tEsvoDSz2YioDxxqRjUKRFVvsMxULxZMir2xBz2pCdKT/Ay806aHwhPDDkd7fHLrxzvlz/McVerg==",
+  "dgSpecHash": "S00fz1vaH4Pzi6rcgcrqMikdEzvKqn59lHHcOzQFsQVGKB2Cr1Teynban6sWTNiu2cMltxeTqMCnckf3DHBNMg==",
   "success": true,
-  "projectFilePath": "D:\\Ingeniería Informatica\\1 - Proyecto de Software\\Proyecto integrador\\Nueva carpeta\\UserManagementMS\\Application\\Application.csproj",
+  "projectFilePath": "D:\\Ingeniería Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\W10-PC\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\W10-PC\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
