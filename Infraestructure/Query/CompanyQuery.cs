@@ -16,6 +16,20 @@ namespace Infraestructure.Query
             _context = context;
         }
 
+        public async Task<Company> RecoveryByCompanyId(int companyId)
+        {
+            var company = await _context.Companies
+                .Include(c => c.CityObject)
+                .ThenInclude(p => p.ProvinceObject)
+                .FirstOrDefaultAsync(c => (c.CompanyId == companyId) && (c.Status));
+
+            if (company == null)
+            {
+                throw new NotFoundException("La Company con el ID " + companyId + " no fue encontrada.");
+            }
+            return company;
+        }
+
         public async Task<Paged<Company>> RecoveryAll(Parameters parameters)
         {
             IQueryable<Company> companies = _context.Companies.Where(a => a.Status)

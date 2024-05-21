@@ -10,6 +10,12 @@
             </summary>
             <response code="200">Retorna un Applicant como resultado.</response>
         </member>
+        <member name="M:API.Controllers.ApplicantController.GetById(System.Guid)">
+            <summary>
+            Retorna la información del Applicant dado un ID
+            </summary>
+            <response code="200">Retorna un Applicant como resultado.</response>
+        </member>
         <member name="M:API.Controllers.ApplicantController.GetAll(System.Int32,System.Int32)">
             <summary>
             Retorna una pagina de Applicants
@@ -28,23 +34,23 @@
             </summary>
             <response code="200">Retorna el Applicant modificado como resultado.</response>
         </member>
-        <member name="M:API.Controllers.ApplicantController.UpdatePartialEntity(Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Application.DTO.Request.ApplicantUpdateRequest})">
-            <summary>
-            Modifica un dato del Applicant, especificando el dato a modificar
-            </summary>
-            <response code="200">Retorna el Applicant modificado.</response>
-        </member>
         <member name="M:API.Controllers.ApplicantController.DeleteById">
             <summary>
             Elimina al Applicant.
             </summary>
             <response code="200">No retorna nada.</response>
         </member>
-        <member name="M:API.Controllers.CompanyController.GetById">
+        <member name="M:API.Controllers.CompanyController.GetByMe">
             <summary>
             Retorna la información de la Company
             </summary>
             <response code="200">Retorna una Company como resultado.</response>
+        </member>
+        <member name="M:API.Controllers.CompanyController.GetById(System.Int32)">
+            <summary>
+            Retorna la información de la Company
+            </summary>
+            <response code="200">Retorna la información de una Company por medio de su ID.</response>
         </member>
         <member name="M:API.Controllers.CompanyController.GetAll(System.Int32,System.Int32)">
             <summary>
@@ -63,12 +69,6 @@
             Modifica la Company, especificando la nueva información
             </summary>
             <response code="200">Retorna la Company modificado como resultado.</response>
-        </member>
-        <member name="M:API.Controllers.CompanyController.UpdatePartialEntity(Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Application.DTO.Request.CompanyUpdateRequest})">
-            <summary>
-            Modifica un dato de la Company, especificando el dato a modificar
-            </summary>
-            <response code="200">Retorna la Company modificada.</response>
         </member>
         <member name="M:API.Controllers.CompanyController.DeleteById">
             <summary>

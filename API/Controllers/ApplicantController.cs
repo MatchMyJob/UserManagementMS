@@ -5,7 +5,6 @@ using Application.DTO.Response;
 using Application.Interfaces;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using System.Security.Claims;
@@ -60,6 +59,39 @@ namespace API.Controllers
                 return new JsonResult(_mapper.Map<HTTPResponse<string>>(new InternalServerErrorException("Ha ocurrido un error en el servicodor."))) { StatusCode = 500 };
             }
         }
+
+
+
+        /// <summary>
+        /// Retorna la información del Applicant dado un ID
+        /// </summary>
+        /// <response code="200">Retorna un Applicant como resultado.</response>
+
+        [HttpGet("{id:Guid}")]
+        //[Authorize(Roles = "company, admin")]
+        [ProducesResponseType(typeof(HTTPResponse<ApplicantResponse>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
+        public async Task<ActionResult> GetById(Guid id)
+        {
+            try
+            {
+                _response.Result = await _queryService.GetById(id.ToString());
+                _response.StatusCode = (HttpStatusCode)200;
+                _response.Status = "OK";
+                return new JsonResult(_response) { StatusCode = 200 };
+            }
+            catch (Exception e)
+            {
+                if (e is HTTPError)
+                {
+                    return new JsonResult(_mapper.Map<HTTPResponse<string>>(e)) { StatusCode = (int)((HTTPError)e).StatusCode };
+                }
+                return new JsonResult(_mapper.Map<HTTPResponse<string>>(new InternalServerErrorException("Ha ocurrido un error en el servicodor."))) { StatusCode = 500 };
+            }
+        }
+
 
 
         /// <summary>
@@ -158,49 +190,6 @@ namespace API.Controllers
                 return new JsonResult(_mapper.Map<HTTPResponse<string>>(new InternalServerErrorException("Ha ocurrido un error en el servicodor."))) { StatusCode = 500 };
             }
         }
-
-
-        /// <summary>
-        /// Modifica un dato del Applicant, especificando el dato a modificar
-        /// </summary>
-        /// <response code="200">Retorna el Applicant modificado.</response>
-
-        [HttpPatch("Me")]
-        [Authorize(Roles = "jobuser")]
-        [ProducesResponseType(typeof(HTTPResponse<ApplicantResponse>), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
-        [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status409Conflict)]
-        [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> UpdatePartialEntity(JsonPatchDocument<ApplicantUpdateRequest> patchRequest)
-        {
-            try
-            {
-                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Obtengo el ID del token
-
-                var applicant = await _queryService.GetById(userId);
-                ApplicantUpdateRequest applicantRequest = _mapper.Map<ApplicantUpdateRequest>(applicant);
-                patchRequest.ApplyTo(applicantRequest, ModelState);
-                if (!ModelState.IsValid)
-                {
-                    throw new BadRequestException("Ingresa los datos correctamente.");
-                }
-
-                _response.Result = await _commandService.Update(userId, applicantRequest);
-                _response.StatusCode = (HttpStatusCode)200;
-                _response.Status = "OK";
-                return new JsonResult(_response) { StatusCode = 200 };
-            }
-            catch (Exception e)
-            {
-                if (e is HTTPError)
-                {
-                    return new JsonResult(_mapper.Map<HTTPResponse<string>>(e)) { StatusCode = (int)((HTTPError)e).StatusCode };
-                }
-                return new JsonResult(_mapper.Map<HTTPResponse<string>>(new InternalServerErrorException("Ha ocurrido un error en el servicodor."))) { StatusCode = 500 };
-            }
-        }
-
 
 
 

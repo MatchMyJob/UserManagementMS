@@ -54,6 +54,36 @@ namespace Application.UseCase.Services
             }
         }
 
+        public async Task<CompanyGetResponse> GetByCompanyId(int companyId)
+        {
+            try
+            {
+                if (companyId <= 0)
+                {
+                    throw new BadRequestException("El ID debe ser mayor a cero.");
+                }
+
+                var company = await _query.RecoveryByCompanyId(companyId);
+
+                var response = _mapper.Map<CompanyGetResponse>(company);
+                response.Ubication = new UbicationResponse
+                {
+                    Province = company.CityObject.ProvinceObject.Name,
+                    City = company.CityObject.Name
+                };
+                return response;
+            }
+            catch (Exception e)
+            {
+                if (e is HTTPError)
+                {
+                    throw;
+                }
+                throw new InternalServerErrorException(e.Message);
+            }
+        }
+
+
         public async Task<CompanyResponse> GetById(string id)
         {
             try

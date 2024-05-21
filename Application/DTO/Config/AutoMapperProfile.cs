@@ -22,6 +22,7 @@ namespace Application.DTO.Config
 
             CreateMap<Company, CompanyRequest>().ReverseMap();
             CreateMap<Company, CompanyResponse>().ReverseMap();
+            CreateMap<Company, CompanyGetResponse>().ReverseMap();
             CreateMap<Company, CompanyUpdateRequest>().ReverseMap();
 
             CreateMap<ContactInformation, ContactInformationResponse>().ReverseMap();
