@@ -13,6 +13,7 @@ namespace Application.DTO.Config
             CreateMap<HTTPError, HTTPResponse<string>>().ReverseMap();
 
             CreateMap<Applicant, ApplicantResponse>().ReverseMap();
+            CreateMap<Applicant, ApplicantMinimalResponse>().ReverseMap();
             CreateMap<Applicant, ApplicantRequest>().ReverseMap();
             CreateMap<Applicant, ApplicantUpdateRequest>().ReverseMap();
             CreateMap<ApplicantRequest, Applicant>()
@@ -23,6 +24,7 @@ namespace Application.DTO.Config
             CreateMap<Company, CompanyRequest>().ReverseMap();
             CreateMap<Company, CompanyResponse>().ReverseMap();
             CreateMap<Company, CompanyGetResponse>().ReverseMap();
+            CreateMap<Company, CompanyMinimalResponse>().ReverseMap();
             CreateMap<Company, CompanyUpdateRequest>().ReverseMap();
 
             CreateMap<ContactInformation, ContactInformationResponse>().ReverseMap();

@@ -2,7 +2,7 @@
 
 namespace Application.Interfaces
 {
-    public interface IContactInformationCommand : ICommand<ContactInformation, int>
+    public interface IContactInformationCommand : ICommand<ContactInformation, Guid>
     {
     }
 }

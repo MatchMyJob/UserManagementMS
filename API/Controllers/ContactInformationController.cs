@@ -38,7 +38,7 @@ namespace API.Controllers
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> GetById(int id)
+        public async Task<ActionResult> GetById(Guid id)
         {
             try
             {
@@ -94,14 +94,14 @@ namespace API.Controllers
         /// </summary>
         /// <response code="200">Retorna la información de contacto modificada como resultado.</response>
 
-        [HttpPut("{id:int}")]
+        [HttpPut("{id:Guid}")]
         [Authorize(Roles = "company, admin")]
         [ProducesResponseType(typeof(HTTPResponse<ContactInformationResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status409Conflict)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> UpdateEntity(int id, [FromBody] ContactInformationRequest request)
+        public async Task<ActionResult> UpdateEntity(Guid id, [FromBody] ContactInformationRequest request)
         {
             try
             {
@@ -126,14 +126,14 @@ namespace API.Controllers
         /// </summary>
         /// <response code="200">Retorna la información de contacto modificada.</response>
 
-        [HttpPatch("{id:int}")]
+        [HttpPatch("{id:Guid}")]
         [Authorize(Roles = "company, admin")]
         [ProducesResponseType(typeof(HTTPResponse<ContactInformationResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status409Conflict)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> UpdatePartialEntity(int id, JsonPatchDocument<ContactInformationRequest> patchRequest)
+        public async Task<ActionResult> UpdatePartialEntity(Guid id, JsonPatchDocument<ContactInformationRequest> patchRequest)
         {
             try
             {

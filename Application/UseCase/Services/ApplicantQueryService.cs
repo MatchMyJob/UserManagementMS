@@ -11,7 +11,7 @@ namespace Application.UseCase.Services
     {
         private IApplicantQuery _query;
         private readonly IMapper _mapper;
-        private List<ApplicantResponse> list;
+        private List<ApplicantMinimalResponse> list;
 
         public ApplicantQueryService(IApplicantQuery query, IMapper mapper)
         {
@@ -20,7 +20,7 @@ namespace Application.UseCase.Services
             list = new();
         }
 
-        public async Task<Paged<ApplicantResponse>> GetAllPaged(int pageNumber, int pageSize)
+        public async Task<Paged<ApplicantMinimalResponse>> GetAllPaged(int pageNumber, int pageSize, string? name)
         {
             try
             {
@@ -29,10 +29,10 @@ namespace Application.UseCase.Services
                     throw new BadRequestException("Ingrese valores mayores que cero (0) para pageNumber y pageSize");
                 }
                 Parameters parameters = new Parameters(pageNumber, pageSize);
-                Paged<Applicant> applicants = await _query.RecoveryAll(parameters);
+                Paged<Applicant> applicants = await _query.RecoveryAll(parameters, name);
                 applicants.Data.ForEach(e =>
                 {
-                    var applicantResponse = _mapper.Map<ApplicantResponse>(e);
+                    var applicantResponse = _mapper.Map<ApplicantMinimalResponse>(e);
                     applicantResponse.Ubication = new UbicationResponse
                     {
                         Province = e.CityObject.ProvinceObject.Name,
@@ -41,7 +41,7 @@ namespace Application.UseCase.Services
                     list.Add(applicantResponse);
                 });
 
-                return new Paged<ApplicantResponse>(list, applicants.MetaData.TotalCount, parameters.PageNumber, parameters.PageSize);
+                return new Paged<ApplicantMinimalResponse>(list, applicants.MetaData.TotalCount, parameters.PageNumber, parameters.PageSize);
             }
             catch (Exception e)
             {
@@ -53,17 +53,11 @@ namespace Application.UseCase.Services
             }
         }
 
-        public async Task<ApplicantResponse> GetById(string id)
+        public async Task<ApplicantResponse> GetById(Guid id)
         {
             try
             {
-                Guid guid;
-                if (!Guid.TryParse(id, out guid))
-                {
-                    throw new BadRequestException("El ID debe ser de tipo GUID.");
-                }
-
-                var entity = await _query.RecoveryById(guid);
+                var entity = await _query.RecoveryById(id);
                
                 var response = _mapper.Map<ApplicantResponse>(entity);
                 response.Ubication = new UbicationResponse
@@ -81,6 +75,11 @@ namespace Application.UseCase.Services
                 }
                 throw new InternalServerErrorException(e.Message);
             }
+        }
+
+        public Task<Paged<ApplicantResponse>> GetAllPaged(int pageNumber, int pageSize)
+        {
+            throw new NotImplementedException();
         }
     }
 }

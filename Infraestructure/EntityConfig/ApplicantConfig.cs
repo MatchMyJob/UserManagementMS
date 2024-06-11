@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+using Infraestructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -32,6 +33,8 @@ namespace Infraestructure.EntityConfig
             builder.HasOne<City>(mu => mu.CityObject)
                     .WithMany(c => c.ApplicantObjects)
                     .HasForeignKey(fk => fk.CityId);
+
+            ApplicantData.SeedData(builder);
         }
     }
 }

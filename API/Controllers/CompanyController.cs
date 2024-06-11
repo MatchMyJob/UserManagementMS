@@ -68,12 +68,12 @@ namespace API.Controllers
         /// </summary>
         /// <response code="200">Retorna la información de una Company por medio de su ID.</response>
 
-        [HttpGet("{id:int}")]
+        [HttpGet("{id:Guid}")]
         [ProducesResponseType(typeof(HTTPResponse<CompanyGetResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> GetById(int id)
+        public async Task<ActionResult> GetById(Guid id)
         {
             try
             {
@@ -100,15 +100,14 @@ namespace API.Controllers
         /// <response code="200">Retorna una pagina de Companies como resultado.</response>
 
         [HttpGet]
-        [Authorize(Roles = "admin")]
-        [ProducesResponseType(typeof(HTTPResponse<Paged<CompanyResponse>>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(HTTPResponse<Paged<CompanyMinimalResponse>>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> GetAll(int pagedNumber = 1, int pagedSize = 10)
+        public async Task<ActionResult> GetAll([FromQuery] string? name, int pagedNumber = 1, int pagedSize = 10)
         {
             try
             {
-                _response.Result = await _queryService.GetAllPaged(pagedNumber, pagedSize);
+                _response.Result = await _queryService.GetCompanyByFilter(pagedNumber, pagedSize, name);
                 _response.StatusCode = (HttpStatusCode)200;
                 _response.Status = "OK";
                 return new JsonResult(_response) { StatusCode = 200 };
@@ -140,9 +139,8 @@ namespace API.Controllers
             try
             {
                 var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Obtengo el ID del token
-                request.UserId = userId;
 
-                _response.Result = await _commandService.Create(request);
+                _response.Result = await _commandService.RegisterCompany(request, userId);
                 _response.StatusCode = (HttpStatusCode)201;
                 _response.Status = "Created";
                 return new JsonResult(_response) { StatusCode = 201 };

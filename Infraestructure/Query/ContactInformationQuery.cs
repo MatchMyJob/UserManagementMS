@@ -21,7 +21,7 @@ namespace Infraestructure.Query
             throw new NotImplementedException(); //sin implementar, no va a ser necesario
         }
 
-        public async Task<ContactInformation> RecoveryById(int id)
+        public async Task<ContactInformation> RecoveryById(Guid id)
         {
             var company = await _context.ContactInformations
                 .FirstOrDefaultAsync(c => (c.CompanyId == id));

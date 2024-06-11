@@ -7,31 +7,167 @@
       "RelativeMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|solutionrelative:controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\dto\\request\\companyrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\api\\controllers\\applicantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|solutionrelative:controllers\\applicantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\usecase\\services\\companyqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\api\\controllers\\contactinformationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|solutionrelative:controllers\\contactinformationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\interfaces\\icompanyqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\infraestructure\\data\\companydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\dto\\config\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\interfaces\\icompanyquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\usecase\\services\\applicantqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\dto\\response\\applicantresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\dto\\response\\applicantminimalresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\interfaces\\iapplicantqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\usecase\\services\\applicantcommandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\api\\controllers\\applicantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|solutionrelative:controllers\\applicantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\interfaces\\iapplicantcommandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\infraestructure\\query\\applicantquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\infraestructure\\query\\companyquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\interfaces\\iapplicantquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\dto\\request\\applicantupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\dto\\request\\applicantrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D6EBE63-DA8C-4D14-B6C9-55B4F621513E}|..\\Domain\\Domain.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\domain\\entities\\applicant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\infraestructure\\command\\companycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D6EBE63-DA8C-4D14-B6C9-55B4F621513E}|..\\Domain\\Domain.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\domain\\entities\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\usecase\\services\\companycommandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\infraestructure\\entityconfig\\companyconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\infraestructure\\entityconfig\\contactinformationconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D6EBE63-DA8C-4D14-B6C9-55B4F621513E}|..\\Domain\\Domain.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\domain\\entities\\contactinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240602053627_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\usecase\\services\\companyqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\usecase\\services\\contactinformationcommandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\interfaces\\icompanyquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\interfaces\\icompanyqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\dto\\response\\companyminimalresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\dto\\response\\companygetresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\interfaces\\icompanycommandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\dto\\response\\companyresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\dto\\request\\contactinformationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\dto\\request\\companyupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\Nueva carpeta\\UserManagementMS\\Application\\DTO\\Config\\AutoMapperProfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\infraestructure\\entityconfig\\applicantconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240602012213_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Visual Studio\\IDE de Visual Studio\\Msbuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\infraestructure\\data\\applicantdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240602011711_init2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240602000926_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240601202529_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240601202052_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240601201855_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\usecase\\services\\contactinformationqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\interfaces\\icontactinformationqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\interfaces\\icontactinformationcommandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\infraestructure\\command\\contactinformationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\interfaces\\icontactinformationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\interfaces\\icontactinformationquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\infraestructure\\query\\contactinformationquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\dto\\pagination\\metadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -58,23 +194,19 @@
       "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\application\\dto\\response\\cityresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\api\\controllers\\contactinformationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|solutionrelative:controllers\\contactinformationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\infraestructure\\infraestructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Giuliano\\UserManagementMS\\Application\\UseCase\\Services\\ApplicantCommandService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\Nueva carpeta\\UserManagementMS\\Application\\DTO\\Config\\AutoMapperProfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\Nueva carpeta\\UserManagementMS\\Infraestructure\\Migrations\\20240421160545_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Response\\CompanyGetResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\infraestructure\\migrations\\20240602055740_init2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\usermanagementms\\infraestructure\\migrations\\20240602054934_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -84,7 +216,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -96,40 +228,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\API\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\API\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACUAAAAbAAAA",
+              "DocumentIndex": 17,
+              "Title": "ApplicantUpdateRequest.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Request\\ApplicantUpdateRequest.cs",
+              "RelativeDocumentMoniker": "..\\Application\\DTO\\Request\\ApplicantUpdateRequest.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Request\\ApplicantUpdateRequest.cs",
+              "RelativeToolTip": "..\\Application\\DTO\\Request\\ApplicantUpdateRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T16:47:19.456Z",
+              "WhenOpened": "2024-06-02T06:32:37.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicantResponse.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Response\\ApplicantResponse.cs",
+              "RelativeDocumentMoniker": "..\\Application\\DTO\\Response\\ApplicantResponse.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Response\\ApplicantResponse.cs",
+              "RelativeToolTip": "..\\Application\\DTO\\Response\\ApplicantResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T06:29:49.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Config\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "..\\Application\\DTO\\Config\\AutoMapperProfile.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Config\\AutoMapperProfile.cs",
+              "RelativeToolTip": "..\\Application\\DTO\\Config\\AutoMapperProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T02:36:49.534Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ICompanyQuery.cs",
-              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\ICompanyQuery.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\ICompanyQuery.cs",
-              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\ICompanyQuery.cs",
-              "RelativeToolTip": "..\\Application\\Interfaces\\ICompanyQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAA5AAAA",
+              "DocumentIndex": 5,
+              "Title": "CompanyData.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Data\\CompanyData.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Data\\CompanyData.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Data\\CompanyData.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Data\\CompanyData.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAgwA4AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T23:52:05.512Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApplicantController.cs",
-              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\API\\Controllers\\ApplicantController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ApplicantController.cs",
-              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\API\\Controllers\\ApplicantController.cs",
-              "RelativeToolTip": "Controllers\\ApplicantController.cs",
-              "ViewState": "AQIAAHcAAAAAAAAAAAAIwI0AAABhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:53:09.864Z",
+              "WhenOpened": "2024-06-01T17:59:39.03Z",
               "EditorCaption": ""
             },
             {
@@ -147,15 +291,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CompanyQueryService.cs",
-              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\UseCase\\Services\\CompanyQueryService.cs",
-              "RelativeDocumentMoniker": "..\\Application\\UseCase\\Services\\CompanyQueryService.cs",
-              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\UseCase\\Services\\CompanyQueryService.cs",
-              "RelativeToolTip": "..\\Application\\UseCase\\Services\\CompanyQueryService.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAgwEMAAABIAAAA",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAAAJsAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T23:38:27.558Z"
+              "WhenOpened": "2024-05-20T16:47:19.456Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -165,14 +310,604 @@
               "RelativeDocumentMoniker": "Controllers\\CompanyController.cs",
               "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\API\\Controllers\\CompanyController.cs",
               "RelativeToolTip": "Controllers\\CompanyController.cs",
-              "ViewState": "AQIAAKAAAAAAAAAAAAAcwLAAAABnAAAA",
+              "ViewState": "AQIAAJ0AAAAAAAAAAAAcwI4AAABYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T19:57:52.471Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CompanyRequest.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Request\\CompanyRequest.cs",
+              "RelativeDocumentMoniker": "..\\Application\\DTO\\Request\\CompanyRequest.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Request\\CompanyRequest.cs",
+              "RelativeToolTip": "..\\Application\\DTO\\Request\\CompanyRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T03:51:06.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicantQueryService.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\UseCase\\Services\\ApplicantQueryService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\UseCase\\Services\\ApplicantQueryService.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\UseCase\\Services\\ApplicantQueryService.cs",
+              "RelativeToolTip": "..\\Application\\UseCase\\Services\\ApplicantQueryService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwCcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T06:37:28.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IApplicantQueryService.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\IApplicantQueryService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\IApplicantQueryService.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\IApplicantQueryService.cs",
+              "RelativeToolTip": "..\\Application\\Interfaces\\IApplicantQueryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T06:38:12.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ApplicantQuery.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Query\\ApplicantQuery.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Query\\ApplicantQuery.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Query\\ApplicantQuery.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Query\\ApplicantQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T06:41:52.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContactInformationController.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\API\\Controllers\\ContactInformationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ContactInformationController.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\API\\Controllers\\ContactInformationController.cs",
+              "RelativeToolTip": "Controllers\\ContactInformationController.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAMwIAAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T20:03:05.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApplicantCommandService.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\UseCase\\Services\\ApplicantCommandService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\UseCase\\Services\\ApplicantCommandService.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\UseCase\\Services\\ApplicantCommandService.cs",
+              "RelativeToolTip": "..\\Application\\UseCase\\Services\\ApplicantCommandService.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAtwF8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T06:54:18.25Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "ApplicantMinimalResponse.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Response\\ApplicantMinimalResponse.cs",
+              "RelativeDocumentMoniker": "..\\Application\\DTO\\Response\\ApplicantMinimalResponse.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Response\\ApplicantMinimalResponse.cs",
+              "RelativeToolTip": "..\\Application\\DTO\\Response\\ApplicantMinimalResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T07:15:24.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IApplicantQuery.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\IApplicantQuery.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\IApplicantQuery.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\IApplicantQuery.cs",
+              "RelativeToolTip": "..\\Application\\Interfaces\\IApplicantQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T06:42:08.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IApplicantCommandService.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\IApplicantCommandService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\IApplicantCommandService.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\IApplicantCommandService.cs",
+              "RelativeToolTip": "..\\Application\\Interfaces\\IApplicantCommandService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T06:53:18.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ApplicantController.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\API\\Controllers\\ApplicantController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ApplicantController.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\API\\Controllers\\ApplicantController.cs",
+              "RelativeToolTip": "Controllers\\ApplicantController.cs",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAjwJIAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:53:09.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ApplicantRequest.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Request\\ApplicantRequest.cs",
+              "RelativeDocumentMoniker": "..\\Application\\DTO\\Request\\ApplicantRequest.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Request\\ApplicantRequest.cs",
+              "RelativeToolTip": "..\\Application\\DTO\\Request\\ApplicantRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T06:31:52.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CompanyQuery.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Query\\CompanyQuery.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Query\\CompanyQuery.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Query\\CompanyQuery.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Query\\CompanyQuery.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T03:10:00.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CompanyCommand.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Command\\CompanyCommand.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Command\\CompanyCommand.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Command\\CompanyCommand.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Command\\CompanyCommand.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAjwBIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T20:09:21.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Company.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Domain\\Entities\\Company.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Entities\\Company.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Domain\\Entities\\Company.cs",
+              "RelativeToolTip": "..\\Domain\\Entities\\Company.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T17:55:03.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ContactInformationCommandService.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\UseCase\\Services\\ContactInformationCommandService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\UseCase\\Services\\ContactInformationCommandService.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\UseCase\\Services\\ContactInformationCommandService.cs",
+              "RelativeToolTip": "..\\Application\\UseCase\\Services\\ContactInformationCommandService.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAApwCIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T20:13:38.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CompanyCommandService.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\UseCase\\Services\\CompanyCommandService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\UseCase\\Services\\CompanyCommandService.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\UseCase\\Services\\CompanyCommandService.cs",
+              "RelativeToolTip": "..\\Application\\UseCase\\Services\\CompanyCommandService.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAjwDQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T04:03:24.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Applicant.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Domain\\Entities\\Applicant.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Entities\\Applicant.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Domain\\Entities\\Applicant.cs",
+              "RelativeToolTip": "..\\Domain\\Entities\\Applicant.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T00:10:07.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20240602053627_init.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240602053627_init.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Migrations\\20240602053627_init.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240602053627_init.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Migrations\\20240602053627_init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T05:36:27.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "20240602054934_init.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240602054934_init.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Migrations\\20240602054934_init.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240602054934_init.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Migrations\\20240602054934_init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T05:49:34.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ContactInformationConfig.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\EntityConfig\\ContactInformationConfig.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\EntityConfig\\ContactInformationConfig.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\EntityConfig\\ContactInformationConfig.cs",
+              "RelativeToolTip": "..\\Infraestructure\\EntityConfig\\ContactInformationConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T05:50:26.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CompanyConfig.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\EntityConfig\\CompanyConfig.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\EntityConfig\\CompanyConfig.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\EntityConfig\\CompanyConfig.cs",
+              "RelativeToolTip": "..\\Infraestructure\\EntityConfig\\CompanyConfig.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T19:59:41.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "20240602055740_init2.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240602055740_init2.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Migrations\\20240602055740_init2.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240602055740_init2.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Migrations\\20240602055740_init2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T05:57:40.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ContactInformation.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Domain\\Entities\\ContactInformation.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Entities\\ContactInformation.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Domain\\Entities\\ContactInformation.cs",
+              "RelativeToolTip": "..\\Domain\\Entities\\ContactInformation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T20:11:54.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CompanyQueryService.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\UseCase\\Services\\CompanyQueryService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\UseCase\\Services\\CompanyQueryService.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\UseCase\\Services\\CompanyQueryService.cs",
+              "RelativeToolTip": "..\\Application\\UseCase\\Services\\CompanyQueryService.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAswFEAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T23:38:27.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "CompanyUpdateRequest.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Request\\CompanyUpdateRequest.cs",
+              "RelativeDocumentMoniker": "..\\Application\\DTO\\Request\\CompanyUpdateRequest.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Request\\CompanyUpdateRequest.cs",
+              "RelativeToolTip": "..\\Application\\DTO\\Request\\CompanyUpdateRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T03:49:32.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ICompanyQuery.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\ICompanyQuery.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\ICompanyQuery.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\ICompanyQuery.cs",
+              "RelativeToolTip": "..\\Application\\Interfaces\\ICompanyQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T23:52:05.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ICompanyQueryService.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\ICompanyQueryService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\ICompanyQueryService.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\ICompanyQueryService.cs",
+              "RelativeToolTip": "..\\Application\\Interfaces\\ICompanyQueryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T23:56:04.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CompanyGetResponse.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Response\\CompanyGetResponse.cs",
+              "RelativeDocumentMoniker": "..\\Application\\DTO\\Response\\CompanyGetResponse.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Response\\CompanyGetResponse.cs",
+              "RelativeToolTip": "..\\Application\\DTO\\Response\\CompanyGetResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T00:10:04.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CompanyMinimalResponse.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Response\\CompanyMinimalResponse.cs",
+              "RelativeDocumentMoniker": "..\\Application\\DTO\\Response\\CompanyMinimalResponse.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Response\\CompanyMinimalResponse.cs",
+              "RelativeToolTip": "..\\Application\\DTO\\Response\\CompanyMinimalResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T04:32:47.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CompanyResponse.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Response\\CompanyResponse.cs",
+              "RelativeDocumentMoniker": "..\\Application\\DTO\\Response\\CompanyResponse.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Response\\CompanyResponse.cs",
+              "RelativeToolTip": "..\\Application\\DTO\\Response\\CompanyResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T03:50:06.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ContactInformationRequest.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Request\\ContactInformationRequest.cs",
+              "RelativeDocumentMoniker": "..\\Application\\DTO\\Request\\ContactInformationRequest.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Request\\ContactInformationRequest.cs",
+              "RelativeToolTip": "..\\Application\\DTO\\Request\\ContactInformationRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T03:53:08.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ICompanyCommandService.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\ICompanyCommandService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\ICompanyCommandService.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\ICompanyCommandService.cs",
+              "RelativeToolTip": "..\\Application\\Interfaces\\ICompanyCommandService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T04:02:16.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\Nueva carpeta\\UserManagementMS\\Application\\DTO\\Config\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "..\\..\\Nueva carpeta\\UserManagementMS\\Application\\DTO\\Config\\AutoMapperProfile.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\Nueva carpeta\\UserManagementMS\\Application\\DTO\\Config\\AutoMapperProfile.cs",
+              "RelativeToolTip": "..\\..\\Nueva carpeta\\UserManagementMS\\Application\\DTO\\Config\\AutoMapperProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T19:30:13.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "20240601202052_init.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240601202052_init.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Migrations\\20240601202052_init.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240601202052_init.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Migrations\\20240601202052_init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T20:20:53.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "20240601202529_init.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240601202529_init.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Migrations\\20240601202529_init.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240601202529_init.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Migrations\\20240601202529_init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T20:25:30.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "20240602000926_init.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240602000926_init.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Migrations\\20240602000926_init.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240602000926_init.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Migrations\\20240602000926_init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T00:09:27.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ApplicantData.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Data\\ApplicantData.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Data\\ApplicantData.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Data\\ApplicantData.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Data\\ApplicantData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGkEAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T00:20:40.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "20240602011711_init2.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240602011711_init2.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Migrations\\20240602011711_init2.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240602011711_init2.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Migrations\\20240602011711_init2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T01:17:11.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ApplicantConfig.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\EntityConfig\\ApplicantConfig.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\EntityConfig\\ApplicantConfig.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\EntityConfig\\ApplicantConfig.cs",
+              "RelativeToolTip": "..\\Infraestructure\\EntityConfig\\ApplicantConfig.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAgwB4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T01:18:46.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "D:\\Visual Studio\\IDE de Visual Studio\\Msbuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Visual Studio\\IDE de Visual Studio\\Msbuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "D:\\Visual Studio\\IDE de Visual Studio\\Msbuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Visual Studio\\IDE de Visual Studio\\Msbuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AQIAAFUTAAAAAAAAAAAAAHATAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-06-02T01:19:35.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "20240602012213_init.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240602012213_init.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Migrations\\20240602012213_init.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240602012213_init.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Migrations\\20240602012213_init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T01:22:13.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "20240601201855_init.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240601201855_init.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Migrations\\20240601201855_init.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Migrations\\20240601201855_init.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Migrations\\20240601201855_init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T20:18:56.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ContactInformationQueryService.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\UseCase\\Services\\ContactInformationQueryService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\UseCase\\Services\\ContactInformationQueryService.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\UseCase\\Services\\ContactInformationQueryService.cs",
+              "RelativeToolTip": "..\\Application\\UseCase\\Services\\ContactInformationQueryService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwAgAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T20:14:01.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "IContactInformationQueryService.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\IContactInformationQueryService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\IContactInformationQueryService.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\IContactInformationQueryService.cs",
+              "RelativeToolTip": "..\\Application\\Interfaces\\IContactInformationQueryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T20:15:17.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "IContactInformationCommandService.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\IContactInformationCommandService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\IContactInformationCommandService.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\IContactInformationCommandService.cs",
+              "RelativeToolTip": "..\\Application\\Interfaces\\IContactInformationCommandService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAACfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T20:13:54.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "IContactInformationCommand.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\IContactInformationCommand.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\IContactInformationCommand.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\IContactInformationCommand.cs",
+              "RelativeToolTip": "..\\Application\\Interfaces\\IContactInformationCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T20:12:37.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "IContactInformationQuery.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\IContactInformationQuery.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\IContactInformationQuery.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\IContactInformationQuery.cs",
+              "RelativeToolTip": "..\\Application\\Interfaces\\IContactInformationQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T20:12:45.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "ContactInformationQuery.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Query\\ContactInformationQuery.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Query\\ContactInformationQuery.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Query\\ContactInformationQuery.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Query\\ContactInformationQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T20:12:29.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ContactInformationCommand.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Command\\ContactInformationCommand.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Command\\ContactInformationCommand.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Command\\ContactInformationCommand.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Command\\ContactInformationCommand.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T20:12:09.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
               "Title": "MetaData.cs",
               "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Pagination\\MetaData.cs",
               "RelativeDocumentMoniker": "..\\Application\\DTO\\Pagination\\MetaData.cs",
@@ -184,7 +919,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 58,
               "Title": "Utilie.cs",
               "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Request\\Utilie.cs",
               "RelativeDocumentMoniker": "..\\Application\\DTO\\Request\\Utilie.cs",
@@ -196,7 +931,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 62,
               "Title": "Infraestructure.csproj",
               "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Infraestructure.csproj",
               "RelativeDocumentMoniker": "..\\Infraestructure\\Infraestructure.csproj",
@@ -208,31 +943,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AutoMapperProfile.cs",
-              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Config\\AutoMapperProfile.cs",
-              "RelativeDocumentMoniker": "..\\Application\\DTO\\Config\\AutoMapperProfile.cs",
-              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Config\\AutoMapperProfile.cs",
-              "RelativeToolTip": "..\\Application\\DTO\\Config\\AutoMapperProfile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T02:36:49.534Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ICompanyQueryService.cs",
-              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\ICompanyQueryService.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\ICompanyQueryService.cs",
-              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\ICompanyQueryService.cs",
-              "RelativeToolTip": "..\\Application\\Interfaces\\ICompanyQueryService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T23:56:04.423Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 57,
               "Title": "IBaseService.cs",
               "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\Interfaces\\IBaseService.cs",
               "RelativeDocumentMoniker": "..\\Application\\Interfaces\\IBaseService.cs",
@@ -244,7 +955,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 61,
               "Title": "CityResponse.cs",
               "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Response\\CityResponse.cs",
               "RelativeDocumentMoniker": "..\\Application\\DTO\\Response\\CityResponse.cs",
@@ -256,19 +967,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "CompanyGetResponse.cs",
-              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Response\\CompanyGetResponse.cs",
-              "RelativeDocumentMoniker": "..\\Application\\DTO\\Response\\CompanyGetResponse.cs",
-              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Response\\CompanyGetResponse.cs",
-              "RelativeToolTip": "..\\Application\\DTO\\Response\\CompanyGetResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T00:10:04.435Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 55,
               "Title": "HTTPRequest.cs",
               "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\DTO\\Request\\HTTPRequest.cs",
               "RelativeDocumentMoniker": "..\\Application\\DTO\\Request\\HTTPRequest.cs",
@@ -280,7 +979,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 56,
               "Title": "BaseService.cs",
               "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\ApiClient\\BaseService.cs",
               "RelativeDocumentMoniker": "..\\Infraestructure\\ApiClient\\BaseService.cs",
@@ -292,7 +991,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 59,
               "Title": "ProvinceQuery.cs",
               "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Query\\ProvinceQuery.cs",
               "RelativeDocumentMoniker": "..\\Infraestructure\\Query\\ProvinceQuery.cs",
@@ -304,31 +1003,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ContactInformationController.cs",
-              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\API\\Controllers\\ContactInformationController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ContactInformationController.cs",
-              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\API\\Controllers\\ContactInformationController.cs",
-              "RelativeToolTip": "Controllers\\ContactInformationController.cs",
-              "ViewState": "AQIAAGUAAAAAAAAAAAAwwHwAAABgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T20:03:05.613Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CompanyQuery.cs",
-              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Query\\CompanyQuery.cs",
-              "RelativeDocumentMoniker": "..\\Infraestructure\\Query\\CompanyQuery.cs",
-              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Infraestructure\\Query\\CompanyQuery.cs",
-              "RelativeToolTip": "..\\Infraestructure\\Query\\CompanyQuery.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBIAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T03:10:00.059Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 60,
               "Title": "ProvinceService.cs",
               "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\UserManagementMS\\Application\\UseCase\\Services\\ProvinceService.cs",
               "RelativeDocumentMoniker": "..\\Application\\UseCase\\Services\\ProvinceService.cs",
@@ -340,19 +1015,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AutoMapperProfile.cs",
-              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\Nueva carpeta\\UserManagementMS\\Application\\DTO\\Config\\AutoMapperProfile.cs",
-              "RelativeDocumentMoniker": "..\\..\\Nueva carpeta\\UserManagementMS\\Application\\DTO\\Config\\AutoMapperProfile.cs",
-              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\Nueva carpeta\\UserManagementMS\\Application\\DTO\\Config\\AutoMapperProfile.cs",
-              "RelativeToolTip": "..\\..\\Nueva carpeta\\UserManagementMS\\Application\\DTO\\Config\\AutoMapperProfile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T19:30:13.256Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 64,
               "Title": "20240421160545_init.cs",
               "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\Nueva carpeta\\UserManagementMS\\Infraestructure\\Migrations\\20240421160545_init.cs",
               "RelativeDocumentMoniker": "..\\..\\Nueva carpeta\\UserManagementMS\\Infraestructure\\Migrations\\20240421160545_init.cs",
@@ -364,7 +1027,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 63,
               "Title": "ApplicantCommandService.cs",
               "DocumentMoniker": "C:\\Users\\Giuliano\\UserManagementMS\\Application\\UseCase\\Services\\ApplicantCommandService.cs",
               "ToolTip": "C:\\Users\\Giuliano\\UserManagementMS\\Application\\UseCase\\Services\\ApplicantCommandService.cs",

@@ -16,7 +16,7 @@
             </summary>
             <response code="200">Retorna un Applicant como resultado.</response>
         </member>
-        <member name="M:API.Controllers.ApplicantController.GetAll(System.Int32,System.Int32)">
+        <member name="M:API.Controllers.ApplicantController.GetAll(System.String,System.Int32,System.Int32)">
             <summary>
             Retorna una pagina de Applicants
             </summary>
@@ -46,13 +46,13 @@
             </summary>
             <response code="200">Retorna una Company como resultado.</response>
         </member>
-        <member name="M:API.Controllers.CompanyController.GetById(System.Int32)">
+        <member name="M:API.Controllers.CompanyController.GetById(System.Guid)">
             <summary>
             Retorna la información de la Company
             </summary>
             <response code="200">Retorna la información de una Company por medio de su ID.</response>
         </member>
-        <member name="M:API.Controllers.CompanyController.GetAll(System.Int32,System.Int32)">
+        <member name="M:API.Controllers.CompanyController.GetAll(System.String,System.Int32,System.Int32)">
             <summary>
             Retorna una pagina de Companies
             </summary>
@@ -76,7 +76,7 @@
             </summary>
             <response code="200">No retorna nada.</response>
         </member>
-        <member name="M:API.Controllers.ContactInformationController.GetById(System.Int32)">
+        <member name="M:API.Controllers.ContactInformationController.GetById(System.Guid)">
             <summary>
             Retorna información de contacto, especificando el ID de la Company
             </summary>
@@ -88,13 +88,13 @@
             </summary>
             <response code="201">Retorna la información de contacto registrada.</response>
         </member>
-        <member name="M:API.Controllers.ContactInformationController.UpdateEntity(System.Int32,Application.DTO.Request.ContactInformationRequest)">
+        <member name="M:API.Controllers.ContactInformationController.UpdateEntity(System.Guid,Application.DTO.Request.ContactInformationRequest)">
             <summary>
             Modifica la información de contacto, especificando el ID de la Company y la nueva información
             </summary>
             <response code="200">Retorna la información de contacto modificada como resultado.</response>
         </member>
-        <member name="M:API.Controllers.ContactInformationController.UpdatePartialEntity(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Application.DTO.Request.ContactInformationRequest})">
+        <member name="M:API.Controllers.ContactInformationController.UpdatePartialEntity(System.Guid,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Application.DTO.Request.ContactInformationRequest})">
             <summary>
             Modifica un dato de la información de contacto, especificando el dato a modificar y el ID de la Company
             </summary>

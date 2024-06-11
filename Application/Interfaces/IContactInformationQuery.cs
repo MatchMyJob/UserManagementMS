@@ -2,7 +2,7 @@
 
 namespace Application.Interfaces
 {
-    public interface IContactInformationQuery : IQuery<ContactInformation, int>
+    public interface IContactInformationQuery : IQuery<ContactInformation, Guid>
     {
     }
 }

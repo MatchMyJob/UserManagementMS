@@ -3,7 +3,7 @@
     public class ContactInformation
     {
         public int ContactInformationId { get; set; }
-        public int CompanyId { get; set; }
+        public Guid CompanyId { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Phone {  get; set; }

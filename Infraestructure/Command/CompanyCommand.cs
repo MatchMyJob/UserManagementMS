@@ -17,21 +17,28 @@ namespace Infraestructure.Command
 
         public async Task<Company> Insert(Company entity)
         {
-            await _context.AddAsync(entity);
-            await _context.SaveChangesAsync();
+            try
+            {
+                await _context.AddAsync(entity);
+                await _context.SaveChangesAsync();
 
-            var company = await _context.Companies
-                .Include(c => c.CityObject)
-                .ThenInclude(p => p.ProvinceObject)
-                .FirstOrDefaultAsync(u => (u.UserId == entity.UserId) && (u.Status));
+                var company = await _context.Companies
+                    .Include(c => c.CityObject)
+                    .ThenInclude(p => p.ProvinceObject)
+                    .FirstOrDefaultAsync(u => (u.CompanyId == entity.CompanyId) && (u.Status));
 
-            return company;
+                return company;
+            }
+            catch (Exception e)
+            {
+                throw;
+            }
         }
 
         public async Task Remove(Guid id)
         {
             var company = await _context.Companies
-                .FirstOrDefaultAsync(u => (u.UserId == id) && (u.Status));
+                .FirstOrDefaultAsync(u => (u.CompanyId == id) && (u.Status));
             if (company == null)
             {
                 throw new NotFoundException("La Company con el ID " + id + " no fue encontrada.");
@@ -43,7 +50,7 @@ namespace Infraestructure.Command
         public async Task<Company> Update(Guid id, Company entity)
         {
             var company = await _context.Companies
-                .FirstOrDefaultAsync(u => (u.UserId == id) && (u.Status));
+                .FirstOrDefaultAsync(u => (u.CompanyId == id) && (u.Status));
             if (company == null)
             {
                 throw new NotFoundException("La Company con el ID " + id + " no fue encontrada.");
@@ -63,7 +70,7 @@ namespace Infraestructure.Command
             company = await _context.Companies
                 .Include(c => c.CityObject)
                 .ThenInclude(p => p.ProvinceObject)
-                .FirstOrDefaultAsync(u => (u.UserId == id) && (u.Status));
+                .FirstOrDefaultAsync(u => (u.CompanyId == id) && (u.Status));
 
             return company;
         }

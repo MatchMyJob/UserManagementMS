@@ -21,26 +21,24 @@ namespace Application.UseCase.Services
             _mapper = mapper;
         }
 
-        public async Task<CompanyResponse> Create(CompanyRequest request)
+        public async Task<CompanyResponse> RegisterCompany(CompanyRequest request, string userId)
         {
             try
             {
-                Guid guid;
-                if (!Guid.TryParse(request.UserId, out guid))
-                {
-                    throw new BadRequestException("El ID debe ser de tipo GUID.");
-                }
                 if (!IsValidPhone(request.Phone.ToString()))
                 {
                     throw new BadRequestException("Ingrese un formato valido: '54-1141462757' ");
 
                 }
-                if (!IsValidCuit(request.Cuit))
+                if (!IsValidCuit(request.CUIT))
                 {
                     throw new BadRequestException("Ingrese un formato valido para CUIT: '30-87654321-2' ");
                 }
 
+                var id = Guid.Parse(userId);
+
                 var company = _mapper.Map<Company>(request);
+                company.CompanyId = id;
                 company.Status = true;
                 company = await _command.Insert(company);
 
@@ -64,13 +62,19 @@ namespace Application.UseCase.Services
                     {
                         throw new ConflictException("Verifique la información ingresada, el ID del User y de City deben estar presentes.");
                     }
-                    if (sqlException.Number == 2601) // / Se comprueba si hay un duplicado
+                    if (sqlException.Number == 2627)
                     {
+                        // 2627 is the error number for a unique constraint violation in SQL Server
                         throw new ConflictException("Ya hay una cuenta registrada para el ID asociado.");
                     }
                 }
                 throw new InternalServerErrorException(e.Message);
             }
+        }
+
+        public Task<CompanyResponse> Create(CompanyRequest request)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task DeleteById(string id)
@@ -108,7 +112,7 @@ namespace Application.UseCase.Services
                     throw new BadRequestException("Ingrese un formato valido para Phone: '54-1141462757' ");
 
                 }
-                if (!IsValidCuit(request.Cuit))
+                if (!IsValidCuit(request.CUIT))
                 {
                     throw new BadRequestException("Ingrese un formato valido para CUIT: '30-87654321-2' ");
                 }
@@ -152,5 +156,7 @@ namespace Application.UseCase.Services
             string pattern = @"^\d{2}-\d{7,9}-\d$";
             return Regex.IsMatch(cuit, pattern);
         }
+
+        
     }
 }

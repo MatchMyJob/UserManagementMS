@@ -16,14 +16,24 @@ namespace Infraestructure.Query
             _context = context;
         }
 
-        public async Task<Paged<Applicant>> RecoveryAll(Parameters parameters)
+        public async Task<Paged<Applicant>> RecoveryAll(Parameters parameters, string? name)
         {
             IQueryable<Applicant> applicants = _context.Applicants.Where(a => a.Status)
                 .Include(c => c.CityObject)
                 .ThenInclude(p => p.ProvinceObject)
                 .ThenInclude(c => c.CountryObject);
 
+            if (!string.IsNullOrEmpty(name))
+            {
+                applicants = applicants.Where(p => p.Name.ToLower().Contains(name.ToLower()) || p.Surname.ToLower().Contains(name.ToLower()));
+            }
+
             return await Paged<Applicant>.ToPagedAsync(applicants, parameters.PageNumber, parameters.PageSize);
+        }
+
+        public Task<Paged<Applicant>> RecoveryAll(Parameters parameters)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<Applicant> RecoveryById(Guid id)

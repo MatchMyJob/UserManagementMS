@@ -26,12 +26,12 @@ namespace Infraestructure.Command
             return contactInformation;
         }
 
-        public Task Remove(int id)
+        public Task Remove(Guid id)
         {
             throw new NotImplementedException(); //sin implementar, no va a ser necesario
         }
 
-        public async Task<ContactInformation> Update(int id, ContactInformation entity)
+        public async Task<ContactInformation> Update(Guid id, ContactInformation entity)
         {
             var contactInformation = await _context.ContactInformations
                 .FirstOrDefaultAsync(ci => ci.CompanyId == id);

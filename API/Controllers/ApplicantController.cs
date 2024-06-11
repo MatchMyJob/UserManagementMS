@@ -43,7 +43,7 @@ namespace API.Controllers
         {
             try
             {
-                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Obtengo el ID del token
+                var userId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)); // Obtengo el ID del token
 
                 _response.Result = await _queryService.GetById(userId);
                 _response.StatusCode = (HttpStatusCode)200;
@@ -77,7 +77,7 @@ namespace API.Controllers
         {
             try
             {
-                _response.Result = await _queryService.GetById(id.ToString());
+                _response.Result = await _queryService.GetById(id);
                 _response.StatusCode = (HttpStatusCode)200;
                 _response.Status = "OK";
                 return new JsonResult(_response) { StatusCode = 200 };
@@ -100,15 +100,18 @@ namespace API.Controllers
         /// <response code="200">Retorna una pagina de Applicants como resultado.</response>
 
         [HttpGet]
-        [Authorize(Roles = "admin")]
         [ProducesResponseType(typeof(HTTPResponse<Paged<ApplicantResponse>>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> GetAll(int pagedNumber = 1, int pagedSize = 10)
+        public async Task<ActionResult> GetAll(
+            [FromQuery] string? name, 
+            int pagedNumber = 1, 
+            int pagedSize = 10
+            )
         {
             try
             {
-                _response.Result = await _queryService.GetAllPaged(pagedNumber, pagedSize);
+                _response.Result = await _queryService.GetAllPaged(pagedNumber, pagedSize, name);
                 _response.StatusCode = (HttpStatusCode)200;
                 _response.Status = "OK";
                 return new JsonResult(_response) { StatusCode = 200 };
@@ -140,9 +143,8 @@ namespace API.Controllers
             try
             {
                 var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Obtengo el ID del token
-                request.UserId = Guid.Parse(userId);
 
-                _response.Result = await _commandService.Create(request);
+                _response.Result = await _commandService.RegisterApplicant(request, userId);
                 _response.StatusCode = (HttpStatusCode)201;
                 _response.Status = "Created";
                 return new JsonResult(_response) { StatusCode = 201 };
@@ -174,7 +176,7 @@ namespace API.Controllers
         {
             try
             {
-                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Obtengo el ID del token
+                var userId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)); // Obtengo el ID del token
 
                 _response.Result = await _commandService.Update(userId, request);
                 _response.StatusCode = (HttpStatusCode)200;
@@ -209,7 +211,7 @@ namespace API.Controllers
         {
             try
             {
-                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Obtengo el ID del token
+                var userId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)); // Obtengo el ID del token
 
                 await _commandService.DeleteById(userId);
                 _response.StatusCode = (HttpStatusCode)200;

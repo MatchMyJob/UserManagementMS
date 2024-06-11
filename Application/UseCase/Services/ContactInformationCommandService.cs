@@ -25,7 +25,6 @@ namespace Application.UseCase.Services
         {
             try
             {
-                IsValidId(request.CompanyId);
                 IsValidPhone(request.Phone);
                 IsValidEmail(request.Email);
 
@@ -51,16 +50,15 @@ namespace Application.UseCase.Services
             }
         }
 
-        public Task DeleteById(int id)
+        public Task DeleteById(Guid id)
         {
             throw new NotImplementedException(); //sin implementar, no va a ser necesario
         }
 
-        public async Task<ContactInformationResponse> Update(int id, ContactInformationRequest request)
+        public async Task<ContactInformationResponse> Update(Guid id, ContactInformationRequest request)
         {
             try
             {
-                IsValidId(id);
                 IsValidPhone(request.Phone);
                 IsValidEmail(request.Email);
 
@@ -88,13 +86,6 @@ namespace Application.UseCase.Services
             }
         }
 
-        private void IsValidId(int id)
-        {
-            if (!(id >= 0))
-            {
-                throw new BadRequestException("El ID no puede ser cero (0), ni un número menor.");
-            }
-        }
         private void IsValidEmail(string email)
         {
             string pattern = @"^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$";

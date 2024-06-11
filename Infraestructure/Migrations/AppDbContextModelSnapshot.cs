@@ -38,6 +38,18 @@ namespace Infraestructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Linkedin")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MinimalDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -63,6 +75,1128 @@ namespace Infraestructure.Migrations
                         .IsUnique();
 
                     b.ToTable("Applicant", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = new Guid("e60df533-79d7-42f2-a36d-99362dbc6f85"),
+                            BirthDate = new DateOnly(1990, 5, 15),
+                            CityId = 60274,
+                            DNI = "307977771",
+                            Email = "leonelesquivel@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/leonel47",
+                            MinimalDescription = "Experienced full-stack developer skilled in C# and .NET.",
+                            Name = "Leonel",
+                            Phone = "54-1115281450",
+                            Status = true,
+                            Surname = "Esquivel"
+                        },
+                        new
+                        {
+                            UserId = new Guid("8fa4d8c8-aa4b-4d01-9cd3-a1e94628e473"),
+                            BirthDate = new DateOnly(1992, 8, 20),
+                            CityId = 60274,
+                            DNI = "307977772",
+                            Email = "anagomez@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/anagomez",
+                            MinimalDescription = "Front-end developer with expertise in React and Angular.",
+                            Name = "Ana",
+                            Phone = "54-1115281451",
+                            Status = true,
+                            Surname = "Gomez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("a0deb200-955f-4b6c-b550-9ca1712392a8"),
+                            BirthDate = new DateOnly(1988, 3, 12),
+                            CityId = 60274,
+                            DNI = "307977773",
+                            Email = "carlosrodriguez@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/carlos23",
+                            MinimalDescription = "Backend developer specializing in Java and Spring framework.",
+                            Name = "Carlos",
+                            Phone = "54-1115281452",
+                            Status = true,
+                            Surname = "Rodriguez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("5b68ad8c-f42e-40d7-87de-3622d34dcf84"),
+                            BirthDate = new DateOnly(1995, 11, 30),
+                            CityId = 60274,
+                            DNI = "307977774",
+                            Email = "mariagarcia@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/maria25",
+                            MinimalDescription = "Software engineer with a focus on data analysis and Python.",
+                            Name = "Maria",
+                            Phone = "54-1115281453",
+                            Status = true,
+                            Surname = "Garcia"
+                        },
+                        new
+                        {
+                            UserId = new Guid("597719b7-3036-4f95-92f8-5163b3e18931"),
+                            BirthDate = new DateOnly(1991, 7, 22),
+                            CityId = 60274,
+                            DNI = "307977775",
+                            Email = "joseluis@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/joseluis45",
+                            MinimalDescription = "Full-stack developer with a passion for mobile app development.",
+                            Name = "Jose Luis",
+                            Phone = "54-1115281454",
+                            Status = true,
+                            Surname = "Perez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("b9b2181b-d620-4db0-9561-9c1ba02480bb"),
+                            BirthDate = new DateOnly(1985, 1, 17),
+                            CityId = 60274,
+                            DNI = "307977776",
+                            Email = "luisfernandez@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/luis10",
+                            MinimalDescription = "Experienced in cloud computing and DevOps practices.",
+                            Name = "Luis",
+                            Phone = "54-1115281455",
+                            Status = true,
+                            Surname = "Fernandez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("53a20833-f2ef-4cb7-a049-326d0cb255ad"),
+                            BirthDate = new DateOnly(1993, 9, 10),
+                            CityId = 60274,
+                            DNI = "307977777",
+                            Email = "martarivera@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/marta34",
+                            MinimalDescription = "Proficient in machine learning and AI development.",
+                            Name = "Marta",
+                            Phone = "54-1115281456",
+                            Status = true,
+                            Surname = "Rivera"
+                        },
+                        new
+                        {
+                            UserId = new Guid("3c36090f-464c-4c80-ac2b-e32ca07c44a9"),
+                            BirthDate = new DateOnly(1987, 4, 28),
+                            CityId = 60274,
+                            DNI = "307977778",
+                            Email = "miguelsanchez@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/miguel67",
+                            MinimalDescription = "Skilled in database management and SQL.",
+                            Name = "Miguel",
+                            Phone = "54-1115281457",
+                            Status = true,
+                            Surname = "Sanchez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("ca6dcc5d-3c35-4bd9-9a4c-f1e76f85c978"),
+                            BirthDate = new DateOnly(1990, 6, 5),
+                            CityId = 60274,
+                            DNI = "307977779",
+                            Email = "laurahernandez@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/laura12",
+                            MinimalDescription = "Expert in cybersecurity and network security protocols.",
+                            Name = "Laura",
+                            Phone = "54-1115281458",
+                            Status = true,
+                            Surname = "Hernandez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("43b4e2b2-a2ce-4e8b-b07f-9d20b014bb5f"),
+                            BirthDate = new DateOnly(1994, 2, 14),
+                            CityId = 60274,
+                            DNI = "307977780",
+                            Email = "davidmartin@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/david89",
+                            MinimalDescription = "Developer with extensive experience in Agile methodologies.",
+                            Name = "David",
+                            Phone = "54-1115281459",
+                            Status = true,
+                            Surname = "Martin"
+                        },
+                        new
+                        {
+                            UserId = new Guid("b0c0659c-a57a-4acb-a906-5e3bf9ab2675"),
+                            BirthDate = new DateOnly(1991, 4, 10),
+                            CityId = 60274,
+                            DNI = "307977781",
+                            Email = "saraperez@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/sara56",
+                            MinimalDescription = "Software developer with extensive experience in backend systems.",
+                            Name = "Sara",
+                            Phone = "54-1115281460",
+                            Status = true,
+                            Surname = "Perez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("55d9f2d3-8b0e-48da-baf5-f782a7b2d5f8"),
+                            BirthDate = new DateOnly(1989, 6, 24),
+                            CityId = 60274,
+                            DNI = "307977782",
+                            Email = "juancarlos@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/juancarlos",
+                            MinimalDescription = "Frontend engineer specializing in React and modern JavaScript.",
+                            Name = "Juan",
+                            Phone = "54-1115281461",
+                            Status = true,
+                            Surname = "Carlos"
+                        },
+                        new
+                        {
+                            UserId = new Guid("35a26eb2-c01c-4df3-b98d-40561190ae36"),
+                            BirthDate = new DateOnly(1987, 11, 5),
+                            CityId = 60274,
+                            DNI = "307977783",
+                            Email = "carmenlopez@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/carmen78",
+                            MinimalDescription = "Data scientist with a strong background in machine learning.",
+                            Name = "Carmen",
+                            Phone = "54-1115281462",
+                            Status = true,
+                            Surname = "Lopez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("cd88e529-eedb-42c5-a88d-384f5976a754"),
+                            BirthDate = new DateOnly(1992, 2, 14),
+                            CityId = 60274,
+                            DNI = "307977784",
+                            Email = "pablomartinez@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/pablo43",
+                            MinimalDescription = "Full stack developer with expertise in cloud-based solutions.",
+                            Name = "Pablo",
+                            Phone = "54-1115281463",
+                            Status = true,
+                            Surname = "Martinez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("0835e1cc-d304-4b61-9b58-135ab2d27b3f"),
+                            BirthDate = new DateOnly(1990, 12, 1),
+                            CityId = 60274,
+                            DNI = "307977785",
+                            Email = "gloriaramos@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/gloria22",
+                            MinimalDescription = "Cybersecurity expert with over 10 years of experience.",
+                            Name = "Gloria",
+                            Phone = "54-1115281464",
+                            Status = true,
+                            Surname = "Ramos"
+                        },
+                        new
+                        {
+                            UserId = new Guid("944cbcf3-7479-4eed-97f1-80fd4c50eda6"),
+                            BirthDate = new DateOnly(1985, 8, 19),
+                            CityId = 60274,
+                            DNI = "307977786",
+                            Email = "antonioalvarez@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/antonio65",
+                            MinimalDescription = "DevOps engineer with a focus on automation and CI/CD.",
+                            Name = "Antonio",
+                            Phone = "54-1115281465",
+                            Status = true,
+                            Surname = "Alvarez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("cca9654e-d839-4e21-a23d-01fbb75e0a26"),
+                            BirthDate = new DateOnly(1993, 5, 22),
+                            CityId = 60274,
+                            DNI = "307977787",
+                            Email = "patriciaflores@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/patricia98",
+                            MinimalDescription = "Mobile application developer with a passion for UI/UX design.",
+                            Name = "Patricia",
+                            Phone = "54-1115281466",
+                            Status = true,
+                            Surname = "Flores"
+                        },
+                        new
+                        {
+                            UserId = new Guid("f3952051-fbde-4d44-a9b7-c3cb54027090"),
+                            BirthDate = new DateOnly(1988, 7, 9),
+                            CityId = 60274,
+                            DNI = "307977788",
+                            Email = "andresromero@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/andres55",
+                            MinimalDescription = "Backend developer with expertise in databases and microservices.",
+                            Name = "Andres",
+                            Phone = "54-1115281467",
+                            Status = true,
+                            Surname = "Romero"
+                        },
+                        new
+                        {
+                            UserId = new Guid("7e246319-564e-4920-bd8c-6029be2a7729"),
+                            BirthDate = new DateOnly(1994, 3, 18),
+                            CityId = 60274,
+                            DNI = "307977789",
+                            Email = "elenadiaz@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/elena31",
+                            MinimalDescription = "Software engineer specializing in AI and machine learning.",
+                            Name = "Elena",
+                            Phone = "54-1115281468",
+                            Status = true,
+                            Surname = "Diaz"
+                        },
+                        new
+                        {
+                            UserId = new Guid("ba694638-8e1c-4398-a3db-50b879ea1414"),
+                            BirthDate = new DateOnly(1992, 6, 28),
+                            CityId = 60274,
+                            DNI = "307977790",
+                            Email = "robertohidalgo@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/roberto44",
+                            MinimalDescription = "Front-end developer with a strong background in design.",
+                            Name = "Roberto",
+                            Phone = "54-1115281469",
+                            Status = true,
+                            Surname = "Hidalgo"
+                        },
+                        new
+                        {
+                            UserId = new Guid("2f5c9c2f-de8c-4396-90af-534f4e163439"),
+                            BirthDate = new DateOnly(1985, 5, 10),
+                            CityId = 60274,
+                            DNI = "307977791",
+                            Email = "pedrogomez@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/pedrogomez",
+                            MinimalDescription = "Experienced software developer with strong C# skills.",
+                            Name = "Pedro",
+                            Phone = "54-1115281470",
+                            Status = true,
+                            Surname = "Gomez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("b2269673-9d47-471a-a958-24160608ae82"),
+                            BirthDate = new DateOnly(1988, 7, 15),
+                            CityId = 60274,
+                            DNI = "307977792",
+                            Email = "isabelhernandez@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/isabelhernandez",
+                            MinimalDescription = "Full-stack developer specializing in .NET and Angular.",
+                            Name = "Isabel",
+                            Phone = "54-1115281471",
+                            Status = true,
+                            Surname = "Hernandez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("bb491436-8b44-4049-8f28-60b5689b6fd7"),
+                            BirthDate = new DateOnly(1990, 3, 20),
+                            CityId = 60274,
+                            DNI = "307977793",
+                            Email = "rafaelmartinez@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/rafaelmartinez",
+                            MinimalDescription = "Backend developer with expertise in microservices architecture.",
+                            Name = "Rafael",
+                            Phone = "54-1115281472",
+                            Status = true,
+                            Surname = "Martinez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("525d6c44-e75c-466a-9510-fb4c0d8f28d1"),
+                            BirthDate = new DateOnly(1993, 9, 30),
+                            CityId = 60274,
+                            DNI = "307977794",
+                            Email = "anamaria@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/anamaria",
+                            MinimalDescription = "Frontend developer passionate about creating intuitive user experiences.",
+                            Name = "Ana Maria",
+                            Phone = "54-1115281473",
+                            Status = true,
+                            Surname = "Gonzalez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("6d46504c-1a72-4036-98e3-3434676e05bb"),
+                            BirthDate = new DateOnly(1984, 12, 5),
+                            CityId = 60274,
+                            DNI = "307977795",
+                            Email = "juanantonio@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/juanantonio89",
+                            MinimalDescription = "DevOps engineer focused on continuous integration and deployment.",
+                            Name = "Juan Antonio",
+                            Phone = "54-1115281474",
+                            Status = true,
+                            Surname = "Fernandez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("6ca18a54-6c7b-46af-b298-fa756919a4f1"),
+                            BirthDate = new DateOnly(1992, 8, 12),
+                            CityId = 60274,
+                            DNI = "307977796",
+                            Email = "sofiagonzalez@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/sofia34",
+                            MinimalDescription = "Mobile app developer specializing in Android and iOS platforms.",
+                            Name = "Sofia",
+                            Phone = "54-1115281475",
+                            Status = true,
+                            Surname = "Gonzalez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("347c951c-16c5-4043-bedc-a847c40fcb7f"),
+                            BirthDate = new DateOnly(1995, 10, 20),
+                            CityId = 60274,
+                            DNI = "307977797",
+                            Email = "alejandro@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/alejandro22",
+                            MinimalDescription = "Data scientist with a strong background in machine learning.",
+                            Name = "Alejandro",
+                            Phone = "54-1115281476",
+                            Status = true,
+                            Surname = "Martinez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("3e0f155c-6f59-4214-a4e4-2d992447488f"),
+                            BirthDate = new DateOnly(1989, 1, 17),
+                            CityId = 60274,
+                            DNI = "307977798",
+                            Email = "luciaramos@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/lucia56",
+                            MinimalDescription = "Cybersecurity expert with extensive experience in network security.",
+                            Name = "Lucia",
+                            Phone = "54-1115281477",
+                            Status = true,
+                            Surname = "Ramos"
+                        },
+                        new
+                        {
+                            UserId = new Guid("4f2d3b1e-6a9c-4d7f-8e5b-1c7a5d3b4e2f"),
+                            BirthDate = new DateOnly(1994, 4, 22),
+                            CityId = 60274,
+                            DNI = "307977799",
+                            Email = "diegolopez@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/diego12",
+                            MinimalDescription = "Software engineer specializing in AI and deep learning.",
+                            Name = "Diego",
+                            Phone = "54-1115281478",
+                            Status = true,
+                            Surname = "Lopez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("c2c1137a-2957-489a-b6bc-a520a28c3206"),
+                            BirthDate = new DateOnly(1991, 6, 11),
+                            CityId = 60274,
+                            DNI = "307977800",
+                            Email = "paulaperez@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/paula31",
+                            MinimalDescription = "Backend developer with expertise in cloud-based applications.",
+                            Name = "Paula",
+                            Phone = "54-1115281479",
+                            Status = true,
+                            Surname = "Perez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("ccedb55a-6010-4ec9-913b-caa122d34ba7"),
+                            BirthDate = new DateOnly(1980, 2, 5),
+                            CityId = 60274,
+                            DNI = "307977801",
+                            Email = "robertomorales@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/roberto67",
+                            MinimalDescription = "Project manager with over 10 years of experience in the tech industry.",
+                            Name = "Roberto",
+                            Phone = "54-1115281480",
+                            Status = true,
+                            Surname = "Morales"
+                        },
+                        new
+                        {
+                            UserId = new Guid("c9ea88e7-aba3-4aa3-8dd7-0977a84004c9"),
+                            BirthDate = new DateOnly(1985, 3, 15),
+                            CityId = 60274,
+                            DNI = "307977802",
+                            Email = "teresadiaz@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/teresadiaz",
+                            MinimalDescription = "Marketing specialist with a focus on digital campaigns.",
+                            Name = "Teresa",
+                            Phone = "54-1115281481",
+                            Status = true,
+                            Surname = "Diaz"
+                        },
+                        new
+                        {
+                            UserId = new Guid("3b2a5c6e-7f9d-4b1e-8a3c-2d5a9c7f6e1b"),
+                            BirthDate = new DateOnly(1978, 11, 25),
+                            CityId = 60274,
+                            DNI = "307977803",
+                            Email = "josemanuel@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/josemanuel78",
+                            MinimalDescription = "System analyst with extensive experience in business process optimization.",
+                            Name = "Jose Manuel",
+                            Phone = "54-1115281482",
+                            Status = true,
+                            Surname = "Lopez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("4a6b6c16-1593-4425-935c-d2ddc3c8eef5"),
+                            BirthDate = new DateOnly(1965, 4, 18),
+                            CityId = 60274,
+                            DNI = "307977804",
+                            Email = "adrianaperez@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/adriana65",
+                            MinimalDescription = "Human resources manager with a knack for talent acquisition.",
+                            Name = "Adriana",
+                            Phone = "54-1115281483",
+                            Status = true,
+                            Surname = "Perez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("3c36090f-464c-4c80-ac2b-e32ca07c44a4"),
+                            BirthDate = new DateOnly(1999, 6, 12),
+                            CityId = 60274,
+                            DNI = "307977805",
+                            Email = "francisco@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/francisco99",
+                            MinimalDescription = "Financial analyst with a focus on market trends and investment strategies.",
+                            Name = "Francisco",
+                            Phone = "54-1115281484",
+                            Status = true,
+                            Surname = "Gonzalez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("92bbd7a3-42a9-4b3e-8e9c-6fa4830404d2"),
+                            BirthDate = new DateOnly(1981, 7, 25),
+                            CityId = 60274,
+                            DNI = "307977806",
+                            Email = "monicagarcia@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/monica43",
+                            MinimalDescription = "Graphic designer with a passion for branding and visual communication.",
+                            Name = "Monica",
+                            Phone = "54-1115281485",
+                            Status = true,
+                            Surname = "Garcia"
+                        },
+                        new
+                        {
+                            UserId = new Guid("38c07b15-1adc-47fb-adca-5a93ab1ec6c3"),
+                            BirthDate = new DateOnly(1987, 10, 30),
+                            CityId = 60274,
+                            DNI = "307977807",
+                            Email = "victormorales@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/victor87",
+                            MinimalDescription = "Sales executive with expertise in B2B sales and client relations.",
+                            Name = "Victor",
+                            Phone = "54-1115281486",
+                            Status = true,
+                            Surname = "Morales"
+                        },
+                        new
+                        {
+                            UserId = new Guid("1b29f96a-23e1-4824-9e66-775d807af9ae"),
+                            BirthDate = new DateOnly(1956, 8, 19),
+                            CityId = 60274,
+                            DNI = "307977808",
+                            Email = "carmenflores@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/carmen56",
+                            MinimalDescription = "Content creator with a strong following on social media platforms.",
+                            Name = "Carmen",
+                            Phone = "54-1115281487",
+                            Status = true,
+                            Surname = "Flores"
+                        },
+                        new
+                        {
+                            UserId = new Guid("c5f0f42f-255f-400d-b657-bed222ec9903"),
+                            BirthDate = new DateOnly(1975, 1, 22),
+                            CityId = 60274,
+                            DNI = "307977809",
+                            Email = "luismiguel@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/luismiguel",
+                            MinimalDescription = "Network engineer with extensive knowledge of Cisco systems.",
+                            Name = "Luis Miguel",
+                            Phone = "54-1115281488",
+                            Status = true,
+                            Surname = "Hernandez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("4ce9ea91-e281-47df-9fc7-79f0c9a95ddd"),
+                            BirthDate = new DateOnly(1989, 12, 3),
+                            CityId = 60274,
+                            DNI = "307977810",
+                            Email = "beatriz@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/beatriz12",
+                            MinimalDescription = "HR specialist with a focus on employee engagement and development.",
+                            Name = "Beatriz",
+                            Phone = "54-1115281489",
+                            Status = true,
+                            Surname = "Lopez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("60786725-191b-4172-acd8-ef669024173b"),
+                            BirthDate = new DateOnly(1977, 7, 15),
+                            CityId = 60274,
+                            DNI = "307977811",
+                            Email = "jorge@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/jorge77",
+                            MinimalDescription = "Software developer with experience in full-stack development.",
+                            Name = "Jorge",
+                            Phone = "54-1115281490",
+                            Status = true,
+                            Surname = "Perez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("ba7faac0-0e0c-4fb8-a329-5483da03032c"),
+                            BirthDate = new DateOnly(1978, 8, 22),
+                            CityId = 60274,
+                            DNI = "307977812",
+                            Email = "fernandogomez@outlook.com",
+                            Linkedin = "https://www.linkedin.com/in/fernando78",
+                            MinimalDescription = "IT consultant specializing in cloud solutions.",
+                            Name = "Fernando",
+                            Phone = "54-1115281491",
+                            Status = true,
+                            Surname = "Gomez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("939a97f5-10b8-4d6c-ab74-ce77187d36df"),
+                            BirthDate = new DateOnly(1985, 5, 30),
+                            CityId = 60274,
+                            DNI = "307977813",
+                            Email = "alejandrahernandez@outlook.com",
+                            Linkedin = "https://www.linkedin.com/in/alejandra45",
+                            MinimalDescription = "Product manager with a focus on consumer electronics.",
+                            Name = "Alejandra",
+                            Phone = "54-1115281492",
+                            Status = true,
+                            Surname = "Hernandez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("c54c442f-e6a2-40b7-a022-3a58bccb2b3b"),
+                            BirthDate = new DateOnly(1988, 9, 10),
+                            CityId = 60274,
+                            DNI = "307977814",
+                            Email = "gustavomartinez@outlook.com",
+                            Linkedin = "https://www.linkedin.com/in/gustavo23",
+                            MinimalDescription = "Electrical engineer with a passion for renewable energy.",
+                            Name = "Gustavo",
+                            Phone = "54-1115281493",
+                            Status = true,
+                            Surname = "Martinez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("83ae68c3-f621-4f03-bda7-73d77aec8ce3"),
+                            BirthDate = new DateOnly(1967, 6, 25),
+                            CityId = 60274,
+                            DNI = "307977815",
+                            Email = "valeriagonzalez@outlook.com",
+                            Linkedin = "https://www.linkedin.com/in/valeria67",
+                            MinimalDescription = "Civil engineer with expertise in large infrastructure projects.",
+                            Name = "Valeria",
+                            Phone = "54-1115281494",
+                            Status = true,
+                            Surname = "Gonzalez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("70e6cdc7-85df-452f-84ea-5e985024734c"),
+                            BirthDate = new DateOnly(1989, 10, 5),
+                            CityId = 60274,
+                            DNI = "307977816",
+                            Email = "raulperez@outlook.com",
+                            Linkedin = "https://www.linkedin.com/in/raul89",
+                            MinimalDescription = "Mechanical engineer with a focus on automotive design.",
+                            Name = "Raul",
+                            Phone = "54-1115281495",
+                            Status = true,
+                            Surname = "Perez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("a9805c2f-71d4-4c13-92fb-ac069cb7d633"),
+                            BirthDate = new DateOnly(1987, 3, 14),
+                            CityId = 60274,
+                            DNI = "307977817",
+                            Email = "camilasanchez@outlook.com",
+                            Linkedin = "https://www.linkedin.com/in/camila34",
+                            MinimalDescription = "Chemical engineer specializing in pharmaceutical processes.",
+                            Name = "Camila",
+                            Phone = "54-1115281496",
+                            Status = true,
+                            Surname = "Sanchez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("ffd79ac4-d69f-4b74-b7c2-67e92905239a"),
+                            BirthDate = new DateOnly(1992, 5, 20),
+                            CityId = 60274,
+                            DNI = "307977818",
+                            Email = "felipelopez@outlook.com",
+                            Linkedin = "https://www.linkedin.com/in/felipe22",
+                            MinimalDescription = "Software engineer with a focus on AI and machine learning.",
+                            Name = "Felipe",
+                            Phone = "54-1115281497",
+                            Status = true,
+                            Surname = "Lopez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("81319e22-745a-45c6-9402-6d1389fd0f44"),
+                            BirthDate = new DateOnly(1968, 8, 30),
+                            CityId = 60274,
+                            DNI = "307977819",
+                            Email = "nataliaramirez@outlook.com",
+                            Linkedin = "https://www.linkedin.com/in/natalia56",
+                            MinimalDescription = "Biomedical engineer with experience in medical device design.",
+                            Name = "Natalia",
+                            Phone = "54-1115281498",
+                            Status = true,
+                            Surname = "Ramirez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("5ac8a9fd-f2bf-478b-afc0-492f8aa7bed2"),
+                            BirthDate = new DateOnly(1985, 6, 15),
+                            CityId = 60274,
+                            DNI = "307977820",
+                            Email = "albertogarcia@outlook.com",
+                            Linkedin = "https://www.linkedin.com/in/alberto12",
+                            MinimalDescription = "Civil engineer with expertise in urban development projects.",
+                            Name = "Alberto",
+                            Phone = "54-1115281499",
+                            Status = true,
+                            Surname = "Garcia"
+                        },
+                        new
+                        {
+                            UserId = new Guid("d496f336-c5ab-4648-841c-38853c4aa4f7"),
+                            BirthDate = new DateOnly(1990, 9, 25),
+                            CityId = 60274,
+                            DNI = "307977821",
+                            Email = "paoladiaz@outlook.com",
+                            Linkedin = "https://www.linkedin.com/in/paola31",
+                            MinimalDescription = "Environmental scientist with a focus on climate change mitigation.",
+                            Name = "Paola",
+                            Phone = "54-1115281500",
+                            Status = true,
+                            Surname = "Diaz"
+                        },
+                        new
+                        {
+                            UserId = new Guid("19d1cc4c-18e4-42fc-9cbd-56253b20165e"),
+                            BirthDate = new DateOnly(1976, 12, 5),
+                            CityId = 60274,
+                            DNI = "307977822",
+                            Email = "claudiaramirez@outlook.com",
+                            Linkedin = "https://www.linkedin.com/in/claudia67",
+                            MinimalDescription = "Marketing specialist with over 20 years of experience in digital campaigns.",
+                            Name = "Claudia",
+                            Phone = "54-1115281501",
+                            Status = true,
+                            Surname = "Ramirez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("c2199980-e00d-45dd-bdb6-8497cfeac41d"),
+                            BirthDate = new DateOnly(1983, 3, 10),
+                            CityId = 60274,
+                            DNI = "307977823",
+                            Email = "ricardomorales@outlook.com",
+                            Linkedin = "https://www.linkedin.com/in/ricardo44",
+                            MinimalDescription = "Mechanical engineer with a passion for automotive design.",
+                            Name = "Ricardo",
+                            Phone = "54-1115281502",
+                            Status = true,
+                            Surname = "Morales"
+                        },
+                        new
+                        {
+                            UserId = new Guid("1199aa46-b03b-4cc4-921e-62b08fd5247f"),
+                            BirthDate = new DateOnly(1978, 11, 22),
+                            CityId = 60274,
+                            DNI = "307977824",
+                            Email = "rosagonzalez@outlook.com",
+                            Linkedin = "https://www.linkedin.com/in/rosa78",
+                            MinimalDescription = "Biotechnologist with extensive research experience in genetic engineering.",
+                            Name = "Rosa",
+                            Phone = "54-1115281503",
+                            Status = true,
+                            Surname = "Gonzalez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("17923d13-ffa5-4e87-9cab-3b313d44b3ea"),
+                            BirthDate = new DateOnly(1990, 4, 12),
+                            CityId = 60274,
+                            DNI = "307977825",
+                            Email = "ignacio@outlook.com",
+                            Linkedin = "https://www.linkedin.com/in/ignacio99",
+                            MinimalDescription = "Ingeniero en sistemas con experiencia en desarrollo web y aplicaciones móviles.",
+                            Name = "Ignacio",
+                            Phone = "54-1115281504",
+                            Status = true,
+                            Surname = "Romero"
+                        },
+                        new
+                        {
+                            UserId = new Guid("31550335-200e-442a-9cca-f1d0f62c0819"),
+                            BirthDate = new DateOnly(1985, 9, 8),
+                            CityId = 60274,
+                            DNI = "307977826",
+                            Email = "andrearamirez@outlook.com",
+                            Linkedin = "https://www.linkedin.com/in/andrea43",
+                            MinimalDescription = "Contadora pública con experiencia en auditoría y consultoría financiera.",
+                            Name = "Andrea",
+                            Phone = "54-1115281505",
+                            Status = true,
+                            Surname = "Ramirez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("2301041e-8c28-4711-b70d-9daed300ae21"),
+                            BirthDate = new DateOnly(1988, 12, 30),
+                            CityId = 60274,
+                            DNI = "307977827",
+                            Email = "victorgarcia@outlook.com",
+                            Linkedin = "https://www.linkedin.com/in/victor88",
+                            MinimalDescription = "Licenciado en administración de empresas con especialización en gestión de proyectos.",
+                            Name = "Victor",
+                            Phone = "54-1115281506",
+                            Status = true,
+                            Surname = "Garcia"
+                        },
+                        new
+                        {
+                            UserId = new Guid("37991d47-ddc6-400b-a3fe-b17b998a76b2"),
+                            BirthDate = new DateOnly(1983, 7, 18),
+                            CityId = 60274,
+                            DNI = "307977828",
+                            Email = "lorenadiaz@outlook.com",
+                            Linkedin = "https://www.linkedin.com/in/lorena56",
+                            MinimalDescription = "Diseñadora gráfica con experiencia en branding y diseño de interfaces.",
+                            Name = "Lorena",
+                            Phone = "54-1115281507",
+                            Status = true,
+                            Surname = "Diaz"
+                        },
+                        new
+                        {
+                            UserId = new Guid("97767fcd-f146-4e88-87dd-f1f1806dec49"),
+                            BirthDate = new DateOnly(1980, 5, 29),
+                            CityId = 60274,
+                            DNI = "307977829",
+                            Email = "carloshernandez@outlook.com",
+                            Linkedin = "https://www.linkedin.com/in/carlos77",
+                            MinimalDescription = "Ingeniero industrial con experiencia en gestión de la cadena de suministro.",
+                            Name = "Carlos",
+                            Phone = "54-1115281508",
+                            Status = true,
+                            Surname = "Hernandez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("2641ba50-9bdf-4107-80e8-a723e7feb06e"),
+                            BirthDate = new DateOnly(1987, 11, 25),
+                            CityId = 60274,
+                            DNI = "307977830",
+                            Email = "miriamlopez@outlook.com",
+                            Linkedin = "https://www.linkedin.com/in/miriam12",
+                            MinimalDescription = "Psicóloga clínica con experiencia en terapia cognitivo-conductual.",
+                            Name = "Miriam",
+                            Phone = "54-1115281509",
+                            Status = true,
+                            Surname = "Lopez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("0497ee14-d660-49a1-916d-8d2391ba6cf2"),
+                            BirthDate = new DateOnly(1982, 8, 17),
+                            CityId = 60274,
+                            DNI = "307977831",
+                            Email = "marcosperez@outlook.com",
+                            Linkedin = "https://www.linkedin.com/in/marcos43",
+                            MinimalDescription = "Abogado especializado en derecho penal y procesal penal.",
+                            Name = "Marcos",
+                            Phone = "54-1115281510",
+                            Status = true,
+                            Surname = "Perez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("2d624f65-a74a-4011-a187-862f58df7885"),
+                            BirthDate = new DateOnly(1989, 3, 7),
+                            CityId = 60274,
+                            DNI = "307977832",
+                            Email = "patriciaflores@outlook.com",
+                            Linkedin = "https://www.linkedin.com/in/patricia99",
+                            MinimalDescription = "Enfermera con experiencia en cuidados intensivos y emergencias médicas.",
+                            Name = "Patricia",
+                            Phone = "54-1115281511",
+                            Status = true,
+                            Surname = "Flores"
+                        },
+                        new
+                        {
+                            UserId = new Guid("52432a25-6a28-480e-ab5c-17fd71be2ffb"),
+                            BirthDate = new DateOnly(1984, 5, 12),
+                            CityId = 60274,
+                            DNI = "307977833",
+                            Email = "julianagonzalez@yahoo.com",
+                            Linkedin = "https://www.linkedin.com/in/juliana78",
+                            MinimalDescription = "Profesora de educación primaria con enfoque en enseñanza de matemáticas.",
+                            Name = "Juliana",
+                            Phone = "54-1115281512",
+                            Status = true,
+                            Surname = "Gonzalez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("f102e342-a664-4b43-bcdb-b1c6945bf241"),
+                            BirthDate = new DateOnly(1980, 10, 3),
+                            CityId = 60274,
+                            DNI = "307977834",
+                            Email = "robertolopez@yahoo.com",
+                            Linkedin = "https://www.linkedin.com/in/roberto45",
+                            MinimalDescription = "Ingeniero civil con experiencia en diseño y supervisión de obras públicas.",
+                            Name = "Roberto",
+                            Phone = "54-1115281513",
+                            Status = true,
+                            Surname = "Lopez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("31105ee2-5a05-4bcf-bff7-f07be401442e"),
+                            BirthDate = new DateOnly(1990, 4, 18),
+                            CityId = 60274,
+                            DNI = "307977835",
+                            Email = "maria33@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/maria33",
+                            MinimalDescription = "Apasionada por la innovación y el desarrollo de software.",
+                            Name = "Maria",
+                            Phone = "54-1115281514",
+                            Status = true,
+                            Surname = "Bogado"
+                        },
+                        new
+                        {
+                            UserId = new Guid("80120fd9-ade7-4cd0-9dda-7b733e02d7cd"),
+                            BirthDate = new DateOnly(1985, 10, 29),
+                            CityId = 60274,
+                            DNI = "307977836",
+                            Email = "carlos22@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/carlos22",
+                            MinimalDescription = "Apasionado por la tecnología, con experiencia en desarrollo web.",
+                            Name = "Carlos",
+                            Phone = "54-1115281515",
+                            Status = true,
+                            Surname = "Pérez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("0e5a9aab-eb68-4ca9-8b80-ea7bef076946"),
+                            BirthDate = new DateOnly(1982, 12, 8),
+                            CityId = 60274,
+                            DNI = "307977837",
+                            Email = "laura11@yahoo.com",
+                            Linkedin = "https://www.linkedin.com/in/laura11",
+                            MinimalDescription = "Desarrolladora de software con pasión por la innovación tecnológica.",
+                            Name = "Laura",
+                            Phone = "54-1115281516",
+                            Status = true,
+                            Surname = "González"
+                        },
+                        new
+                        {
+                            UserId = new Guid("0b450794-1b65-4d42-8df7-05b57b970454"),
+                            BirthDate = new DateOnly(1995, 7, 3),
+                            CityId = 60274,
+                            DNI = "307977838",
+                            Email = "jose99@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/jose99",
+                            MinimalDescription = "Apasionado por la programación y la resolución de problemas.",
+                            Name = "Jose",
+                            Phone = "54-1115281517",
+                            Status = true,
+                            Surname = "Martínez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("87dbaf90-f343-423e-9f14-e124fd145730"),
+                            BirthDate = new DateOnly(1988, 5, 21),
+                            CityId = 60274,
+                            DNI = "307977839",
+                            Email = "ana88@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/ana88",
+                            MinimalDescription = "Desarrolladora web con experiencia en proyectos innovadores.",
+                            Name = "Ana",
+                            Phone = "54-1115281518",
+                            Status = true,
+                            Surname = "Rodríguez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("dd39eee3-6b17-4b39-95e0-075ad1b704bd"),
+                            BirthDate = new DateOnly(1980, 9, 12),
+                            CityId = 60274,
+                            DNI = "307977840",
+                            Email = "pedro77@yahoo.com",
+                            Linkedin = "https://www.linkedin.com/in/pedro77",
+                            MinimalDescription = "Desarrollador de software con habilidades en diseño de interfaces.",
+                            Name = "Pedro",
+                            Phone = "54-1115281519",
+                            Status = true,
+                            Surname = "Gómez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("3a76ac51-89f5-4b7f-a2fb-cca12abc04e9"),
+                            BirthDate = new DateOnly(1977, 5, 7),
+                            CityId = 60274,
+                            DNI = "307977841",
+                            Email = "isabel66@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/isabel66",
+                            MinimalDescription = "Ingeniera de software con experiencia en desarrollo ágil.",
+                            Name = "Isabel",
+                            Phone = "54-1115281520",
+                            Status = true,
+                            Surname = "García"
+                        },
+                        new
+                        {
+                            UserId = new Guid("ecf7b85e-8c3c-47ee-a80d-b0b360512c16"),
+                            BirthDate = new DateOnly(1992, 11, 30),
+                            CityId = 60274,
+                            DNI = "307977842",
+                            Email = "david55@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/david55",
+                            MinimalDescription = "Desarrollador full-stack con experiencia en tecnologías modernas.",
+                            Name = "David",
+                            Phone = "54-1115281521",
+                            Status = true,
+                            Surname = "Gutiérrez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("866d732a-ab7e-42b8-aa7d-3bfb6e1477da"),
+                            BirthDate = new DateOnly(1988, 3, 18),
+                            CityId = 60274,
+                            DNI = "307977843",
+                            Email = "monica44@yahoo.com",
+                            Linkedin = "https://www.linkedin.com/in/monica44",
+                            MinimalDescription = "Ingeniera de software con experiencia en análisis de datos.",
+                            Name = "Monica",
+                            Phone = "54-1115281522",
+                            Status = true,
+                            Surname = "Martínez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("20b9c66b-7518-4cbc-aa39-f8bf41f0a423"),
+                            BirthDate = new DateOnly(1985, 7, 25),
+                            CityId = 60274,
+                            DNI = "307977844",
+                            Email = "fernando33@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/fernando33",
+                            MinimalDescription = "Desarrollador web especializado en aplicaciones móviles.",
+                            Name = "Fernando",
+                            Phone = "54-1115281523",
+                            Status = true,
+                            Surname = "López"
+                        },
+                        new
+                        {
+                            UserId = new Guid("1cdb46ef-e0a5-427c-8409-9a58cde54ce9"),
+                            BirthDate = new DateOnly(1990, 12, 3),
+                            CityId = 60274,
+                            DNI = "307977845",
+                            Email = "luis22@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/luis22",
+                            MinimalDescription = "Ingeniero de software apasionado por la inteligencia artificial.",
+                            Name = "Luis",
+                            Phone = "54-1115281524",
+                            Status = true,
+                            Surname = "Martínez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("3f059c7a-b764-49b9-bf1d-e5e2359e0cf6"),
+                            BirthDate = new DateOnly(1985, 6, 17),
+                            CityId = 60274,
+                            DNI = "307977846",
+                            Email = "carmen11@yahoo.com",
+                            Linkedin = "https://www.linkedin.com/in/carmen11",
+                            MinimalDescription = "Desarrolladora de software con experiencia en sistemas distribuidos.",
+                            Name = "Carmen",
+                            Phone = "54-1115281525",
+                            Status = true,
+                            Surname = "Sánchez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("a748c5cb-884e-46a4-b1c3-1bd4a4c2d7c7"),
+                            BirthDate = new DateOnly(1989, 8, 25),
+                            CityId = 60274,
+                            DNI = "307977847",
+                            Email = "pablo99@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/pablo99",
+                            MinimalDescription = "Desarrollador de software con experiencia en proyectos de e-commerce.",
+                            Name = "Pablo",
+                            Phone = "54-1115281526",
+                            Status = true,
+                            Surname = "González"
+                        },
+                        new
+                        {
+                            UserId = new Guid("b7d7964a-3f03-4930-a23d-59d90711f002"),
+                            BirthDate = new DateOnly(1983, 4, 9),
+                            CityId = 60274,
+                            DNI = "307977848",
+                            Email = "elena88@hotmail.com",
+                            Linkedin = "https://www.linkedin.com/in/elena88",
+                            MinimalDescription = "Desarrolladora de software con experiencia en front-end.",
+                            Name = "Elena",
+                            Phone = "54-1115281527",
+                            Status = true,
+                            Surname = "Gómez"
+                        },
+                        new
+                        {
+                            UserId = new Guid("153ff2f4-ccb7-43b1-b163-8f995adb1d13"),
+                            BirthDate = new DateOnly(1987, 11, 21),
+                            CityId = 60274,
+                            DNI = "307977849",
+                            Email = "diego77@yahoo.com",
+                            Linkedin = "https://www.linkedin.com/in/diego77",
+                            MinimalDescription = "Ingeniero de software especializado en seguridad informática.",
+                            Name = "Diego",
+                            Phone = "54-1115281528",
+                            Status = true,
+                            Surname = "Hernández"
+                        },
+                        new
+                        {
+                            UserId = new Guid("7c5891f9-9fac-4dbf-9afd-2c9e01759e20"),
+                            BirthDate = new DateOnly(1992, 5, 8),
+                            CityId = 60274,
+                            DNI = "307977850",
+                            Email = "alejandra66@gmail.com",
+                            Linkedin = "https://www.linkedin.com/in/alejandra66",
+                            MinimalDescription = "Desarrolladora full-stack con experiencia en aplicaciones web.",
+                            Name = "Alejandra",
+                            Phone = "54-1115281529",
+                            Status = true,
+                            Surname = "García"
+                        });
                 });
 
             modelBuilder.Entity("Domain.Entities.City", b =>
@@ -12584,14 +13718,11 @@ namespace Infraestructure.Migrations
 
             modelBuilder.Entity("Domain.Entities.Company", b =>
                 {
-                    b.Property<int>("CompanyId")
+                    b.Property<Guid>("CompanyId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CompanyId"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Address")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
@@ -12615,10 +13746,23 @@ namespace Infraestructure.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.Property<int>("Founded")
+                        .HasColumnType("int");
+
+                    b.Property<string>("FrontPage")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("Logo")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("MinimalDescription")
                         .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
@@ -12631,22 +13775,381 @@ namespace Infraestructure.Migrations
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Website")
                         .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
+                    b.Property<int>("WorkerQuantity")
+                        .HasColumnType("int");
+
                     b.HasKey("CompanyId");
 
                     b.HasIndex("CityId");
 
-                    b.HasIndex("UserId")
+                    b.HasIndex("CompanyId")
                         .IsUnique();
 
                     b.ToTable("Company", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            CompanyId = new Guid("ecdb5eda-1cee-4e68-b100-160203158d57"),
+                            BusinessName = "Accenture",
+                            BusinessSector = "Business Consulting and Services",
+                            CUIT = "203454354455",
+                            CityId = 60763,
+                            Description = "Accenture is a leading global professional services company that helps the world’s leading businesses, governments and other organizations build their digital core, optimize their operations, accelerate revenue growth and enhance citizen services—creating tangible value at speed and scale.\r\n\r\nWe are a talent and innovation-led company serving clients in more than 120 countries. Technology is at the core of change today, and we are one of the world’s leaders in helping drive that change, with strong ecosystem relationships. We combine our strength in technology and leadership in cloud, data and AI with unmatched industry experience, functional expertise and global delivery capability. We are uniquely able to deliver tangible outcomes because of our broad range of services, solutions and assets across Strategy & Consulting, Technology, Operations, Industry X and Song.\r\n\r\nThese capabilities, together with our culture of shared success and commitment to creating 360° value, enable us to help our clients reinvent and build trusted, lasting relationships. We measure our success by the 360° value we create for our clients, each other, our shareholders, partners and communities.",
+                            Founded = 1989,
+                            FrontPage = "https://thebrandhopper.com/wp-content/uploads/2020/11/Accenture-PowerPoint-Presentation-Slide-Examples-1.jpg",
+                            Logo = "https://media.licdn.com/dms/image/D4E0BAQGs35w9Fb-nnw/company-logo_200_200/0/1717212681869/accenture_logo?e=1725494400&v=beta&t=awvmpU6rBmgQT8hES8WXnH5oJY8xrUZS2ybi7cSPK8Y",
+                            MinimalDescription = "Transformamos los desafíos de nuestros clientes con soluciones innovadoras",
+                            Phone = "54-1132394831",
+                            Status = true,
+                            Website = "https://www.accenture.com",
+                            WorkerQuantity = 10000
+                        },
+                        new
+                        {
+                            CompanyId = new Guid("d51252c3-6e21-4ffc-aab3-f4bda791a574"),
+                            BusinessName = "Mercado Libre",
+                            BusinessSector = "Internet Publishing",
+                            CUIT = "203444754455",
+                            CityId = 60763,
+                            Description = "Founded in 1999 and headquartered in Buenos Aires, Argentina, Mercado Libre is Latin America’s leading e-commerce technology company.  Through its primary platforms, MercadoLibre.com and MercadoPago.com, it provides solutions to individuals and companies buying, selling, advertising, and paying for goods online.    \r\nMercado Libe serves millions of users and creates a market for a wide variety of goods and services in an easy, safe and efficient way.  \r\nMercadoLibre maintains a leadership position in 18 Latin American countries.  The Company listed on Nasdaq (NASDAQ: MELI) following its initial public offering in 2007.",
+                            Founded = 2001,
+                            FrontPage = "https://static.eldiario.es/clip/b72e0e08-837c-441b-a198-89e857a50b40_16-9-discover-aspect-ratio_default_0.jpg",
+                            Logo = "https://media.licdn.com/dms/image/D4D0BAQGAMFztKl2_oA/company-logo_200_200/0/1711465281298/mercadolibre_logo?e=1725494400&v=beta&t=wZGETBiUWUr7U1cGXRs7KDl6hwtW_EBRI5D5Rbqtum0",
+                            MinimalDescription = "Co-creando uno de los mejores lugares para trabajar del mundo",
+                            Phone = "54-1134596831",
+                            Status = true,
+                            Website = "https://careers-meli.mercadolibre.com",
+                            WorkerQuantity = 10000
+                        },
+                        new
+                        {
+                            CompanyId = new Guid("925b2ab6-5a03-40a7-891e-7bb594086e61"),
+                            BusinessName = "Enta Consulting",
+                            BusinessSector = "IT Services and IT Consulting",
+                            CUIT = "202254354455",
+                            CityId = 60028,
+                            Description = "Enta Consulting es una empresa especializada en la creación de soluciones de automatización de procesos de negocios y desarrollo de software aplicando combinaciones únicas de tecnología, metodologías e información. Potenciamos la eficiencia de nuestros clientes simplificando su acceso a las oportunidades que ofrece el mundo digital. Somos especialistas en RPA (Robotic Process Automation)  \r\n\r\nEnta está formado por un equipo de personas que cada día aportan su pasión, conocimiento y experiencia para resolver las necesidades que nos plantean nuestros clientes. Estamos orgullosos de poder decir que trabajamos en un ambiente donde cada uno puede ser quien es, donde hay aprendizaje continuo, oportunidades de desarrollo, y donde se destaca la colaboración entre todos los colegas a lo largo de la organización. Esto nos llevó a alcanzar, a finales de 2022, la certificación Great Place To Work como un gran lugar para trabajar en Argentina.",
+                            Founded = 2011,
+                            FrontPage = "https://www.entaconsulting.com/wp-content/uploads/ENTA-BLOG-34-1080x675.png",
+                            Logo = "https://pbs.twimg.com/profile_images/875782274809294848/MKvtWStg_400x400.jpg",
+                            MinimalDescription = "Potenciamos la eficiencia aplicando nuevas tecnologías para optimizar los procesos y la información de su empresa",
+                            Phone = "54-1152540027",
+                            Status = true,
+                            Website = "http://www.entaconsulting.com",
+                            WorkerQuantity = 500
+                        },
+                        new
+                        {
+                            CompanyId = new Guid("9d8b9e84-33a7-4c28-a6c0-5941a68f1968"),
+                            BusinessName = "ADN - Recursos Humanos",
+                            BusinessSector = "Human Resources Services",
+                            CUIT = "202044354455",
+                            CityId = 60490,
+                            Description = "ADN - BUSCAMOS EL PERSONAL PARA SU EMPRESA\r\n\r\n- Búsqueda y Selección de Personal - Psicotécnicos - Liquidación de Sueldos - Outsourcing. \r\n- Auditoría / Consultoría- Capacitación.\r\n\r\nADN - Recursos Humanos - Somos La Consultora especializada en Recursos Humanos.\r\n\r\n- No cobramos anticipo.\r\n- No pedimos exclusividad.\r\n- Si se cancela la búsqueda, no cobramos NADA.\r\n- El servicio incluye una garantía.\r\n. \r\n- Más de 80.000 Currículums, actualizados permanentemente.\r\n- Trabajamos bajo estándares internacionales de calidad, alineados a los requerimientos de la norma SGC ISO 9001:2008 (sistema de gestión de la calidad).",
+                            Founded = 2014,
+                            FrontPage = "https://media-exp2.licdn.com/dms/image/C4D1BAQFSKaQZH-v7LA/company-background_10000/0/1542331321131?e=2147483647&v=beta&t=a3Pg2kHnQF5a7WHQcwUFyr5TpynnIeVaIyfrCr-oKbw",
+                            Logo = "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/186ea7f184211b827e377b130fb08c67",
+                            MinimalDescription = "Buscamos tu GENte",
+                            Phone = "54-1152541027",
+                            Status = true,
+                            Website = "http://www.adnrh.com.ar",
+                            WorkerQuantity = 200
+                        },
+                        new
+                        {
+                            CompanyId = new Guid("09260ec0-0368-4da8-80d5-6e8b9c574920"),
+                            BusinessName = "QUICKPASS - Tiempo y Asistencia",
+                            BusinessSector = "IT Services and IT Consulting",
+                            CUIT = "203354354455",
+                            CityId = 60441,
+                            Description = "Somos una empresa que brinda soluciones de identificación y reconocimiento de personas. Brindamos soluciones para la administración de la asistencia y el tiempo del personal mediante reconocimiento biométrico. Nuestras soluciones están especialmente diseñadas para cadenas de Retail, Pymes y grandes empresas con personal disperso que requieran la información consolidada y centralizada.\r\n\r\nCon más de 10 años de experiencia en el mercado somos la empresa líder en nuestro rubro. Hoy en día trabajamos con más de 300 clientes en Argentina, Chile, Colombia y México.\r\n\r\nQuickPass, empresa proveedora de soluciones IT que incorpora la tecnología Biometrica para minimizar el fraude y maximizar el control en la identificación de los individuos.\r\n\r\nUsos: Control Horario, Control de Accesos, Autorización de transacciones, Reconocimiento de Personas, Sistema de Fidelización, Comedores y mucho mas.\r\n\r\nSpecialties : Time & Attendance, Access Control, Transaction Authorization, Self-service, Customer Loyalty, and more.",
+                            Founded = 2011,
+                            FrontPage = "https://eu-images.contentstack.com/v3/assets/blt0bbd1b20253587c0/bltdf11df31e8399c48/651407a3b5e3e2567bb533c1/GettyImages-cybersecurity1400359666.png?width=850&auto=webp&quality=95&format=jpg&disable=upscale",
+                            Logo = "https://media.licdn.com/dms/image/D560BAQFNEnZ9T3JTmA/company-logo_200_200/0/1689863298510/quickpass_logo?e=1725494400&v=beta&t=vyjvfV67ygo-smaFzK58153ShIjSWoWcDR8HPSzdNfw",
+                            MinimalDescription = "Ayudamos a las empresas a gestionar el Tiempo, Asistencia y Novedades de los colaboradores.",
+                            Phone = "54-1177003233",
+                            Status = true,
+                            Website = "https://quickpassweb.com",
+                            WorkerQuantity = 50
+                        },
+                        new
+                        {
+                            CompanyId = new Guid("a3fb7e92-6b31-4630-835c-3ea7d11e4306"),
+                            BusinessName = "Data108",
+                            BusinessSector = "Software Development",
+                            CUIT = "202464354455",
+                            CityId = 60434,
+                            Description = "Data108 is a full-service digital agency located in South Florida.\r\n\r\nWe are a team of professional designers, developers, marketers and IT specialists combining our knowledge and expertise to create exceptional designs and strategies, tailored to your business’s needs and requirements.\r\n\r\nTell us about your goal and we’ll show you how you can achieve it. No matter what your project is, we’d love to be involved.",
+                            Founded = 2015,
+                            FrontPage = "https://www.itrixbox.com/storage/portada-software-esp.jpg",
+                            Logo = "https://media.licdn.com/dms/image/D4E0BAQHxTsTuH2BBGg/company-logo_200_200/0/1695671742793/data108_logo?e=1725494400&v=beta&t=Eh5WgQxCPa826LZ-VlhkEVmoQ9CFCZ62FthcuWqsX8c",
+                            MinimalDescription = "We offer WordPress, Software Development, Web Development, Mobile Development, Desktop Development, Automation & API",
+                            Phone = "54-1136932646",
+                            Status = true,
+                            Website = "https://data108.com",
+                            WorkerQuantity = 10
+                        },
+                        new
+                        {
+                            CompanyId = new Guid("02bdfba1-5d7d-46f8-89c7-5d02a5fc7655"),
+                            BusinessName = "Accusys Technology",
+                            BusinessSector = "IT Services and IT Consulting",
+                            CUIT = "202154354455",
+                            CityId = 60861,
+                            Description = "Accusys Technology, es  líder en el desarrollo y mantenimiento de aplicaciones de software para la innovación, gestión y mayor productividad de los procesos de negocios.\r\nLa compañía, posee  amplia experiencia en el área de servicios financieros en América Latina, con un fuerte foco en el mercado de Banca y Seguros. \r\n\r\nAccusys Technology cuenta con una amplia gama de productos y servicios informáticos, cuyos diseños permiten satisfacer las distintas necesidades y  requerimientos corporativos.\r\nEntre sus principales productos se encuentran el Core Bancario COBIS,  COE para el Control Optimo de Efectivo, y  para la planificación y ejecución de procesos el producto AST PROBATCH.\r\n\r\nLa  empresa cuenta con un equipo de más de 300 profesionales altamente capacitados, que contribuyen con su trabajo y sus competencias profesionales a la mejora continua e innovación en las organizaciones.  \r\nAccusys Technology cuenta con filiales en Venezuela, Bolivia, Estados Unidos y Argentina, la empresa posee un Centro de desarrollo en Buenos Aires.\r\n\r\nAccusys Technology brinda los siguientes servicios:\r\n\r\n•	Consultoría: brinda consultoría en diseño, desarrollo e  implantación de Soluciones de software, como también consultoría en procesos.\r\n\r\n•	Mantenimiento Aplicaciones: Mantenimiento Correctivo, Normativo, Evolutivo/Proyecto, para soluciones de misión critica. Soporte 7 x 24.\r\n\r\n•	Testing: Probadas Metodologías para la verificación de la calidad del software e identificación de fallos en su implementación, calidad, o usabilidad.\r\n\r\n•	Software Factory: la compañía desarrolla aplicaciones específicas con alta consistencia en la calidad del código.",
+                            Founded = 2001,
+                            FrontPage = "https://media-exp1.licdn.com/dms/image/C561BAQFcz2R8heFjxw/company-background_10000/0/1639489687528?e=2159024400&v=beta&t=Q5GACpkRTUUpb7ec_cSlS6J2xfgqkonhx76xSV4gEwY",
+                            Logo = "https://media.licdn.com/dms/image/C4D0BAQGYiIk7JYRxLg/company-logo_200_200/0/1631332444066?e=2147483647&v=beta&t=or7qa3YYF2QvfIBAr6UJduaW4fA2oyfpuoYavXcls6A",
+                            MinimalDescription = "Transformamos los desafíos de nuestros clientes con soluciones innovadoras.",
+                            Phone = "54-1152540427",
+                            Status = true,
+                            Website = "http://www.accusys.com.ar",
+                            WorkerQuantity = 500
+                        },
+                        new
+                        {
+                            CompanyId = new Guid("be76d6cb-0532-4dd5-8e4e-f944faf0106b"),
+                            BusinessName = "Sistemas Activos SRL",
+                            BusinessSector = "IT Services and IT Consulting",
+                            CUIT = "201254354455",
+                            CityId = 60861,
+                            Description = "Sistemas Activos es una empresa de desarrollo de software, especializada en el sector financiero. Cuenta con importante experiencia en proyectos de desarrollo de software, en múltiples  plataformas para diferentes industrias y se especializa en análisis, diseño y construcción de sistemas para banca y seguros. En el transcurso de estos años conformamos un equipo multidiciplinario de jóvenes profesionales con los que realizamos las siguientes actividades: Fábrica de Software, multiplataforma | Outsourcing de análisis, diseño y construcción de software a medida | Outsourcing de mantenimiento de aplicaciones | Desarrollo de software “llave en mano” con garantía de funcionamiento y calidad | Diseño y Construcción de Manuales Técnicos y de Usuario | Implementación de aplicaciones | Reclutamiento y Selección de Personal para contratación externa | Servicio de Capacitación con planificación de contenidos a medida.",
+                            Founded = 2002,
+                            FrontPage = "https://img.freepik.com/foto-gratis/concepto-sistema-gestion-empresarial-activos-digitales_53876-121226.jpg?w=1380&t=st=1690433056~exp=1690433656~hmac=57e506ed6a2753cd7cf6be67608bc1940f7ab526f107a08f337381abbb3da052",
+                            Logo = "https://www.empleosit.com.ar/files/pictures/sistemas-activos.png",
+                            MinimalDescription = "Potenciamos la eficiencia aplicando nuevas tecnologías para optimizar los procesos y la información de su empresa",
+                            Phone = "54-1151540027",
+                            Status = true,
+                            Website = "http://www.sistemasactivos.com",
+                            WorkerQuantity = 200
+                        },
+                        new
+                        {
+                            CompanyId = new Guid("ac270f24-3f1f-43a6-b291-1f0ce4489bfd"),
+                            BusinessName = "Ingematica S.A.",
+                            BusinessSector = "IT Services and IT Consulting",
+                            CUIT = "201344354455",
+                            CityId = 60861,
+                            Description = "Technological company dedicated to the personalized application development for 25 years. In their customer relationship, Ingematica commits itself as a strategic partner by understanding the problems and opportunities posed by businesses, so that it can provide technology solutions that not only meet the requirements but also add value to the project. Its business not only comprises the systems and technology areas but goes beyond that and takes into account the core of the business, therefore creating value.\r\n\r\nIngemática has gained wide experience in technology solutions in the financial, commercial, storage and distribution, e_commerce fields, among others.\r\n\r\nIn this way, Ingemática has provided overall advice in the information technology area, from the strategic planning to the realization of the project for the implementation of improvements in commercial, administrative and process fields. The company has chosen the most suitable technology to use in networks and databases, as well as having tested and planned hardware migrations, primary and intermediate software and applications installation\r\n\r\nLike Microsoft’s Gold Partner in e-commerce solutions, the company has developed multiple on-line sites, Web services and integration services that include a wide range of industries and sectors of the market.",
+                            Founded = 1983,
+                            FrontPage = "https://info.mavtechglobal.com/hubfs/07.23_MAV-CFE_IIoT.jpg",
+                            Logo = "https://th.bing.com/th/id/OIP.e_KR8q6Eov7usmPt0Rmc_QAAAA?rs=1&pid=ImgDetMain",
+                            MinimalDescription = "Desarrollamos soluciones tecnológicas innovadoras que agreguen valor a nuestros clientes",
+                            Phone = "54-1151540447",
+                            Status = true,
+                            Website = "http://www.ingematica.net",
+                            WorkerQuantity = 200
+                        },
+                        new
+                        {
+                            CompanyId = new Guid("2a913313-dc4c-4f93-a1be-3fc5568e00b1"),
+                            BusinessName = "Axoft",
+                            BusinessSector = "Software Development",
+                            CUIT = "201256654455",
+                            CityId = 60091,
+                            Description = "Somos la empresa líder del mercado ERP en Argentina.  Desarrollamos Software para empresas, estudios contables , comercios y gastronomía.  Junto a nuestros colaboradores, partners, clientes, estudiantes y graduados de Tango Univerisity, formamos una enorme comunidad que genera sinergia y colaboración en todo lo que emprendemos. #LaRebeldíaDeCrecer",
+                            Founded = 1988,
+                            FrontPage = "https://th.bing.com/th/id/OIP.cdUAE2drVxaH2PBRnFRotAHaD3?rs=1&pid=ImgDetMain",
+                            Logo = "https://media.licdn.com/dms/image/C4E0BAQFqZnda3B2tSg/company-logo_200_200/0/1631354439249?e=1725494400&v=beta&t=9uiJKcFhfAClRoh--djZSIZyDzr7j1O_1vEjOhkiMcY",
+                            MinimalDescription = "Potenciamos la eficiencia aplicando nuevas tecnologías para optimizar los procesos y la información de su empresa",
+                            Phone = "54-1141540027",
+                            Status = true,
+                            Website = "http://www.axoft.com",
+                            WorkerQuantity = 500
+                        },
+                        new
+                        {
+                            CompanyId = new Guid("f42be566-1cc3-4863-9cf1-315828169000"),
+                            BusinessName = "Softtek",
+                            BusinessSector = "IT Services and IT Consulting",
+                            CUIT = "201356654455",
+                            CityId = 60861,
+                            Description = "Founded in 1982 by a small group of entrepreneurs, Softtek started out in Mexico providing local IT services, and today is a global leader in next-generation digital solutions. The first company to introduce the Nearshore model, Softtek helps Global 2000 organizations build their digital capabilities constantly and seamlessly, from ideation and development to execution and evolution. Its entrepreneurial drive spans 20+ countries and more than 15,000 talented professionals.\r\n\r\nFor more information on what we do, who we are, and career opportunities, visit www.softtek.com / Follow us on Instagram (@softtekofficial), on Twitter (@Softtek), and be our fan on Facebook www.facebook.com/softtek.",
+                            Founded = 1982,
+                            FrontPage = "https://www.softtek.com/hubfs/Softtek/images/Media%20Resources/Softtek_MR01.jpg",
+                            Logo = "https://media.licdn.com/dms/image/D560BAQGPNg8TewdnIg/company-logo_200_200/0/1699028835508/softtek_logo?e=1725494400&v=beta&t=SYiZ5XhA6cStX3ZJB1lEFWPQ00bsL2wjMnBhYmsJAUg",
+                            MinimalDescription = "...creating value through technology.",
+                            Phone = "54-1141540027",
+                            Status = true,
+                            Website = "http://www.softtek.com",
+                            WorkerQuantity = 10000
+                        },
+                        new
+                        {
+                            CompanyId = new Guid("0d4ad714-56a4-4bfc-b4b4-d776cfd51fd8"),
+                            BusinessName = "Telecom Argentina",
+                            BusinessSector = "Telecommunications",
+                            CUIT = "201246654455",
+                            CityId = 60427,
+                            Description = "We are Telecom Argentina, a connectivity solutions and entertainment company with over 23,000 collaborators throughout the country. We transform the digital experience of our over 28 million customers providing them a secure, flexible and dynamic service on all of their devices, with high speed mobile and fixed connections, and a live and on-demand contents platform which includes series, films, gaming, music and TV shows. Through our commercial brands Personal, Fibertel, Flow and Telecom | Fibercorp, we provide services such as fixed and mobile telephony, data transmission, pay TV and Internet, for individuals, companies and institutions throughout the country. We are also present in Paraguay, providing mobile service, and in Uruguay, with pay TV.\r\nWe are leaders in an industry that has become one of the pillars for the social and economic development of our country, and we are active participants in the community with sustainable practices and initiatives that add value to the use of technology as a tool for training and social inclusion.\r\n\r\n",
+                            Founded = 1990,
+                            FrontPage = "https://www.radiosudamericana.com/notix/multimedia/imagenes/fotos/2021-10-05/936513.jpg",
+                            Logo = "https://media.licdn.com/dms/image/C560BAQFprODE31hkZw/company-logo_200_200/0/1633362509709/telecom_argentina_logo?e=1725494400&v=beta&t=SzsNY0t_wJt9VZ8gfJ8SOIgUsxGnOSpehBseYaBpg9Q",
+                            MinimalDescription = "Potenciamos la eficiencia aplicando nuevas tecnologías para optimizar los procesos y la información de su empresa",
+                            Phone = "54-1141560027",
+                            Status = true,
+                            Website = "https://institucional.telecom.com.ar",
+                            WorkerQuantity = 10000
+                        },
+                        new
+                        {
+                            CompanyId = new Guid("d4caf327-f110-4ab6-9305-c064a2071dc5"),
+                            BusinessName = "Personal Argentina",
+                            BusinessSector = "Telecommunications",
+                            CUIT = "201256754455",
+                            CityId = 60427,
+                            Description = "Personal es el servicio de conectividad total, fija y móvil, de Telecom Argentina. Con la red 4G/LTE más rápida y la primera red 5G del país, las redes FTTH (fibra óptica al hogar) y HFC (red que incorpora fibra óptica y cable coaxial), brinda una experiencia de conectividad sin fronteras, dentro y fuera del hogar, para estudiar, trabajar o entretenerse, desde cualquier dispositivo, momento y lugar.  Ofrece velocidades de navegación que llegan los 300 y 1000 megas, y con su red 4G alcanza a más de 1.900 localidades en todas las provincias.",
+                            Founded = 1988,
+                            FrontPage = "https://argentinaesim.com/wp-content/uploads/sites/39/2023/11/26-1024x683.jpg",
+                            Logo = "https://media.licdn.com/dms/image/C4D0BAQEPykopfVrlFA/company-logo_200_200/0/1636481278317/personal_argentina_logo?e=1725494400&v=beta&t=630rgenJQ6Ram88lQa3lLngMBtWmGjtth8Oav5pEC28",
+                            MinimalDescription = "Personal es el servicio de conectividad total, fija y móvil, de Telecom Argentina",
+                            Phone = "54-1141540027",
+                            Status = true,
+                            Website = "https://www.personal.com.ar",
+                            WorkerQuantity = 10000
+                        },
+                        new
+                        {
+                            CompanyId = new Guid("874fb32f-0ddd-4b5f-ac31-f2f11b66e098"),
+                            BusinessName = "Paypal",
+                            BusinessSector = "Software Development",
+                            CUIT = "201256654455",
+                            CityId = 60412,
+                            Description = "We're championing possibilities for all by making money fast, easy, and more enjoyable. Our hope is unlock opportunities for people in their everyday lives and empower the millions of people and businesses around the world who trust, rely, and use PayPal every day. \r\n\r\nFor support, visit the PayPal Help Center. https://payp.al/help\r\n\r\nFor employment opportunities, check out our job openings in the 'Jobs' tab. We're an equal opportunity employer that welcomes diversity, and offer generous benefits to help you thrive at work and in your free time.",
+                            Founded = 1995,
+                            FrontPage = "https://tynmagazine.com/wp-content/uploads/sites/3/2015/08/paypal-900x620.jpg",
+                            Logo = "https://media.licdn.com/dms/image/D560BAQEBi1qAFwOeEg/company-logo_200_200/0/1705414740395/paypal_logo?e=1725494400&v=beta&t=JFRCXFAAq6f5W-4MvFc3EAbfFCsUq7ozxCWppUliKp8",
+                            MinimalDescription = "We're championing possibilities for all by making money fast, easy, and more enjoyable",
+                            Phone = "54-1141540027",
+                            Status = true,
+                            Website = "https://www.paypal.com/us/home",
+                            WorkerQuantity = 10000
+                        },
+                        new
+                        {
+                            CompanyId = new Guid("57168621-b0dd-4fe4-a20e-489171d70a5d"),
+                            BusinessName = "EY",
+                            BusinessSector = "Professional Services",
+                            CUIT = "201256654455",
+                            CityId = 60412,
+                            Description = "EY exists to build a better working world, helping create long-term value for clients, people and society and build trust in the capital markets.\r\n\r\nEnabled by data and technology, diverse EY teams in over 150 countries provide trust through assurance and help clients grow, transform and operate.\r\n\r\nWorking across assurance, consulting, law, strategy, tax and transactions, EY teams ask better questions to find new answers for the complex issues facing our world today.\r\n\r\nFind out more about the EY global network http://ey.com/en_gl/legal-statement",
+                            Founded = 1998,
+                            FrontPage = "https://th.bing.com/th/id/R.561c527d1aca80affd4e665bd076bf3c?rik=zpvdFzoQRCRPnA&pid=ImgRaw&r=0",
+                            Logo = "https://media.licdn.com/dms/image/C510BAQGpRhkpxp5A9A/company-logo_200_200/0/1630570672166/ernstandyoung_logo?e=1725494400&v=beta&t=AtOxU4BR9-jY6sLiwS6Ayj9muNw55lwSADpzMJn3oGY",
+                            MinimalDescription = "EY exists to build a better working world...",
+                            Phone = "54-1141540027",
+                            Status = true,
+                            Website = "http://www.ey.com",
+                            WorkerQuantity = 10000
+                        },
+                        new
+                        {
+                            CompanyId = new Guid("379982fe-d22e-429f-bc14-26fffc569958"),
+                            BusinessName = "Santander Argentina",
+                            BusinessSector = "Banking",
+                            CUIT = "201256655455",
+                            CityId = 60412,
+                            Description = "Somos el Equipo de Santander Río, 7.800 personas que buscamos compartir nuestras iniciativas orientadas a construir cada día, en cada Oficina, en cada Sucursal un mejor lugar para trabajar. \r\n\r\nDar forma a una empresa orientada a las personas, creando un entorno que privilegia el reconocimiento, el trabajo en equipo y el desarrollo, integrando los intereses personales con los laborales. Mientras crecemos como profesionales y como personas buscamos crear grandes relaciones con nuestros clientes y contribuir al progreso de las Comunidades en las que estamos presentes.\r\n\r\nA través de este espacio, invitamos a nuestros más de 2,5 millones de clientes en más de 397 sucursales, a colegas y profesionales, a profesores y estudiantes de carreras de capital humano a conocer y enriquecer mutuamente nuestras prácticas. Te invitamos a crecer, a innovar y crear experiencias, juntos.",
+                            Founded = 1921,
+                            FrontPage = "https://image.blockchain.news/features/DC5D08441EF81C2B346BB8958233EFCEF16CAF3538A0CD57AD444F5927A4FB02.jpg",
+                            Logo = "https://media.licdn.com/dms/image/D4D0BAQH4npMYAm8s8Q/company-logo_200_200/0/1688566399619?e=1725494400&v=beta&t=VNWXJEM7LQF-RXYBa6dbsiyaK6misDSIdcTYoXCVq-A",
+                            MinimalDescription = "#QueremosAyudarte",
+                            Phone = "54-1141540027",
+                            Status = true,
+                            Website = "http://www.santander.com.ar",
+                            WorkerQuantity = 10000
+                        },
+                        new
+                        {
+                            CompanyId = new Guid("9f7c46a4-9ea5-4bc6-bd47-90ba52c54734"),
+                            BusinessName = "Galicia Bank",
+                            BusinessSector = "Financial Services",
+                            CUIT = "201256654444",
+                            CityId = 60410,
+                            Description = "Fundado en 1905, Banco Galicia es uno de los principales bancos privados del sistema financiero argentino, líder en la provisión de servicios financieros en todo el país. \r\n\r\nComo banco universal –y a través de distintas compañías vinculadas y de variados canales de distribución–, ofrecemos una amplia gama de servicios financieros a más de 4,2 millones de clientes, tanto individuos como empresas. \r\nOperamos en una de las más extensas y diversificadas redes de distribución del sector financiero privado argentino, ofreciendo más de 350 puntos de contacto con sus clientes por intermedio de sucursales bancarias y centros de banca electrónica y otros más de 200 centros de atención correspondientes a las compañías de tarjetas regionales. \r\nNuestros clientes también cuentan con acceso a servicios de banca telefónica y a bancogalicia.com y Galicia Móvil, el primer portal financiero de Internet y el primer servicio de pagos mediante el teléfono celular, respectivamente, establecidos por un banco en la Argentina.\r\n\r\nEl principal accionista del Banco es Grupo Financiero Galicia S.A.,sociedad holding de servicios  financieros.",
+                            Founded = 1905,
+                            FrontPage = "https://www.ideailuminacion.com.ar/wp-content/uploads/2018/02/galicia-portada-opcion-2-1920x1038.jpg",
+                            Logo = "https://media.licdn.com/dms/image/C4D0BAQFp8pBc86ERbg/company-logo_200_200/0/1672239398829/bancogalicia_logo?e=1725494400&v=beta&t=u2zR5ftORacCv6qOk-lmUWX5QHkWk-BrTkDu71Ykqy4",
+                            MinimalDescription = "Sumate a mejorar el día a día de más personas",
+                            Phone = "54-1141543227",
+                            Status = true,
+                            Website = "https://www.galicia.ar/personas",
+                            WorkerQuantity = 10000
+                        },
+                        new
+                        {
+                            CompanyId = new Guid("b735e23e-c928-41fc-b399-aa4a28807210"),
+                            BusinessName = "Adviters",
+                            BusinessSector = "IT Services and IT Consulting",
+                            CUIT = "201256654455",
+                            CityId = 60091,
+                            Description = "We are a digital native company with leading capabilities whose objective is to empower our clients and support them in their transformation processes towards modern, digital organizations, with the agility and dynamism necessary to successfully materialize their business vision\r\n\r\nWith clients such Volkswagen, Fiserv, Itaú, we stand for them as a technology partner with a service oriented mindset, providing Digital Transformation services end to end.  \r\nWe partner big brands such Microsoft, Google, AWS and RedHat with specialists in their tools and applications.\r\n\r\nWe have been recognized as one of the best IT Companies by GreatPleaceToWork.  That is just a sign of our advocacy for equality putting the people first.",
+                            Founded = 2015,
+                            FrontPage = "https://adviters.com/wp-content/uploads/2023/05/20230228_141700-1-scaled.jpg",
+                            Logo = "https://media.licdn.com/dms/image/C4D0BAQEEBMsbWMdO5A/company-logo_200_200/0/1678907502108/adviters_logo?e=1725494400&v=beta&t=Q68iW4TgfRWRZj4MofsduiWslaaAqwZwzVjn-wfm8jQ",
+                            MinimalDescription = "SHIFTING IDEAS INTO FACTS",
+                            Phone = "54-1115881458",
+                            Status = true,
+                            Website = "https://www.adviters.com",
+                            WorkerQuantity = 200
+                        },
+                        new
+                        {
+                            CompanyId = new Guid("f4c4ffe2-e95d-4c05-a958-d32b26fecfc2"),
+                            BusinessName = "Faster Argentina",
+                            BusinessSector = "Human Resources Services",
+                            CUIT = "201256653355",
+                            CityId = 60412,
+                            Description = "Somos una empresa de trabajo temporal, que inició su actividad en 1980 con el propósito de afianzar el sector de RR.HH.\r\n\r\nContamos con un grupo de profesionales altamente calificados en Recursos Humanos, dispuestos a interpretar las necesidades de quienes quieren insertarse en el mercado laboral y aquellos que buscan talentos para desempeñarse en sus posiciones vacantes.\r\n\r\nBuscamos agilizar y optimizar el proceso de selección y asegurar una atención totalmente personalizada, donde la satisfacción de nuestros clientes se convertirá en nuestro primer objetivo.",
+                            Founded = 1980,
+                            FrontPage = "https://res.cloudinary.com/people-matters/image/upload/fl_immutable_cache,w_768,h_432,q_auto,f_auto/q_auto,f_auto/v1692140931/1692140930.jpg",
+                            Logo = "https://ii.ct-stc.com/5/logos/empresas/2017/11/21/ett-faster-argentina-sa-A5C885307F8746A7180927thumbnail.jpeg",
+                            MinimalDescription = "Búsqueda y Selección de Personal - Personal Eventual",
+                            Phone = "54-1115881458",
+                            Status = true,
+                            Website = "http://www.ettfaster.com.ar",
+                            WorkerQuantity = 5000
+                        },
+                        new
+                        {
+                            CompanyId = new Guid("a4db8ecb-2f10-436e-8011-cf701620ea60"),
+                            BusinessName = "SIDESYS IT SOLUTIONS",
+                            BusinessSector = "IT Services and IT Consulting",
+                            CUIT = "201156654455",
+                            CityId = 60091,
+                            Description = "WeEn SIDESYS IT SOLUTIONS® nos dedicamos hace más de 20 años al desarrollo e implementación de soluciones tecnológicas integrales e innovadoras, orientadas a optimizar el circuito de los procesos de atención al público y la experiencia del cliente.\r\n\r\nAdemás, somos una empresa que desde su nacimiento en el año 1999 en Buenos Aires, hasta el día de hoy fue logrando un crecimiento constante tanto a nivel comercial, llegando a tener más de 300 clientes, como también regional, contando con más de 10 oficinas a lo largo de todo América Latina.",
+                            Founded = 1999,
+                            FrontPage = "https://media-exp1.licdn.com/dms/image/C4E1BAQFXP9i9g43__w/company-background_10000/0/1555400015935?e=2159024400&v=beta&t=5C0t657HxzUlGUVvteARb1d_SztEdDQ_cWOqpFY_SY4",
+                            Logo = "https://media.licdn.com/dms/image/C560BAQFuSnwdYVIErQ/company-logo_200_200/0/1630634222975/sidesys_logo?e=1725494400&v=beta&t=Gd3vDsqLp3_5ox_aCuMP43hW7Y_GBUhubD7KmjSwR2M",
+                            MinimalDescription = "Brindamos soluciones destinadas a mejorar y optimizar el circuito de los procesos de atención al público.",
+                            Phone = "54-1115882458",
+                            Status = true,
+                            Website = "http://www.sidesys.com",
+                            WorkerQuantity = 200
+                        },
+                        new
+                        {
+                            CompanyId = new Guid("ddc7879b-e104-4047-bd15-d0fade9bbeee"),
+                            BusinessName = "Grupo Gestión",
+                            BusinessSector = "Human Resources Services",
+                            CUIT = "201253653455",
+                            CityId = 60412,
+                            Description = "WeDesde su formación en 1997, GRUPO GESTIÓN se afianzó en el país, a través de sus diferentes Unidades de Negocio, como uno de los líderes de Compañías especializadas en la prestación de Servicios Integrales de Recursos Humanos. Ofreciendo la mejor cobertura de Personal Temporario y brindando asistencia profesional en las áreas de: Consultoría en Búsqueda y Selección de Personal; Promoción y Merchandising; Servicios Logísticos y de Out Sourcing, Servicios para la Agroindustria, entre otras.\r\n\r\nActualmente somos la Compañía de capitales nacionales número UNO en el Mercado del Personal Eventual, asegurando siempre el mejor Servicio, brindando asistencia y Capital Humano en todo momento y lugar.\r\n\r\nCon más de 250 profesionales puestos a disposición y 23 Sucursales estratégicamente ubicadas a lo largo de todo el país, alcanzamos una cobertura de los pedidos superior al 90 por ciento. 600 Empresas confían diariamente en nosotros.\r\nEn el 2011, se incorporó la nueva Unidad de Negocio Gestión Consultores, especializada en Búsquedas y selección de personal; Head Hunting; Encuestas de clima organizacional; Evaluaciones de desempeño; Outplacement; Capacitación; Informes psicotécnicos y ambientales; Encuestas salariales; y Evaluación de la cultura en seguridad e higiene.\r\n\r\nGestión Laboral, Gestión Integral, Gestión Logística, Gestión Industrial, Gestión Agro y Gestión Consultores. Juntos somos GRUPO GESTIÓN.",
+                            Founded = 1997,
+                            FrontPage = "https://th.bing.com/th/id/R.01939c6d2797605321b119cde9a0505a?rik=Lk53XXEo6YBiMQ&pid=ImgRaw&r=0",
+                            Logo = "https://media.licdn.com/dms/image/C4D0BAQEx9lY5-7_NIg/company-logo_200_200/0/1631376883650/grupo_gesti_n_logo?e=1725494400&v=beta&t=QDMyJ6NdAgwBY4KNCPAzBKVovF-gT26MX8Ml7YVOTBQ",
+                            MinimalDescription = "Líderes en la prestación de servicios profesionales de búsqueda, selección y gestión de capital humano.",
+                            Phone = "54-1115281458",
+                            Status = true,
+                            Website = "http://www.grupo-gestion.com.ar",
+                            WorkerQuantity = 200
+                        });
                 });
 
             modelBuilder.Entity("Domain.Entities.ContactInformation", b =>
@@ -12657,8 +14160,8 @@ namespace Infraestructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ContactInformationId"));
 
-                    b.Property<int>("CompanyId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("CompanyId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Email")
                         .IsRequired()

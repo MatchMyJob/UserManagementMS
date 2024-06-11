@@ -12,7 +12,7 @@ namespace Application.UseCase.Services
     {
         private readonly ICompanyQuery _query;
         private readonly IMapper _mapper;
-        private List<CompanyResponse> list;
+        private List<CompanyMinimalResponse> list;
 
         public CompanyQueryService(ICompanyQuery query, IMapper mapper)
         {
@@ -21,7 +21,7 @@ namespace Application.UseCase.Services
             list = new();
         }
 
-        public async Task<Paged<CompanyResponse>> GetAllPaged(int pageNumber, int pageSize)
+        public async Task<Paged<CompanyMinimalResponse>> GetCompanyByFilter(int pageNumber, int pageSize, string? name)
         {
             try
             {
@@ -30,10 +30,10 @@ namespace Application.UseCase.Services
                     throw new BadRequestException("Ingrese valores mayores que cero (0) para pageNumber y pageSize");
                 }
                 Parameters parameters = new Parameters(pageNumber, pageSize);
-                Paged<Company> companies = await _query.RecoveryAll(parameters);
+                Paged<Company> companies = await _query.RecoveryAll(parameters, name);
                 companies.Data.ForEach(e =>
                 {
-                    var companyResponse = _mapper.Map<CompanyResponse>(e);
+                    var companyResponse = _mapper.Map<CompanyMinimalResponse>(e);
                     companyResponse.Ubication = new UbicationResponse
                     {
                         Province = e.CityObject.ProvinceObject.Name,
@@ -42,7 +42,7 @@ namespace Application.UseCase.Services
                     list.Add(companyResponse);
                 });
 
-                return new Paged<CompanyResponse>(list, companies.MetaData.TotalCount, parameters.PageNumber, parameters.PageSize);
+                return new Paged<CompanyMinimalResponse>(list, companies.MetaData.TotalCount, parameters.PageNumber, parameters.PageSize);
             }
             catch (Exception e)
             {
@@ -54,15 +54,10 @@ namespace Application.UseCase.Services
             }
         }
 
-        public async Task<CompanyGetResponse> GetByCompanyId(int companyId)
+        public async Task<CompanyGetResponse> GetByCompanyId(Guid companyId)
         {
             try
             {
-                if (companyId <= 0)
-                {
-                    throw new BadRequestException("El ID debe ser mayor a cero.");
-                }
-
                 var company = await _query.RecoveryByCompanyId(companyId);
 
                 var response = _mapper.Map<CompanyGetResponse>(company);
@@ -112,6 +107,11 @@ namespace Application.UseCase.Services
                 }
                 throw new InternalServerErrorException(e.Message);
             }
+        }
+
+        Task<Paged<CompanyResponse>> IQueryService<CompanyResponse, string>.GetAllPaged(int pageNumber, int pageSize)
+        {
+            throw new NotImplementedException();
         }
     }
 }

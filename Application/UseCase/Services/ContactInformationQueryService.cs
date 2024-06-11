@@ -22,15 +22,10 @@ namespace Application.UseCase.Services
             throw new NotImplementedException(); //sin implementar, no va a ser necesario
         }
 
-        public async Task<ContactInformationResponse> GetById(int id)
+        public async Task<ContactInformationResponse> GetById(Guid id)
         {
             try
             {
-                if (!(id >= 0))
-                {
-                    throw new BadRequestException("El ID no puede ser cero (0), ni un número menor.");
-                }
-
                 var contactInformation = await _query.RecoveryById(id);
 
                 return _mapper.Map<ContactInformationResponse>(contactInformation);                

@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+using Infraestructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -10,11 +11,7 @@ namespace Infraestructure.EntityConfig
         {
             builder.ToTable("Company");
             builder.HasKey(c => c.CompanyId);
-            builder.Property(c => c.CompanyId)
-                   .ValueGeneratedOnAdd();
-            builder.Property(u => u.UserId)
-                   .IsRequired();
-            builder.HasIndex(u => u.UserId)
+            builder.HasIndex(c => c.CompanyId)
                    .IsUnique();
             builder.Property(u => u.CityId)
                    .IsRequired();
@@ -28,15 +25,24 @@ namespace Infraestructure.EntityConfig
                    .HasMaxLength(50)
                    .IsRequired();
             builder.Property(a => a.Address)
-                   .HasMaxLength(50);
+                   .HasMaxLength(50)
+                   .IsRequired(false);
             builder.Property(bs => bs.BusinessSector)
                    .HasMaxLength(50);
             builder.Property(w => w.Website)
                    .HasMaxLength(255);
+            builder.Property(w => w.MinimalDescription)
+                   .HasMaxLength(255);
             builder.Property(d => d.Description)
-                   .HasMaxLength(500);
+                   .HasMaxLength(2000);
+            builder.Property(w => w.WorkerQuantity)
+                   .IsRequired();
             builder.Property(l => l.Logo)
                    .HasMaxLength(255);
+            builder.Property(l => l.FrontPage)
+                   .HasMaxLength(255);
+            builder.Property(l => l.Founded)
+                   .IsRequired();
 
             builder.HasOne<City>(mu => mu.CityObject)
                    .WithMany(c => c.CompanyObjects)
@@ -45,6 +51,8 @@ namespace Infraestructure.EntityConfig
             builder.HasOne<ContactInformation>(ci => ci.ContactInformationObject)
                    .WithOne(c => c.CompanyObject)
                    .HasForeignKey<ContactInformation>(fk => fk.CompanyId);
+
+            CompanyData.SeedData(builder);
         }
     }
 }
