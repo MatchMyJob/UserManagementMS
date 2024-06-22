@@ -138,7 +138,7 @@ namespace API.Controllers
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status409Conflict)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> CreateEntity(ApplicantRequest request)
+        public async Task<ActionResult> CreateEntity([FromBody] ApplicantRequest request)
         {
             try
             {

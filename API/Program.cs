@@ -153,6 +153,9 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
+
+app.UseCors("NewPolicy");
+
 app.UseAuthorization();
 
 app.MapControllers();
